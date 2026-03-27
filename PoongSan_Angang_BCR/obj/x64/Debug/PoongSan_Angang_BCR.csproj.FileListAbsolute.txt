@@ -1,0 +1,314 @@
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.Form1.resources
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.Properties.Resources.resources
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.WaitForm.resources
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.GenerateResource.cache
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.CoreCompileInputs.cache
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.AssemblyReference.cache
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.exe.config
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.exe
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.pdb
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Data.Desktop.v21.2.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Data.v21.2.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Printing.v21.2.Core.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Utils.v21.2.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Core.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Drawing.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Data.Desktop.v21.2.xml
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Data.v21.2.xml
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Printing.v21.2.Core.xml
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Utils.v21.2.xml
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Core.xml
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Drawing.xml
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Data.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Data.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Data.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Data.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Printing.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Printing.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Printing.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Printing.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Utils.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Utils.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Utils.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Utils.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.CopyComplete
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.exe
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.pdb
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.exe.config
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.exe
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.pdb
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Data.Desktop.v21.2.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Data.v21.2.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Printing.v21.2.Core.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Utils.v21.2.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Core.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Drawing.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Data.Desktop.v21.2.xml
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Data.v21.2.xml
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Printing.v21.2.Core.xml
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Utils.v21.2.xml
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Core.xml
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Drawing.xml
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Data.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Data.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Data.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Data.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Printing.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Printing.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Printing.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Printing.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Utils.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Utils.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Utils.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Utils.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.AssemblyReference.cache
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.Form1.resources
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.Properties.Resources.resources
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.WaitForm.resources
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.GenerateResource.cache
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.CoreCompileInputs.cache
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.CopyComplete
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.exe
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.pdb
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.exe.config
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.exe
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.pdb
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Core.dll
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Drawing.dll
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Data.Desktop.v21.2.xml
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Data.v21.2.xml
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Printing.v21.2.Core.xml
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Utils.v21.2.xml
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Core.xml
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Drawing.xml
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Data.v21.2.resources.dll
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Data.v21.2.resources.dll
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Data.v21.2.resources.dll
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Data.v21.2.resources.dll
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Printing.v21.2.Core.resources.dll
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Printing.v21.2.Core.resources.dll
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Printing.v21.2.Core.resources.dll
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Printing.v21.2.Core.resources.dll
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Utils.v21.2.resources.dll
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Utils.v21.2.resources.dll
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Utils.v21.2.resources.dll
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Utils.v21.2.resources.dll
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.AssemblyReference.cache
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.Form1.resources
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.Properties.Resources.resources
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.WaitForm.resources
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.GenerateResource.cache
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.CoreCompileInputs.cache
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.CopyComplete
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.exe
+D:\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.pdb
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.exe.config
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.exe
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.pdb
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Core.dll
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Drawing.dll
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Data.Desktop.v21.2.xml
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Data.v21.2.xml
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Printing.v21.2.Core.xml
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Utils.v21.2.xml
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Core.xml
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Drawing.xml
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Data.v21.2.resources.dll
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Data.v21.2.resources.dll
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Data.v21.2.resources.dll
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Data.v21.2.resources.dll
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Printing.v21.2.Core.resources.dll
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Printing.v21.2.Core.resources.dll
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Printing.v21.2.Core.resources.dll
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Printing.v21.2.Core.resources.dll
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Utils.v21.2.resources.dll
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Utils.v21.2.resources.dll
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Utils.v21.2.resources.dll
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Utils.v21.2.resources.dll
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Pdf.v21.2.Core.resources.dll
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Pdf.v21.2.Core.resources.dll
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Pdf.v21.2.Core.resources.dll
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Pdf.v21.2.Core.resources.dll
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.AssemblyReference.cache
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.Form1.resources
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.Properties.Resources.resources
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.WaitForm.resources
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.GenerateResource.cache
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.CoreCompileInputs.cache
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.CopyComplete
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.exe
+E:\새 폴더\PoongSan_Angang_BCR_260213\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.pdb
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.exe.config
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.exe
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.pdb
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Core.dll
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Drawing.dll
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Data.Desktop.v21.2.xml
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Data.v21.2.xml
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Printing.v21.2.Core.xml
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Utils.v21.2.xml
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Core.xml
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Drawing.xml
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Data.v21.2.resources.dll
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Data.v21.2.resources.dll
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Data.v21.2.resources.dll
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Data.v21.2.resources.dll
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Printing.v21.2.Core.resources.dll
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Printing.v21.2.Core.resources.dll
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Printing.v21.2.Core.resources.dll
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Printing.v21.2.Core.resources.dll
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Utils.v21.2.resources.dll
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Utils.v21.2.resources.dll
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Utils.v21.2.resources.dll
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Utils.v21.2.resources.dll
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.AssemblyReference.cache
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.AlarmForm.resources
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.Form1.resources
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.Properties.Resources.resources
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.WaitForm.resources
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.GenerateResource.cache
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.CoreCompileInputs.cache
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan.A06EE8F5.Up2Date
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.exe
+D:\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.pdb
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.exe.config
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.exe
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.pdb
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.AlarmForm.resources
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.Form1.resources
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.Properties.Resources.resources
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.WaitForm.resources
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.GenerateResource.cache
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan.A06EE8F5.Up2Date
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.exe
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260313\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.pdb
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260319\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.exe.config
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260319\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.exe
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260319\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.pdb
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260319\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260319\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.AlarmForm.resources
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260319\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.Form1.resources
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260319\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.Properties.Resources.resources
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260319\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.WaitForm.resources
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260319\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.GenerateResource.cache
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260319\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260319\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan.A06EE8F5.Up2Date
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260319\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.exe
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260319\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.pdb
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260319\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.PasswordForm.resources
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260319\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.ModelForm.resources
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.AlarmForm.resources
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.Form1.resources
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.ModelForm.resources
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.PasswordForm.resources
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.Properties.Resources.resources
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.WaitForm.resources
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.GenerateResource.cache
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.CoreCompileInputs.cache
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.exe.config
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.exe
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.pdb
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Data.Desktop.v21.2.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Data.v21.2.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Printing.v21.2.Core.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Utils.v21.2.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Core.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Drawing.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Data.Desktop.v21.2.xml
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Data.v21.2.xml
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Printing.v21.2.Core.xml
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Utils.v21.2.xml
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Core.xml
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Drawing.xml
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Data.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Data.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Data.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Data.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Printing.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Printing.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Printing.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Printing.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Utils.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Utils.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Utils.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Utils.v21.2.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.CopyComplete
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.exe
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.pdb
+D:\4.Project\40. 풍산 안강 바코드리더\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.exe
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.pdb
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.exe.config
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.exe
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.pdb
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Core.dll
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Drawing.dll
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Data.Desktop.v21.2.xml
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Data.v21.2.xml
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Printing.v21.2.Core.xml
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Utils.v21.2.xml
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Core.xml
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\DevExpress.Pdf.v21.2.Drawing.xml
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Data.v21.2.resources.dll
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Data.v21.2.resources.dll
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Data.v21.2.resources.dll
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Data.v21.2.resources.dll
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Printing.v21.2.Core.resources.dll
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Printing.v21.2.Core.resources.dll
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Printing.v21.2.Core.resources.dll
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Printing.v21.2.Core.resources.dll
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Utils.v21.2.resources.dll
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Utils.v21.2.resources.dll
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Utils.v21.2.resources.dll
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Utils.v21.2.resources.dll
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\de\DevExpress.Pdf.v21.2.Core.resources.dll
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\es\DevExpress.Pdf.v21.2.Core.resources.dll
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\ja\DevExpress.Pdf.v21.2.Core.resources.dll
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\bin\x64\Debug\ru\DevExpress.Pdf.v21.2.Core.resources.dll
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.AlarmForm.resources
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.Form1.resources
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.ModelForm.resources
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.PasswordForm.resources
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.Properties.Resources.resources
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.WaitForm.resources
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.GenerateResource.cache
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan.A06EE8F5.Up2Date
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323_수정\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.exe.config
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323_수정\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.exe
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323_수정\PoongSan_Angang_BCR\bin\x64\Debug\PoongSan_Angang_BCR.pdb
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323_수정\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323_수정\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.AlarmForm.resources
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323_수정\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.Form1.resources
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323_수정\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.ModelForm.resources
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323_수정\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.PasswordForm.resources
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323_수정\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.Properties.Resources.resources
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323_수정\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.WaitForm.resources
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323_수정\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.GenerateResource.cache
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323_수정\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323_수정\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan.A06EE8F5.Up2Date
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323_수정\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.exe
+C:\Users\user\Desktop\풍산\PoongSan_Angang_BCR_260323_수정\PoongSan_Angang_BCR\obj\x64\Debug\PoongSan_Angang_BCR.pdb

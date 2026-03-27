@@ -1,0 +1,3 @@
+14:13:40	AlarmForm.cs	ShowAlarm	0x0000040	AMR : NG
+14:20:26	AlarmForm.cs	ShowAlarm	0x0000040	AMR : NG
+14:56:56	AlarmForm.cs	ShowAlarm	0x0000040	AMR : NG

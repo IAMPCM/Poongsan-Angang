@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls \"C:\\\\Users\\\\user\\\\Desktop\\\\풍산\\\\PoongSan_Angang_BCR_260319\\\\PoongSan_Angang_BCR\\\\bin\\\\x64\\\\Debug\"\" 2>/dev/null || ls \"C:UsersuserDesktop풍산PoongSan_Angang_BCR_260319PoongSan_Angang_BCRbinDebug\"\")",
+      "Bash(ls \"C:\\\\Users\\\\user\\\\Desktop\\\\풍산\\\\PoongSan_Angang_BCR_260319\\\\PoongSan_Angang_BCR\"\" | grep -i \".csv \")",
+      "Bash(cmd /c \"dir /s /b D:\\\\PoongSanBCD.csv 2>nul & dir /s /b C:\\\\PoongSanBCD.csv 2>nul\")",
+      "Bash(cmd /c \"dir D:\\\\PoongSanBCD.csv 2>nul && echo FOUND_D || echo NOT_FOUND_D\")",
+      "Bash(cmd /c \"dir /b /s C:\\\\PoongSan* D:\\\\PoongSan* 2>nul\")",
+      "Bash(cmd /c \"dir /b /s C:\\\\Users\\\\user\\\\Desktop\\\\* 2>nul | findstr /i PoongSanBCD\")",
+      "Bash(cmd /c \"cd /d C:\\\\Users\\\\user\\\\Desktop && dir /b /s PoongSan_Angang_BCR.exe 2>nul\")",
+      "Bash(powershell -Command \"Get-ChildItem -Path ''C:\\\\Users\\\\user\\\\Desktop'' -Filter ''*.exe'' -Recurse -ErrorAction SilentlyContinue | Select-Object -ExpandProperty FullName\")",
+      "Bash(powershell -Command \"Get-ChildItem -Path ''C:\\\\Users\\\\user\\\\Desktop\\\\풍산'' -Filter ''*.exe'' -Recurse -ErrorAction SilentlyContinue | Select-Object FullName\")"
+    ]
+  }
+}

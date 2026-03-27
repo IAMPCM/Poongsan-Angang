@@ -1,0 +1,7 @@
+15:32:36	AlarmForm.cs	ShowAlarm	0x0000040	AMR : NG
+15:32:50	AlarmForm.cs	ShowAlarm	0x0000040	AMR : NG
+15:32:56	AlarmForm.cs	ShowAlarm	0x0000040	AMR : NG
+15:33:35	AlarmForm.cs	ShowAlarm	0x0000040	AMR : NG
+15:34:53	AlarmForm.cs	ShowAlarm	0x0000040	AMR : NG
+15:35:13	AlarmForm.cs	ShowAlarm	0x0000040	AMR : NG
+15:36:54	AlarmForm.cs	ShowAlarm	0x0000040	AMR : 타임아웃 초과

@@ -1,0 +1,2 @@
+08:28:00	AlarmForm.cs	ShowAlarm	0x0000040	AMR : NG
+08:29:00	AlarmForm.cs	ShowAlarm	0x0000040	AMR : 타임아웃 초과

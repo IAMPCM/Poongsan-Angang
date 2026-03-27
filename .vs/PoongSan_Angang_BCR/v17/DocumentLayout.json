@@ -1,0 +1,395 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|c:\\users\\user\\desktop\\\uD48D\uC0B0\\poongsan_angang_bcr_260323_\uC218\uC815\\poongsan_angang_bcr\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\poongsan_angang_bcr\\mxplc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\mxplc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\poongsan_angang_bcr\\plcdefine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\plcdefine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\poongsan_angang_bcr\\systemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\systemdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\poongsan_angang_bcr\\vasimplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\vasimplatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\poongsan_angang_bcr\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\poongsan_angang_bcr\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\poongsan_angang_bcr\\define.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\define.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\poongsan_angang_bcr\\waitform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\waitform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\poongsan_angang_bcr\\addeditmodelform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\addeditmodelform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\poongsan_angang_bcr\\modelform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\modelform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\poongsan_angang_bcr\\passwordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\passwordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\poongsan_angang_bcr\\alarmform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\alarmform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\poongsan_angang_bcr\\changepasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\changepasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\poongsan_angang_bcr\\inputkeypadform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\inputkeypadform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\poongsan_angang_bcr\\modelform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\modelform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\poongsan_angang_bcr\\modelform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\modelform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\poongsan_angang_bcr\\addeditmodelform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\addeditmodelform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\poongsan_angang_bcr\\changepasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\changepasswordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\poongsan_angang_bcr\\alarmform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\alarmform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\poongsan_angang_bcr\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\poongsan_angang_bcr\\alarmform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\alarmform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\poongsan_angang_bcr\\passwordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA467D01-0239-41DE-956B-6C9DFABD5906}|PoongSan_Angang_BCR\\PoongSan_Angang_BCR.csproj|solutionrelative:poongsan_angang_bcr\\passwordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260313\\PoongSan_Angang_BCR\\PasswordForm_Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ModelForm.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\ModelForm.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\ModelForm.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\ModelForm.cs",
+              "RelativeToolTip": "PoongSan_Angang_BCR\\ModelForm.cs",
+              "ViewState": "AQIAAEIBAAAAAAAAAAAvwFIBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T04:37:42.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ChangePasswordForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\ChangePasswordForm.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\ChangePasswordForm.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260319\\PoongSan_Angang_BCR\\ChangePasswordForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "..\\PoongSan_Angang_BCR_260319\\PoongSan_Angang_BCR\\ChangePasswordForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T05:43:03.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\Form1.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\Form1.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\Form1.cs",
+              "RelativeToolTip": "PoongSan_Angang_BCR\\Form1.cs",
+              "ViewState": "AQIAAEYCAAAAAAAAAAAuwEcCAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T07:57:41.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MXPlc.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\MXPlc.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\MXPlc.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\MXPlc.cs",
+              "RelativeToolTip": "PoongSan_Angang_BCR\\MXPlc.cs",
+              "ViewState": "AQIAAKUBAAAAAAAAAAAAAKUBAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-22T23:56:30.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PasswordForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\PasswordForm.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\PasswordForm.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260319\\PoongSan_Angang_BCR\\PasswordForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "..\\PoongSan_Angang_BCR_260319\\PoongSan_Angang_BCR\\PasswordForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T04:38:26.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AlarmForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\AlarmForm.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\AlarmForm.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260319\\PoongSan_Angang_BCR\\AlarmForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "..\\PoongSan_Angang_BCR_260319\\PoongSan_Angang_BCR\\AlarmForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T06:32:37.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\Form1.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\Form1.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323\\PoongSan_Angang_BCR\\Form1.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "..\\PoongSan_Angang_BCR_260323\\PoongSan_Angang_BCR\\Form1.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T04:38:04.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\Form1.Designer.cs",
+              "RelativeToolTip": "PoongSan_Angang_BCR\\Form1.Designer.cs",
+              "ViewState": "AQIAAPgBAAAAAAAAAAAIwBcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T06:17:33.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SystemData.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\SystemData.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\SystemData.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\SystemData.cs",
+              "RelativeToolTip": "PoongSan_Angang_BCR\\SystemData.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAxwAIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T06:56:12.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PLCDefine.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\PLCDefine.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\PLCDefine.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\PLCDefine.cs",
+              "RelativeToolTip": "PoongSan_Angang_BCR\\PLCDefine.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T00:11:27.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VasimPlatform.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\VasimPlatform.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\VasimPlatform.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\VasimPlatform.cs",
+              "RelativeToolTip": "PoongSan_Angang_BCR\\VasimPlatform.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-23T00:14:59.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ModelForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\ModelForm.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\ModelForm.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260319\\PoongSan_Angang_BCR\\ModelForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "..\\PoongSan_Angang_BCR_260319\\PoongSan_Angang_BCR\\ModelForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T01:19:17.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WaitForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\WaitForm.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\WaitForm.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260319\\PoongSan_Angang_BCR\\WaitForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "..\\PoongSan_Angang_BCR_260319\\PoongSan_Angang_BCR\\WaitForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T04:35:26.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Define.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\Define.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\Define.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\Define.cs",
+              "RelativeToolTip": "PoongSan_Angang_BCR\\Define.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T00:22:23.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AddEditModelForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\AddEditModelForm.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\AddEditModelForm.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260319\\PoongSan_Angang_BCR\\AddEditModelForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "..\\PoongSan_Angang_BCR_260319\\PoongSan_Angang_BCR\\AddEditModelForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T05:43:36.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "InputKeypadForm.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\InputKeypadForm.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\InputKeypadForm.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260319\\PoongSan_Angang_BCR\\InputKeypadForm.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "..\\PoongSan_Angang_BCR_260319\\PoongSan_Angang_BCR\\InputKeypadForm.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T04:30:31.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AddEditModelForm.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\AddEditModelForm.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\AddEditModelForm.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\AddEditModelForm.cs",
+              "RelativeToolTip": "PoongSan_Angang_BCR\\AddEditModelForm.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAiwAwAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T05:43:46.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ModelForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\ModelForm.Designer.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\ModelForm.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\ModelForm.Designer.cs",
+              "RelativeToolTip": "PoongSan_Angang_BCR\\ModelForm.Designer.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T05:45:01.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ChangePasswordForm.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\ChangePasswordForm.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\ChangePasswordForm.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\ChangePasswordForm.cs",
+              "RelativeToolTip": "PoongSan_Angang_BCR\\ChangePasswordForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T05:10:44.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AlarmForm.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\AlarmForm.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\AlarmForm.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\AlarmForm.cs",
+              "RelativeToolTip": "PoongSan_Angang_BCR\\AlarmForm.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T06:32:39.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AlarmForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\AlarmForm.Designer.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\AlarmForm.Designer.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\AlarmForm.Designer.cs",
+              "RelativeToolTip": "PoongSan_Angang_BCR\\AlarmForm.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T07:29:14.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "History.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\History.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\History.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\History.cs",
+              "RelativeToolTip": "PoongSan_Angang_BCR\\History.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAApwCcAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T00:17:58.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PasswordForm.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\PasswordForm.cs",
+              "RelativeDocumentMoniker": "PoongSan_Angang_BCR\\PasswordForm.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260323_\uC218\uC815\\PoongSan_Angang_BCR\\PasswordForm.cs",
+              "RelativeToolTip": "PoongSan_Angang_BCR\\PasswordForm.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAADwvxcAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T06:28:52.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PasswordForm_Designer.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260313\\PoongSan_Angang_BCR\\PasswordForm_Designer.cs",
+              "RelativeDocumentMoniker": "..\\PoongSan_Angang_BCR_260313\\PoongSan_Angang_BCR\\PasswordForm_Designer.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\\uD48D\uC0B0\\PoongSan_Angang_BCR_260313\\PoongSan_Angang_BCR\\PasswordForm_Designer.cs",
+              "RelativeToolTip": "..\\PoongSan_Angang_BCR_260313\\PoongSan_Angang_BCR\\PasswordForm_Designer.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T04:29:19.332Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
