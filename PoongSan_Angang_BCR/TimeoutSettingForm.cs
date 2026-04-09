@@ -165,7 +165,7 @@ namespace PoongSan_Angang_BCR
         {
             if (!Authenticate()) return;
 
-            using (var keypad = new InputKeypadForm("타임아웃 시간 (분)"))
+            using (var keypad = new NumericInputForm("타임아웃 시간 (분)"))
             {
                 if (keypad.ShowDialog(this) != System.Windows.Forms.DialogResult.OK) return;
 
