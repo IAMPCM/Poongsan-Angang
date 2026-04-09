@@ -135,6 +135,18 @@
     <Compile Include="InputKeypadForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="NumericInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeoutSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ModelForm.cs">
       <SubType>Form</SubType>
     </Compile>
