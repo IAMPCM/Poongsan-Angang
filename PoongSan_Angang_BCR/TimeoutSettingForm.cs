@@ -24,7 +24,7 @@ namespace PoongSan_Angang_BCR
             this.Text            = "타임아웃 설정";
             this.FormBorderStyle = FormBorderStyle.None;
             this.BackColor       = Color.FromArgb(51, 51, 56);
-            this.Size            = new Size(400, 320);
+            this.Size            = new Size(560, 430);
             this.StartPosition   = FormStartPosition.CenterParent;
             this.TopMost         = true;
 
@@ -32,11 +32,11 @@ namespace PoongSan_Angang_BCR
             var lblTitle = new Label
             {
                 Text      = "타임아웃 설정",
-                Font      = new Font("굴림", 16F, FontStyle.Bold),
+                Font      = new Font("굴림", 20F, FontStyle.Bold),
                 ForeColor = Color.White,
                 BackColor = Color.FromArgb(51, 51, 56),
-                Size      = new Size(360, 44),
-                Location  = new Point(20, 12),
+                Size      = new Size(520, 54),
+                Location  = new Point(20, 14),
                 TextAlign = ContentAlignment.MiddleCenter
             };
 
@@ -44,21 +44,21 @@ namespace PoongSan_Angang_BCR
             var lblStatusHeader = new Label
             {
                 Text      = "현재 상태",
-                Font      = new Font("굴림", 11F),
+                Font      = new Font("굴림", 13F),
                 ForeColor = Color.FromArgb(180, 180, 180),
                 BackColor = Color.FromArgb(51, 51, 56),
-                Size      = new Size(360, 24),
-                Location  = new Point(20, 65),
+                Size      = new Size(520, 28),
+                Location  = new Point(20, 80),
                 TextAlign = ContentAlignment.MiddleLeft
             };
 
             // ON/OFF 토글 버튼
             _btnToggle = new Button
             {
-                Font      = new Font("굴림", 14F, FontStyle.Bold),
+                Font      = new Font("굴림", 16F, FontStyle.Bold),
                 ForeColor = Color.White,
-                Size      = new Size(360, 60),
-                Location  = new Point(20, 90),
+                Size      = new Size(520, 80),
+                Location  = new Point(20, 108),
                 FlatStyle = FlatStyle.Flat
             };
             _btnToggle.FlatAppearance.BorderSize = 0;
@@ -69,23 +69,23 @@ namespace PoongSan_Angang_BCR
             var lblTimeHeader = new Label
             {
                 Text      = "설정 시간",
-                Font      = new Font("굴림", 11F),
+                Font      = new Font("굴림", 13F),
                 ForeColor = Color.FromArgb(180, 180, 180),
                 BackColor = Color.FromArgb(51, 51, 56),
-                Size      = new Size(360, 24),
-                Location  = new Point(20, 168),
+                Size      = new Size(520, 28),
+                Location  = new Point(20, 208),
                 TextAlign = ContentAlignment.MiddleLeft
             };
 
             // 현재 설정 시간 표시
             _lblMinutes = new Label
             {
-                Font      = new Font("굴림", 18F, FontStyle.Bold),
-                ForeColor = Color.White,
-                BackColor = Color.FromArgb(40, 40, 45),
-                Size      = new Size(220, 60),
-                Location  = new Point(20, 194),
-                TextAlign = ContentAlignment.MiddleCenter,
+                Font        = new Font("굴림", 22F, FontStyle.Bold),
+                ForeColor   = Color.White,
+                BackColor   = Color.FromArgb(40, 40, 45),
+                Size        = new Size(310, 80),
+                Location    = new Point(20, 238),
+                TextAlign   = ContentAlignment.MiddleCenter,
                 BorderStyle = BorderStyle.FixedSingle
             };
             UpdateMinutesLabel();
@@ -94,11 +94,11 @@ namespace PoongSan_Angang_BCR
             var btnChangeTime = new Button
             {
                 Text      = "시간 변경",
-                Font      = new Font("굴림", 13F, FontStyle.Bold),
+                Font      = new Font("굴림", 15F, FontStyle.Bold),
                 BackColor = Color.FromArgb(41, 128, 185),
                 ForeColor = Color.White,
-                Size      = new Size(128, 60),
-                Location  = new Point(252, 194),
+                Size      = new Size(190, 80),
+                Location  = new Point(350, 238),
                 FlatStyle = FlatStyle.Flat
             };
             btnChangeTime.FlatAppearance.BorderSize = 0;
@@ -112,7 +112,7 @@ namespace PoongSan_Angang_BCR
                 BackColor = Color.FromArgb(51, 51, 56),
                 ForeColor = Color.White,
                 Size      = new Size(40, 30),
-                Location  = new Point(350, 5),
+                Location  = new Point(510, 5),
                 FlatStyle = FlatStyle.Flat
             };
             btnX.FlatAppearance.BorderSize = 0;
@@ -122,11 +122,11 @@ namespace PoongSan_Angang_BCR
             var btnClose = new Button
             {
                 Text      = "닫  기",
-                Font      = new Font("굴림", 13F, FontStyle.Bold),
+                Font      = new Font("굴림", 15F, FontStyle.Bold),
                 BackColor = Color.FromArgb(100, 100, 110),
                 ForeColor = Color.White,
-                Size      = new Size(120, 44),
-                Location  = new Point(260, 264),
+                Size      = new Size(160, 54),
+                Location  = new Point(380, 360),
                 FlatStyle = FlatStyle.Flat
             };
             btnClose.FlatAppearance.BorderSize = 0;
