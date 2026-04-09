@@ -111,9 +111,9 @@ namespace PoongSan_Angang_BCR
             this.label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label18.Font = new System.Drawing.Font("굴림", 20F, System.Drawing.FontStyle.Bold);
             this.label18.ForeColor = System.Drawing.SystemColors.Window;
-            this.label18.Location = new System.Drawing.Point(276, 248);
+            this.label18.Location = new System.Drawing.Point(1, 248);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(400, 101);
+            this.label18.Size = new System.Drawing.Size(671, 101);
             this.label18.TabIndex = 145;
             this.label18.Text = "구경";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -147,7 +147,7 @@ namespace PoongSan_Angang_BCR
             // 
             this.cboBore.Font = new System.Drawing.Font("굴림", 45F);
             this.cboBore.FormattingEnabled = true;
-            this.cboBore.Location = new System.Drawing.Point(680, 248);
+            this.cboBore.Location = new System.Drawing.Point(816, 248);
             this.cboBore.Margin = new System.Windows.Forms.Padding(4);
             this.cboBore.Name = "cboBore";
             this.cboBore.Size = new System.Drawing.Size(900, 98);
@@ -161,9 +161,9 @@ namespace PoongSan_Angang_BCR
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("굴림", 20F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(276, 351);
+            this.label1.Location = new System.Drawing.Point(1, 351);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(400, 101);
+            this.label1.Size = new System.Drawing.Size(671, 101);
             this.label1.TabIndex = 154;
             this.label1.Text = "탄종";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -172,7 +172,7 @@ namespace PoongSan_Angang_BCR
             // 
             this.cboBullet.Font = new System.Drawing.Font("굴림", 45F);
             this.cboBullet.FormattingEnabled = true;
-            this.cboBullet.Location = new System.Drawing.Point(680, 351);
+            this.cboBullet.Location = new System.Drawing.Point(816, 351);
             this.cboBullet.Margin = new System.Windows.Forms.Padding(4);
             this.cboBullet.Name = "cboBullet";
             this.cboBullet.Size = new System.Drawing.Size(900, 98);
@@ -184,7 +184,7 @@ namespace PoongSan_Angang_BCR
             // 
             this.cboLocal.Font = new System.Drawing.Font("굴림", 45F);
             this.cboLocal.FormattingEnabled = true;
-            this.cboLocal.Location = new System.Drawing.Point(680, 454);
+            this.cboLocal.Location = new System.Drawing.Point(816, 454);
             this.cboLocal.Margin = new System.Windows.Forms.Padding(4);
             this.cboLocal.Name = "cboLocal";
             this.cboLocal.Size = new System.Drawing.Size(900, 98);
@@ -198,9 +198,9 @@ namespace PoongSan_Angang_BCR
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("굴림", 20F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.SystemColors.Window;
-            this.label2.Location = new System.Drawing.Point(276, 454);
+            this.label2.Location = new System.Drawing.Point(1, 454);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(400, 101);
+            this.label2.Size = new System.Drawing.Size(671, 101);
             this.label2.TabIndex = 156;
             this.label2.Text = "미국(A)/유럽(E)";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
