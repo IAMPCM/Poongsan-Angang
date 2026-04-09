@@ -57,18 +57,6 @@ namespace PoongSan_Angang_BCR
 
             Initialize();
 
-            // 타임아웃 토글 버튼 초기 상태 설정
-            if (m_VasimPlatform.m_SystemData.TimeoutUse == "true")
-            {
-                btn_TimeoutToggle.Text = "타임아웃 ON";
-                btn_TimeoutToggle.BackColor = System.Drawing.Color.Green;
-            }
-            else
-            {
-                btn_TimeoutToggle.Text = "타임아웃 OFF";
-                btn_TimeoutToggle.BackColor = System.Drawing.Color.Gray;
-            }
-
             // 금일 검사 수량 복원
             string savedDate = m_VasimPlatform.m_SystemData.CountDate;
             if (savedDate == DateTime.Today.ToString("yyyy-MM-dd"))
@@ -760,8 +748,6 @@ namespace PoongSan_Angang_BCR
             {
                 // ON → OFF
                 m_VasimPlatform.m_SystemData.TimeoutUse = "false";
-                btn_TimeoutToggle.Text = "타임아웃 OFF";
-                btn_TimeoutToggle.BackColor = System.Drawing.Color.Gray;
 
                 // 타이머 중지
                 if (_timeoutTimer != null)
@@ -771,8 +757,6 @@ namespace PoongSan_Angang_BCR
             {
                 // OFF → ON
                 m_VasimPlatform.m_SystemData.TimeoutUse = "true";
-                btn_TimeoutToggle.Text = "타임아웃 ON";
-                btn_TimeoutToggle.BackColor = System.Drawing.Color.Green;
 
                 // 설비 동작 중이면 타이머 즉시 시작
                 if (bEQStart)
@@ -791,6 +775,18 @@ namespace PoongSan_Angang_BCR
 
             // ini 파일에 저장
             m_VasimPlatform.m_SystemData.Save();
+        }
+
+        private void btn_Settings_Click(object sender, EventArgs e)
+        {
+            using (var form = new SettingsForm(
+                onChangePassword: () => btn_ChangePassword_Click(null, null),
+                onToggleTimeout:  () => btn_TimeoutToggle_Click(null, null),
+                onModelSetting:   () => btn_ModelSetting_Click(null, null),
+                systemData:       m_VasimPlatform.m_SystemData))
+            {
+                form.ShowDialog(this);
+            }
         }
 
         private void cboBore_Click(object sender, EventArgs e) { }

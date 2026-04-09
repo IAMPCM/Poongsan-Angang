@@ -56,15 +56,13 @@ namespace PoongSan_Angang_BCR
             this.label9 = new System.Windows.Forms.Label();
             this.btn_Start = new System.Windows.Forms.Button();
             this.btn_Stop = new System.Windows.Forms.Button();
-            this.btn_TimeoutToggle = new System.Windows.Forms.Button();
-            this.btn_ModelSetting = new System.Windows.Forms.Button();
+            this.btn_Settings = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label_PLC_Status = new System.Windows.Forms.Label();
             this.txtInputBoxBCD = new System.Windows.Forms.Label();
             this.txtHiddenInput = new System.Windows.Forms.TextBox();
             this.txtInputBCR = new System.Windows.Forms.TextBox();
-            this.btn_ChangePassword = new System.Windows.Forms.Button();
             this.btnResetCount = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -395,34 +393,20 @@ namespace PoongSan_Angang_BCR
             this.btn_Stop.Text = "정지";
             this.btn_Stop.UseVisualStyleBackColor = true;
             this.btn_Stop.Click += new System.EventHandler(this.btn_Stop_Click);
-            // 
-            // btn_TimeoutToggle
-            // 
-            this.btn_TimeoutToggle.BackColor = System.Drawing.Color.Green;
-            this.btn_TimeoutToggle.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btn_TimeoutToggle.ForeColor = System.Drawing.Color.Black;
-            this.btn_TimeoutToggle.Location = new System.Drawing.Point(1301, 45);
-            this.btn_TimeoutToggle.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_TimeoutToggle.Name = "btn_TimeoutToggle";
-            this.btn_TimeoutToggle.Size = new System.Drawing.Size(200, 62);
-            this.btn_TimeoutToggle.TabIndex = 180;
-            this.btn_TimeoutToggle.Text = "타임아웃 ON";
-            this.btn_TimeoutToggle.UseVisualStyleBackColor = false;
-            this.btn_TimeoutToggle.Click += new System.EventHandler(this.btn_TimeoutToggle_Click);
-            // 
-            // btn_ModelSetting
-            // 
-            this.btn_ModelSetting.BackColor = System.Drawing.Color.White;
-            this.btn_ModelSetting.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btn_ModelSetting.ForeColor = System.Drawing.Color.Black;
-            this.btn_ModelSetting.Location = new System.Drawing.Point(1521, 45);
-            this.btn_ModelSetting.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_ModelSetting.Name = "btn_ModelSetting";
-            this.btn_ModelSetting.Size = new System.Drawing.Size(160, 62);
-            this.btn_ModelSetting.TabIndex = 181;
-            this.btn_ModelSetting.Text = "바코드 설정";
-            this.btn_ModelSetting.UseVisualStyleBackColor = false;
-            this.btn_ModelSetting.Click += new System.EventHandler(this.btn_ModelSetting_Click);
+            //
+            // btn_Settings
+            //
+            this.btn_Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.btn_Settings.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_Settings.ForeColor = System.Drawing.Color.White;
+            this.btn_Settings.Location = new System.Drawing.Point(1301, 45);
+            this.btn_Settings.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Settings.Name = "btn_Settings";
+            this.btn_Settings.Size = new System.Drawing.Size(257, 62);
+            this.btn_Settings.TabIndex = 180;
+            this.btn_Settings.Text = "설정";
+            this.btn_Settings.UseVisualStyleBackColor = false;
+            this.btn_Settings.Click += new System.EventHandler(this.btn_Settings_Click);
             // 
             // label6
             // 
@@ -508,30 +492,14 @@ namespace PoongSan_Angang_BCR
             this.txtInputBCR.TextChanged += new System.EventHandler(this.txtInputBCR_TextChanged);
             this.txtInputBCR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInputBCR_KeyPress);
             // 
-            // btn_ChangePassword
-            // 
-            this.btn_ChangePassword.BackColor = System.Drawing.Color.White;
-            this.btn_ChangePassword.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btn_ChangePassword.ForeColor = System.Drawing.Color.Black;
-            this.btn_ChangePassword.Location = new System.Drawing.Point(22, 48);
-            this.btn_ChangePassword.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_ChangePassword.Name = "btn_ChangePassword";
-            this.btn_ChangePassword.Size = new System.Drawing.Size(139, 62);
-            this.btn_ChangePassword.TabIndex = 182;
-            this.btn_ChangePassword.Text = "비밀번호 변경";
-            this.btn_ChangePassword.UseVisualStyleBackColor = false;
-            this.btn_ChangePassword.Click += new System.EventHandler(this.btn_ChangePassword_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1857, 1530);
             this.Controls.Add(this.txtInputBCR);
-            this.Controls.Add(this.btn_ChangePassword);
             this.Controls.Add(this.btnResetCount);
-            this.Controls.Add(this.btn_TimeoutToggle);
-            this.Controls.Add(this.btn_ModelSetting);
+            this.Controls.Add(this.btn_Settings);
             this.Controls.Add(this.cboBore);
             this.Controls.Add(this.label_PLC_Status);
             this.Controls.Add(this.label6);
@@ -605,12 +573,10 @@ namespace PoongSan_Angang_BCR
         public System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label14;
         public System.Windows.Forms.Label label_PLC_Status;
-        private System.Windows.Forms.Button btn_TimeoutToggle;
-        private System.Windows.Forms.Button btn_ModelSetting;
+        private System.Windows.Forms.Button btn_Settings;
         private System.Windows.Forms.Label txtInputBoxBCD;
         private System.Windows.Forms.TextBox txtHiddenInput;
         private System.Windows.Forms.TextBox txtInputBCR;
-        private System.Windows.Forms.Button btn_ChangePassword;
         private System.Windows.Forms.Button btnResetCount;
     }
 }
