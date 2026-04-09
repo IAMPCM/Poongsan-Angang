@@ -120,8 +120,8 @@ namespace PoongSan_Angang_BCR
                 Font      = new Font("굴림", 14F, FontStyle.Bold),
                 BackColor = Color.FromArgb(100, 100, 110),
                 ForeColor = Color.White,
-                Size      = new Size(360, 48),
-                Location  = new Point(20, 360),
+                Size      = new Size(120, 48),
+                Location  = new Point(260, 360),
                 FlatStyle = FlatStyle.Flat
             };
             btnClose.FlatAppearance.BorderSize = 0;
