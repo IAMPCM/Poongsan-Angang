@@ -68,9 +68,9 @@ namespace PoongSan_Angang_BCR
             int btnY = 320;
             int btnW = 125;
 
-            var btnSelect = MakeBtn("출근 선택", Color.FromArgb(39, 174, 96),  20,  btnY, btnW);
-            var btnAdd    = MakeBtn("추  가",    Color.FromArgb(52, 152, 219), 160, btnY, btnW);
-            var btnDelete = MakeBtn("삭  제",    Color.FromArgb(231, 76, 60),  300, btnY, btnW);
+            var btnSelect = MakeBtn("출근 선택", Color.FromArgb(0, 120, 60), 20,      btnY, btnW);
+            var btnAdd    = MakeBtn("추  가",    Color.FromArgb(0, 100, 180), 160,     btnY, btnW);
+            var btnDelete = MakeBtn("삭  제",    Color.FromArgb(180, 50, 50), 300,     btnY, btnW);
 
             btnSelect.Click += OnSelectClick;
             btnAdd.Click    += OnAddClick;

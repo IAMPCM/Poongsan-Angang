@@ -49,8 +49,8 @@ namespace PoongSan_Angang_BCR
             {
                 Text      = "비밀번호 변경",
                 Font      = new Font("굴림", 14F, FontStyle.Bold),
-                BackColor = Color.FromArgb(26, 188, 156),
-                ForeColor = Color.White,
+                BackColor = Color.White,
+                ForeColor = Color.Black,
                 Size      = new Size(360, 60),
                 Location  = new Point(20, 75),
                 FlatStyle = FlatStyle.Flat
@@ -63,7 +63,7 @@ namespace PoongSan_Angang_BCR
             {
                 Text      = "타임아웃 설정",
                 Font      = new Font("굴림", 14F, FontStyle.Bold),
-                BackColor = Color.FromArgb(41, 128, 185),
+                BackColor = Color.FromArgb(52, 73, 94),
                 ForeColor = Color.White,
                 Size      = new Size(360, 60),
                 Location  = new Point(20, 145),
@@ -77,8 +77,8 @@ namespace PoongSan_Angang_BCR
             {
                 Text      = "바코드 설정",
                 Font      = new Font("굴림", 14F, FontStyle.Bold),
-                BackColor = Color.FromArgb(230, 126, 34),
-                ForeColor = Color.White,
+                BackColor = Color.White,
+                ForeColor = Color.Black,
                 Size      = new Size(360, 60),
                 Location  = new Point(20, 215),
                 FlatStyle = FlatStyle.Flat
@@ -91,7 +91,7 @@ namespace PoongSan_Angang_BCR
             {
                 Text      = "사번 관리",
                 Font      = new Font("굴림", 14F, FontStyle.Bold),
-                BackColor = Color.FromArgb(155, 89, 182),
+                BackColor = Color.FromArgb(80, 80, 100),
                 ForeColor = Color.White,
                 Size      = new Size(360, 60),
                 Location  = new Point(20, 285),
@@ -119,7 +119,7 @@ namespace PoongSan_Angang_BCR
             {
                 Text      = "닫  기",
                 Font      = new Font("굴림", 14F, FontStyle.Bold),
-                BackColor = Color.FromArgb(99, 110, 114),
+                BackColor = Color.FromArgb(100, 100, 110),
                 ForeColor = Color.White,
                 Size      = new Size(120, 48),
                 Location  = new Point(260, 360),

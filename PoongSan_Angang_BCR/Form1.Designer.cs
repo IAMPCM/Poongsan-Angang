@@ -95,8 +95,6 @@ namespace PoongSan_Angang_BCR
             // 
             // btn_Exit
             // 
-            this.btn_Exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(57)))), ((int)(((byte)(43)))));
-            this.btn_Exit.ForeColor = System.Drawing.Color.White;
             this.btn_Exit.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_Exit.Location = new System.Drawing.Point(1699, 45);
             this.btn_Exit.Margin = new System.Windows.Forms.Padding(4);
@@ -104,7 +102,7 @@ namespace PoongSan_Angang_BCR
             this.btn_Exit.Size = new System.Drawing.Size(141, 62);
             this.btn_Exit.TabIndex = 131;
             this.btn_Exit.Text = "종료";
-            this.btn_Exit.UseVisualStyleBackColor = false;
+            this.btn_Exit.UseVisualStyleBackColor = true;
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // label18
@@ -381,16 +379,12 @@ namespace PoongSan_Angang_BCR
             this.btn_Start.Name = "btn_Start";
             this.btn_Start.Size = new System.Drawing.Size(909, 124);
             this.btn_Start.TabIndex = 174;
-            this.btn_Start.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(174)))), ((int)(((byte)(96)))));
-            this.btn_Start.ForeColor = System.Drawing.Color.White;
             this.btn_Start.Text = "시작";
-            this.btn_Start.UseVisualStyleBackColor = false;
+            this.btn_Start.UseVisualStyleBackColor = true;
             this.btn_Start.Click += new System.EventHandler(this.btn_Start_Click);
-            //
+            // 
             // btn_Stop
-            //
-            this.btn_Stop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.btn_Stop.ForeColor = System.Drawing.Color.White;
+            // 
             this.btn_Stop.Font = new System.Drawing.Font("굴림", 40F, System.Drawing.FontStyle.Bold);
             this.btn_Stop.Location = new System.Drawing.Point(946, 1404);
             this.btn_Stop.Margin = new System.Windows.Forms.Padding(4);
@@ -398,12 +392,12 @@ namespace PoongSan_Angang_BCR
             this.btn_Stop.Size = new System.Drawing.Size(909, 124);
             this.btn_Stop.TabIndex = 175;
             this.btn_Stop.Text = "정지";
-            this.btn_Stop.UseVisualStyleBackColor = false;
+            this.btn_Stop.UseVisualStyleBackColor = true;
             this.btn_Stop.Click += new System.EventHandler(this.btn_Stop_Click);
             //
             // btn_Settings
             //
-            this.btn_Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(68)))), ((int)(((byte)(173)))));
+            this.btn_Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.btn_Settings.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_Settings.ForeColor = System.Drawing.Color.White;
             this.btn_Settings.Location = new System.Drawing.Point(1301, 45);
