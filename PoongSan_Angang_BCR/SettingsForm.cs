@@ -28,7 +28,7 @@ namespace PoongSan_Angang_BCR
             this.Text            = "설정";
             this.FormBorderStyle = FormBorderStyle.None;
             this.BackColor       = Color.FromArgb(51, 51, 56);
-            this.Size            = new Size(400, 400);
+            this.Size            = new Size(400, 430);
             this.StartPosition   = FormStartPosition.CenterParent;
             this.TopMost         = true;
 
@@ -99,8 +99,8 @@ namespace PoongSan_Angang_BCR
             btnEmployee.FlatAppearance.BorderSize = 0;
             btnEmployee.Click += (s, e) => { _onEmployeeManagement(); };
 
-            // 닫기
-            var btnClose = new Button
+            // 우상단 X 버튼
+            var btnX = new Button
             {
                 Text      = "✕",
                 Font      = new Font("굴림", 12F, FontStyle.Bold),
@@ -108,6 +108,20 @@ namespace PoongSan_Angang_BCR
                 ForeColor = Color.White,
                 Size      = new Size(40, 30),
                 Location  = new Point(350, 5),
+                FlatStyle = FlatStyle.Flat
+            };
+            btnX.FlatAppearance.BorderSize = 0;
+            btnX.Click += (s, e) => this.Close();
+
+            // 하단 닫기 버튼
+            var btnClose = new Button
+            {
+                Text      = "닫  기",
+                Font      = new Font("굴림", 14F, FontStyle.Bold),
+                BackColor = Color.FromArgb(100, 100, 110),
+                ForeColor = Color.White,
+                Size      = new Size(360, 48),
+                Location  = new Point(20, 360),
                 FlatStyle = FlatStyle.Flat
             };
             btnClose.FlatAppearance.BorderSize = 0;
@@ -118,6 +132,7 @@ namespace PoongSan_Angang_BCR
             this.Controls.Add(_btnTimeout);
             this.Controls.Add(btnModelSetting);
             this.Controls.Add(btnEmployee);
+            this.Controls.Add(btnX);
             this.Controls.Add(btnClose);
         }
 
