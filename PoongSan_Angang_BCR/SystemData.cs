@@ -23,6 +23,10 @@ namespace PoongSan_Angang_BCR
         public string SavedBore;       // 마지막 선택 구경
         public string SavedBullet;     // 마지막 선택 탄종
         public string SavedLocal;      // 마지막 선택 Local (A/E)
+
+        // 사번 관리
+        public string EmployeeIds;        // 등록된 사번 목록 (쉼표 구분)
+        public string CurrentEmployeeId;  // 현재 작업자 사번
         
         public SystemData(Form1 frm)
         {
@@ -59,6 +63,10 @@ namespace PoongSan_Angang_BCR
                 SavedBore   = ini.ReadString(section, "SavedBore",   "");
                 SavedBullet = ini.ReadString(section, "SavedBullet", "");
                 SavedLocal  = ini.ReadString(section, "SavedLocal",  "");
+
+                // 사번 불러오기
+                EmployeeIds       = ini.ReadString(section, "EmployeeIds",       "");
+                CurrentEmployeeId = ini.ReadString(section, "CurrentEmployeeId", "");
             }
         }
 
@@ -92,6 +100,10 @@ namespace PoongSan_Angang_BCR
                 ini.WriteString(section, "SavedBore",   SavedBore   ?? "");
                 ini.WriteString(section, "SavedBullet", SavedBullet ?? "");
                 ini.WriteString(section, "SavedLocal",  SavedLocal  ?? "");
+
+                // 사번 저장
+                ini.WriteString(section, "EmployeeIds",       EmployeeIds       ?? "");
+                ini.WriteString(section, "CurrentEmployeeId", CurrentEmployeeId ?? "");
             }
         }
     }

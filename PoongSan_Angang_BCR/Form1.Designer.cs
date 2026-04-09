@@ -64,6 +64,7 @@ namespace PoongSan_Angang_BCR
             this.txtHiddenInput = new System.Windows.Forms.TextBox();
             this.txtInputBCR = new System.Windows.Forms.TextBox();
             this.btnResetCount = new System.Windows.Forms.Button();
+            this.lblCurrentEmployee = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -407,7 +408,19 @@ namespace PoongSan_Angang_BCR
             this.btn_Settings.Text = "설정";
             this.btn_Settings.UseVisualStyleBackColor = false;
             this.btn_Settings.Click += new System.EventHandler(this.btn_Settings_Click);
-            // 
+            //
+            // lblCurrentEmployee
+            //
+            this.lblCurrentEmployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.lblCurrentEmployee.Font = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblCurrentEmployee.ForeColor = System.Drawing.Color.White;
+            this.lblCurrentEmployee.Location = new System.Drawing.Point(450, 45);
+            this.lblCurrentEmployee.Name = "lblCurrentEmployee";
+            this.lblCurrentEmployee.Size = new System.Drawing.Size(840, 62);
+            this.lblCurrentEmployee.TabIndex = 184;
+            this.lblCurrentEmployee.Text = "작업자: 미선택";
+            this.lblCurrentEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // label6
             // 
             this.label6.BackColor = System.Drawing.Color.White;
@@ -500,6 +513,7 @@ namespace PoongSan_Angang_BCR
             this.Controls.Add(this.txtInputBCR);
             this.Controls.Add(this.btnResetCount);
             this.Controls.Add(this.btn_Settings);
+            this.Controls.Add(this.lblCurrentEmployee);
             this.Controls.Add(this.cboBore);
             this.Controls.Add(this.label_PLC_Status);
             this.Controls.Add(this.label6);
@@ -574,6 +588,7 @@ namespace PoongSan_Angang_BCR
         private System.Windows.Forms.Label label14;
         public System.Windows.Forms.Label label_PLC_Status;
         private System.Windows.Forms.Button btn_Settings;
+        private System.Windows.Forms.Label lblCurrentEmployee;
         private System.Windows.Forms.Label txtInputBoxBCD;
         private System.Windows.Forms.TextBox txtHiddenInput;
         private System.Windows.Forms.TextBox txtInputBCR;

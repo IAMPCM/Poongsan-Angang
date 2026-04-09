@@ -9,15 +9,17 @@ namespace PoongSan_Angang_BCR
         private readonly Action _onChangePassword;
         private readonly Action _onToggleTimeout;
         private readonly Action _onModelSetting;
+        private readonly Action _onEmployeeManagement;
         private readonly SystemData _systemData;
         private Button _btnTimeout;
 
-        public SettingsForm(Action onChangePassword, Action onToggleTimeout, Action onModelSetting, SystemData systemData)
+        public SettingsForm(Action onChangePassword, Action onToggleTimeout, Action onModelSetting, Action onEmployeeManagement, SystemData systemData)
         {
-            _onChangePassword = onChangePassword;
-            _onToggleTimeout  = onToggleTimeout;
-            _onModelSetting   = onModelSetting;
-            _systemData       = systemData;
+            _onChangePassword    = onChangePassword;
+            _onToggleTimeout     = onToggleTimeout;
+            _onModelSetting      = onModelSetting;
+            _onEmployeeManagement = onEmployeeManagement;
+            _systemData          = systemData;
             BuildUI();
         }
 
@@ -26,7 +28,7 @@ namespace PoongSan_Angang_BCR
             this.Text            = "설정";
             this.FormBorderStyle = FormBorderStyle.None;
             this.BackColor       = Color.FromArgb(51, 51, 56);
-            this.Size            = new Size(400, 330);
+            this.Size            = new Size(400, 400);
             this.StartPosition   = FormStartPosition.CenterParent;
             this.TopMost         = true;
 
@@ -83,6 +85,20 @@ namespace PoongSan_Angang_BCR
             btnModelSetting.FlatAppearance.BorderSize = 0;
             btnModelSetting.Click += (s, e) => { _onModelSetting(); this.Close(); };
 
+            // 사번 관리
+            var btnEmployee = new Button
+            {
+                Text      = "사번 관리",
+                Font      = new Font("굴림", 14F, FontStyle.Bold),
+                BackColor = Color.FromArgb(80, 80, 100),
+                ForeColor = Color.White,
+                Size      = new Size(360, 60),
+                Location  = new Point(20, 285),
+                FlatStyle = FlatStyle.Flat
+            };
+            btnEmployee.FlatAppearance.BorderSize = 0;
+            btnEmployee.Click += (s, e) => { _onEmployeeManagement(); };
+
             // 닫기
             var btnClose = new Button
             {
@@ -101,6 +117,7 @@ namespace PoongSan_Angang_BCR
             this.Controls.Add(btnChangePassword);
             this.Controls.Add(_btnTimeout);
             this.Controls.Add(btnModelSetting);
+            this.Controls.Add(btnEmployee);
             this.Controls.Add(btnClose);
         }
 

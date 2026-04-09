@@ -57,6 +57,9 @@ namespace PoongSan_Angang_BCR
 
             Initialize();
 
+            // 작업자 사번 표시 초기화
+            UpdateEmployeeLabel();
+
             // 금일 검사 수량 복원
             string savedDate = m_VasimPlatform.m_SystemData.CountDate;
             if (savedDate == DateTime.Today.ToString("yyyy-MM-dd"))
@@ -780,13 +783,31 @@ namespace PoongSan_Angang_BCR
         private void btn_Settings_Click(object sender, EventArgs e)
         {
             using (var form = new SettingsForm(
-                onChangePassword: () => btn_ChangePassword_Click(null, null),
-                onToggleTimeout:  () => btn_TimeoutToggle_Click(null, null),
-                onModelSetting:   () => btn_ModelSetting_Click(null, null),
-                systemData:       m_VasimPlatform.m_SystemData))
+                onChangePassword:    () => btn_ChangePassword_Click(null, null),
+                onToggleTimeout:     () => btn_TimeoutToggle_Click(null, null),
+                onModelSetting:      () => btn_ModelSetting_Click(null, null),
+                onEmployeeManagement: () => OpenEmployeeForm(),
+                systemData:          m_VasimPlatform.m_SystemData))
             {
                 form.ShowDialog(this);
             }
+        }
+
+        private void OpenEmployeeForm()
+        {
+            using (var form = new EmployeeForm(m_VasimPlatform.m_SystemData))
+            {
+                form.ShowDialog(this);
+            }
+            UpdateEmployeeLabel();
+        }
+
+        private void UpdateEmployeeLabel()
+        {
+            string id = m_VasimPlatform.m_SystemData.CurrentEmployeeId;
+            lblCurrentEmployee.Text = string.IsNullOrEmpty(id)
+                ? "작업자: 미선택"
+                : string.Format("작업자: {0}", id);
         }
 
         private void cboBore_Click(object sender, EventArgs e) { }
