@@ -58,18 +58,19 @@ namespace PoongSan_Angang_BCR
             btnChangePassword.FlatAppearance.BorderSize = 0;
             btnChangePassword.Click += (s, e) => { _onChangePassword(); };
 
-            // 타임아웃 토글
+            // 타임아웃 설정
             _btnTimeout = new Button
             {
+                Text      = "타임아웃 설정",
                 Font      = new Font("굴림", 14F, FontStyle.Bold),
+                BackColor = Color.FromArgb(52, 73, 94),
                 ForeColor = Color.White,
                 Size      = new Size(360, 60),
                 Location  = new Point(20, 145),
                 FlatStyle = FlatStyle.Flat
             };
             _btnTimeout.FlatAppearance.BorderSize = 0;
-            UpdateTimeoutButton();
-            _btnTimeout.Click += (s, e) => { _onToggleTimeout(); UpdateTimeoutButton(); };
+            _btnTimeout.Click += (s, e) => { _onToggleTimeout(); };
 
             // 바코드 설정
             var btnModelSetting = new Button
@@ -136,18 +137,5 @@ namespace PoongSan_Angang_BCR
             this.Controls.Add(btnClose);
         }
 
-        private void UpdateTimeoutButton()
-        {
-            if (_systemData.TimeoutUse == "true")
-            {
-                _btnTimeout.Text      = "타임아웃 ON";
-                _btnTimeout.BackColor = Color.Green;
-            }
-            else
-            {
-                _btnTimeout.Text      = "타임아웃 OFF";
-                _btnTimeout.BackColor = Color.Gray;
-            }
-        }
     }
 }

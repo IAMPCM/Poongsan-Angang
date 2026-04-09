@@ -29,9 +29,8 @@ namespace PoongSan_Angang_BCR
 
         public bool bAlarmPopupFocousStop = false;
 
-        // 추가 - 타임아웃 60초 기능 추가
+        // 추가 - 타임아웃 기능
         private System.Timers.Timer _timeoutTimer;  // 타이머 객체
-        private const int TIMEOUT_SECONDS = 60;     // 60초 = 1분
 
         // 로그인 관련 변수
         private bool _isLoggedIn = false;                    // 로그인 상태
@@ -550,14 +549,16 @@ namespace PoongSan_Angang_BCR
             // 추가 -> 타임아웃 타이머 시작 (타임아웃 ON일 때만)
             if (m_VasimPlatform.m_SystemData.TimeoutUse == "true")
             {
+                int _tm = 1;
+                int.TryParse(m_VasimPlatform.m_SystemData.TimeoutMinutes, out _tm);
                 if (_timeoutTimer == null)
                 {
                     _timeoutTimer = new System.Timers.Timer();
-                    _timeoutTimer.Interval = TIMEOUT_SECONDS * 1000;
                     _timeoutTimer.AutoReset = false;
                     _timeoutTimer.Elapsed += new ElapsedEventHandler(TimeoutTimer_Elapsed);
                 }
                 _timeoutTimer.Stop();
+                _timeoutTimer.Interval = _tm * 60.0 * 1000.0;
                 _timeoutTimer.Start();
             }
 
@@ -745,49 +746,54 @@ namespace PoongSan_Angang_BCR
             }
         }
 
-        private void btn_TimeoutToggle_Click(object sender, EventArgs e)
+        // 타임아웃 설정 변경 시 타이머 인터벌 갱신
+        private void ApplyTimeoutSettings()
         {
+            int minutes = 1;
+            int.TryParse(m_VasimPlatform.m_SystemData.TimeoutMinutes, out minutes);
+            double intervalMs = minutes * 60.0 * 1000.0;
+
             if (m_VasimPlatform.m_SystemData.TimeoutUse == "true")
             {
-                // ON → OFF
-                m_VasimPlatform.m_SystemData.TimeoutUse = "false";
-
-                // 타이머 중지
-                if (_timeoutTimer != null)
-                    _timeoutTimer.Stop();
+                if (_timeoutTimer == null)
+                {
+                    _timeoutTimer = new System.Timers.Timer();
+                    _timeoutTimer.AutoReset = false;
+                    _timeoutTimer.Elapsed += new ElapsedEventHandler(TimeoutTimer_Elapsed);
+                }
+                _timeoutTimer.Stop();
+                _timeoutTimer.Interval = intervalMs;
+                if (bEQStart)
+                    _timeoutTimer.Start();
             }
             else
             {
-                // OFF → ON
-                m_VasimPlatform.m_SystemData.TimeoutUse = "true";
-
-                // 설비 동작 중이면 타이머 즉시 시작
-                if (bEQStart)
-                {
-                    if (_timeoutTimer == null)
-                    {
-                        _timeoutTimer = new System.Timers.Timer();
-                        _timeoutTimer.Interval = TIMEOUT_SECONDS * 1000;
-                        _timeoutTimer.AutoReset = false;
-                        _timeoutTimer.Elapsed += new ElapsedEventHandler(TimeoutTimer_Elapsed);
-                    }
+                if (_timeoutTimer != null)
                     _timeoutTimer.Stop();
-                    _timeoutTimer.Start();
-                }
             }
-
-            // ini 파일에 저장
-            m_VasimPlatform.m_SystemData.Save();
         }
+
+        // 기존 핸들러 — TimeoutSettingForm 내부에서 직접 처리하므로 빈 상태 유지
+        private void btn_TimeoutToggle_Click(object sender, EventArgs e) { }
 
         private void btn_Settings_Click(object sender, EventArgs e)
         {
             using (var form = new SettingsForm(
-                onChangePassword:    () => btn_ChangePassword_Click(null, null),
-                onToggleTimeout:     () => btn_TimeoutToggle_Click(null, null),
-                onModelSetting:      () => btn_ModelSetting_Click(null, null),
+                onChangePassword:     () => btn_ChangePassword_Click(null, null),
+                onToggleTimeout:      () => OpenTimeoutSettingForm(),
+                onModelSetting:       () => btn_ModelSetting_Click(null, null),
                 onEmployeeManagement: () => OpenEmployeeForm(),
-                systemData:          m_VasimPlatform.m_SystemData))
+                systemData:           m_VasimPlatform.m_SystemData))
+            {
+                form.ShowDialog(this);
+            }
+        }
+
+        private void OpenTimeoutSettingForm()
+        {
+            using (var form = new TimeoutSettingForm(
+                m_VasimPlatform.m_SystemData,
+                onSettingChanged: () => ApplyTimeoutSettings()))
             {
                 form.ShowDialog(this);
             }

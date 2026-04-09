@@ -7,6 +7,7 @@ namespace PoongSan_Angang_BCR
         public string SimulationUse;
         public string AutoMachineUse;
         public string TimeoutUse;
+        public string TimeoutMinutes;  // 타임아웃 시간(분)
         public string LoginPassword; // 로그인 비밀번호
         public string melsecplcUse;
 
@@ -46,7 +47,8 @@ namespace PoongSan_Angang_BCR
 
                 SimulationUse = ini.ReadString(section, "SIMULATION", "");
                 AutoMachineUse = ini.ReadString(section, "AutoMachineUse", "");
-                TimeoutUse = ini.ReadString(section, "TimeoutUse", "true");
+                TimeoutUse     = ini.ReadString(section, "TimeoutUse",     "true");
+                TimeoutMinutes = ini.ReadString(section, "TimeoutMinutes", "1");
                 LoginPassword = ini.ReadString(section, "LoginPassword", "1234");
                 melsecplcUse = ini.ReadString(section, "melsecplcUse", "");
                 PLC_Address = ini.ReadString(section, "PLC_Address", "");
@@ -86,7 +88,8 @@ namespace PoongSan_Angang_BCR
                 ini.WriteString(section, "SIMULATION", SimulationUse);
                 //ini.WriteString(section, "melsecplcUse", melsecplcUse);
                 ini.WriteString(section, "AutoMachineUse", AutoMachineUse);
-                ini.WriteString(section, "TimeoutUse", TimeoutUse);
+                ini.WriteString(section, "TimeoutUse",     TimeoutUse);
+                ini.WriteString(section, "TimeoutMinutes", TimeoutMinutes ?? "1");
                 ini.WriteString(section, "LoginPassword", LoginPassword);
 
                 // 금일 검사 수량 저장
