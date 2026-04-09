@@ -65,6 +65,7 @@ namespace PoongSan_Angang_BCR
             this.txtHiddenInput = new System.Windows.Forms.TextBox();
             this.txtInputBCR = new System.Windows.Forms.TextBox();
             this.btn_ChangePassword = new System.Windows.Forms.Button();
+            this.btnResetCount = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -431,11 +432,25 @@ namespace PoongSan_Angang_BCR
             this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(676, 1179);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(1178, 106);
+            this.label6.Size = new System.Drawing.Size(978, 106);
             this.label6.TabIndex = 177;
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
+            //
+            // btnResetCount
+            //
+            this.btnResetCount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnResetCount.Font = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnResetCount.ForeColor = System.Drawing.Color.White;
+            this.btnResetCount.Location = new System.Drawing.Point(1658, 1179);
+            this.btnResetCount.Margin = new System.Windows.Forms.Padding(4);
+            this.btnResetCount.Name = "btnResetCount";
+            this.btnResetCount.Size = new System.Drawing.Size(196, 106);
+            this.btnResetCount.TabIndex = 183;
+            this.btnResetCount.Text = "수량 초기화";
+            this.btnResetCount.UseVisualStyleBackColor = false;
+            this.btnResetCount.Click += new System.EventHandler(this.btnResetCount_Click);
+            //
             // label14
             // 
             this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
@@ -514,6 +529,7 @@ namespace PoongSan_Angang_BCR
             this.ClientSize = new System.Drawing.Size(1857, 1530);
             this.Controls.Add(this.txtInputBCR);
             this.Controls.Add(this.btn_ChangePassword);
+            this.Controls.Add(this.btnResetCount);
             this.Controls.Add(this.btn_TimeoutToggle);
             this.Controls.Add(this.btn_ModelSetting);
             this.Controls.Add(this.cboBore);
@@ -595,6 +611,7 @@ namespace PoongSan_Angang_BCR
         private System.Windows.Forms.TextBox txtHiddenInput;
         private System.Windows.Forms.TextBox txtInputBCR;
         private System.Windows.Forms.Button btn_ChangePassword;
+        private System.Windows.Forms.Button btnResetCount;
     }
 }
 

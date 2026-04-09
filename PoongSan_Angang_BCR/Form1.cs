@@ -231,6 +231,19 @@ namespace PoongSan_Angang_BCR
                 _boxOkCount, _boxNgCount);
         }
 
+        // 수량 초기화 버튼 클릭
+        private void btnResetCount_Click(object sender, EventArgs e)
+        {
+            using (var pwForm = new PasswordForm(m_VasimPlatform.m_SystemData.LoginPassword))
+            {
+                pwForm.ShowDialog(this);
+                if (pwForm.IsAuthenticated)
+                {
+                    ResetDailyCount();
+                }
+            }
+        }
+
         // 수량 초기화
         private void ResetDailyCount()
         {
