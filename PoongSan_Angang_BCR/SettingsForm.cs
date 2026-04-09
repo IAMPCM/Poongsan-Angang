@@ -84,7 +84,7 @@ namespace PoongSan_Angang_BCR
                 FlatStyle = FlatStyle.Flat
             };
             btnModelSetting.FlatAppearance.BorderSize = 0;
-            btnModelSetting.Click += (s, e) => { _onModelSetting(); this.Close(); };
+            btnModelSetting.Click += (s, e) => { _onModelSetting(); };
 
             // 사번 관리
             var btnEmployee = new Button
