@@ -397,16 +397,14 @@ namespace PoongSan_Angang_BCR
             //
             // btn_Settings
             //
-            this.btn_Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.btn_Settings.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btn_Settings.ForeColor = System.Drawing.Color.White;
             this.btn_Settings.Location = new System.Drawing.Point(1301, 45);
             this.btn_Settings.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Settings.Name = "btn_Settings";
             this.btn_Settings.Size = new System.Drawing.Size(257, 62);
             this.btn_Settings.TabIndex = 180;
             this.btn_Settings.Text = "설정";
-            this.btn_Settings.UseVisualStyleBackColor = false;
+            this.btn_Settings.UseVisualStyleBackColor = true;
             this.btn_Settings.Click += new System.EventHandler(this.btn_Settings_Click);
             //
             // lblCurrentEmployee
