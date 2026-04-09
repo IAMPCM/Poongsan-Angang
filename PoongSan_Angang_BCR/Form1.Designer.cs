@@ -414,9 +414,9 @@ namespace PoongSan_Angang_BCR
             this.lblCurrentEmployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
             this.lblCurrentEmployee.Font = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lblCurrentEmployee.ForeColor = System.Drawing.Color.White;
-            this.lblCurrentEmployee.Location = new System.Drawing.Point(450, 45);
+            this.lblCurrentEmployee.Location = new System.Drawing.Point(22, 48);
             this.lblCurrentEmployee.Name = "lblCurrentEmployee";
-            this.lblCurrentEmployee.Size = new System.Drawing.Size(840, 62);
+            this.lblCurrentEmployee.Size = new System.Drawing.Size(300, 62);
             this.lblCurrentEmployee.TabIndex = 184;
             this.lblCurrentEmployee.Text = "작업자: 미선택";
             this.lblCurrentEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
