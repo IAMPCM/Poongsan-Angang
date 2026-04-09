@@ -411,7 +411,8 @@ namespace PoongSan_Angang_BCR
             //
             // lblCurrentEmployee
             //
-            this.lblCurrentEmployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.lblCurrentEmployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.lblCurrentEmployee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblCurrentEmployee.Font = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lblCurrentEmployee.ForeColor = System.Drawing.Color.White;
             this.lblCurrentEmployee.Location = new System.Drawing.Point(22, 48);
