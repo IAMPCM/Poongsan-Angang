@@ -147,11 +147,14 @@ namespace PoongSan_Angang_BCR
             // 
             this.cboBore.Font = new System.Drawing.Font("굴림", 45F);
             this.cboBore.FormattingEnabled = true;
+            this.cboBore.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboBore.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboBore.Location = new System.Drawing.Point(816, 248);
             this.cboBore.Margin = new System.Windows.Forms.Padding(4);
             this.cboBore.Name = "cboBore";
             this.cboBore.Size = new System.Drawing.Size(900, 98);
             this.cboBore.TabIndex = 153;
+            this.cboBore.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.cbo_DrawItem);
             this.cboBore.SelectedIndexChanged += new System.EventHandler(this.cboBore_SelectedIndexChanged);
             this.cboBore.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cboBore_MouseDown);
             // 
@@ -172,11 +175,14 @@ namespace PoongSan_Angang_BCR
             // 
             this.cboBullet.Font = new System.Drawing.Font("굴림", 45F);
             this.cboBullet.FormattingEnabled = true;
+            this.cboBullet.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboBullet.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboBullet.Location = new System.Drawing.Point(816, 351);
             this.cboBullet.Margin = new System.Windows.Forms.Padding(4);
             this.cboBullet.Name = "cboBullet";
             this.cboBullet.Size = new System.Drawing.Size(900, 98);
             this.cboBullet.TabIndex = 155;
+            this.cboBullet.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.cbo_DrawItem);
             this.cboBullet.SelectedIndexChanged += new System.EventHandler(this.cboBullet_SelectedIndexChanged);
             this.cboBullet.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cboBullet_MouseDown);
             // 
@@ -184,11 +190,14 @@ namespace PoongSan_Angang_BCR
             // 
             this.cboLocal.Font = new System.Drawing.Font("굴림", 45F);
             this.cboLocal.FormattingEnabled = true;
+            this.cboLocal.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboLocal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboLocal.Location = new System.Drawing.Point(816, 454);
             this.cboLocal.Margin = new System.Windows.Forms.Padding(4);
             this.cboLocal.Name = "cboLocal";
             this.cboLocal.Size = new System.Drawing.Size(900, 98);
             this.cboLocal.TabIndex = 157;
+            this.cboLocal.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.cbo_DrawItem);
             this.cboLocal.SelectedIndexChanged += new System.EventHandler(this.cboLocal_SelectedIndexChanged);
             this.cboLocal.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cboLocal_MouseDown);
             // 

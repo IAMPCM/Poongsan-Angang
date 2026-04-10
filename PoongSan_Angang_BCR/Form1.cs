@@ -816,6 +816,24 @@ namespace PoongSan_Angang_BCR
                 : string.Format("작업자: {0}", id);
         }
 
+        private void cbo_DrawItem(object sender, DrawItemEventArgs e)
+        {
+            if (e.Index < 0) return;
+            e.DrawBackground();
+            var cbo = (ComboBox)sender;
+            string text = cbo.Items[e.Index].ToString();
+            var sf = new System.Drawing.StringFormat
+            {
+                Alignment     = System.Drawing.StringAlignment.Center,
+                LineAlignment = System.Drawing.StringAlignment.Center
+            };
+            using (var brush = new System.Drawing.SolidBrush(e.ForeColor))
+            {
+                e.Graphics.DrawString(text, e.Font, brush, e.Bounds, sf);
+            }
+            e.DrawFocusRectangle();
+        }
+
         private void cboBore_Click(object sender, EventArgs e) { }
 
         private void cboBore_MouseDown(object sender, MouseEventArgs e)
