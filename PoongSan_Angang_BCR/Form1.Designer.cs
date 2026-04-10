@@ -149,6 +149,7 @@ namespace PoongSan_Angang_BCR
             this.cboBore.FormattingEnabled = true;
             this.cboBore.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cboBore.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboBore.ItemHeight = 93;
             this.cboBore.Location = new System.Drawing.Point(816, 248);
             this.cboBore.Margin = new System.Windows.Forms.Padding(4);
             this.cboBore.Name = "cboBore";
@@ -177,6 +178,7 @@ namespace PoongSan_Angang_BCR
             this.cboBullet.FormattingEnabled = true;
             this.cboBullet.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cboBullet.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboBullet.ItemHeight = 93;
             this.cboBullet.Location = new System.Drawing.Point(816, 351);
             this.cboBullet.Margin = new System.Windows.Forms.Padding(4);
             this.cboBullet.Name = "cboBullet";
@@ -192,6 +194,7 @@ namespace PoongSan_Angang_BCR
             this.cboLocal.FormattingEnabled = true;
             this.cboLocal.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cboLocal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboLocal.ItemHeight = 93;
             this.cboLocal.Location = new System.Drawing.Point(816, 454);
             this.cboLocal.Margin = new System.Windows.Forms.Padding(4);
             this.cboLocal.Name = "cboLocal";

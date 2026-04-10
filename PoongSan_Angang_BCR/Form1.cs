@@ -822,14 +822,12 @@ namespace PoongSan_Angang_BCR
             e.DrawBackground();
             var cbo = (ComboBox)sender;
             string text = cbo.Items[e.Index].ToString();
-            var sf = new System.Drawing.StringFormat
-            {
-                Alignment     = System.Drawing.StringAlignment.Center,
-                LineAlignment = System.Drawing.StringAlignment.Center
-            };
+            SizeF textSize = e.Graphics.MeasureString(text, e.Font);
+            float x = e.Bounds.Left + (e.Bounds.Width  - textSize.Width)  / 2f;
+            float y = e.Bounds.Top  + (e.Bounds.Height - textSize.Height) / 2f;
             using (var brush = new System.Drawing.SolidBrush(e.ForeColor))
             {
-                e.Graphics.DrawString(text, e.Font, brush, e.Bounds, sf);
+                e.Graphics.DrawString(text, e.Font, brush, x, y);
             }
             e.DrawFocusRectangle();
         }
