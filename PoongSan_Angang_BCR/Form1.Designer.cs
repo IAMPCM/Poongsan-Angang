@@ -61,6 +61,7 @@ namespace PoongSan_Angang_BCR
             this.btnResetCarton = new System.Windows.Forms.Button();
             this.btnResetBox = new System.Windows.Forms.Button();
             this.lblCurrentEmployee = new System.Windows.Forms.Label();
+            this.btn_Employee = new System.Windows.Forms.Button();
             this.cboBore = new System.Windows.Forms.ComboBox();
             this.cboLocal = new System.Windows.Forms.ComboBox();
             this.cboBullet = new System.Windows.Forms.ComboBox();
@@ -471,7 +472,23 @@ namespace PoongSan_Angang_BCR
             this.lblCurrentEmployee.TabIndex = 184;
             this.lblCurrentEmployee.Text = "작업자: 미선택";
             this.lblCurrentEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
+            //
+            // btn_Employee
+            //
+            this.btn_Employee.BackColor = System.Drawing.Color.FromArgb(0, 100, 180);
+            this.btn_Employee.FlatAppearance.BorderSize = 0;
+            this.btn_Employee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Employee.Font      = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_Employee.ForeColor = System.Drawing.Color.White;
+            this.btn_Employee.Location  = new System.Drawing.Point(330, 41);
+            this.btn_Employee.Margin    = new System.Windows.Forms.Padding(4);
+            this.btn_Employee.Name      = "btn_Employee";
+            this.btn_Employee.Size      = new System.Drawing.Size(200, 62);
+            this.btn_Employee.TabIndex  = 185;
+            this.btn_Employee.Text      = "사번 관리";
+            this.btn_Employee.UseVisualStyleBackColor = false;
+            this.btn_Employee.Click += new System.EventHandler(this.btn_Employee_Click);
+            //
             // cboBore
             // 
             this.cboBore.Font = new System.Drawing.Font("굴림", 45F);
@@ -517,6 +534,7 @@ namespace PoongSan_Angang_BCR
             this.Controls.Add(this.btnResetCarton);
             this.Controls.Add(this.btnResetBox);
             this.Controls.Add(this.btn_Settings);
+            this.Controls.Add(this.btn_Employee);
             this.Controls.Add(this.lblCurrentEmployee);
             this.Controls.Add(this.cboBore);
             this.Controls.Add(this.label_PLC_Status);
@@ -590,6 +608,7 @@ namespace PoongSan_Angang_BCR
         public System.Windows.Forms.Label label_PLC_Status;
         private System.Windows.Forms.Button btn_Settings;
         private System.Windows.Forms.Label lblCurrentEmployee;
+        private System.Windows.Forms.Button btn_Employee;
         private System.Windows.Forms.Label txtInputBoxBCD;
         private System.Windows.Forms.TextBox txtHiddenInput;
         private System.Windows.Forms.TextBox txtInputBCR;

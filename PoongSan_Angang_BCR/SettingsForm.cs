@@ -8,7 +8,6 @@ namespace PoongSan_Angang_BCR
         private readonly Action _onChangePassword;
         private readonly Action _onToggleTimeout;
         private readonly Action _onModelSetting;
-        private readonly Action _onEmployeeManagement;
 
         // VS Designer용 기본 생성자
         public SettingsForm()
@@ -17,13 +16,11 @@ namespace PoongSan_Angang_BCR
         }
 
         public SettingsForm(Action onChangePassword, Action onToggleTimeout,
-                            Action onModelSetting, Action onEmployeeManagement,
-                            SystemData systemData)
+                            Action onModelSetting, SystemData systemData)
         {
-            _onChangePassword     = onChangePassword;
-            _onToggleTimeout      = onToggleTimeout;
-            _onModelSetting       = onModelSetting;
-            _onEmployeeManagement = onEmployeeManagement;
+            _onChangePassword = onChangePassword;
+            _onToggleTimeout  = onToggleTimeout;
+            _onModelSetting   = onModelSetting;
             InitializeComponent();
             WireEvents();
         }
@@ -33,7 +30,6 @@ namespace PoongSan_Angang_BCR
             btnChangePassword.Click += (s, e) => _onChangePassword?.Invoke();
             btnTimeout.Click        += (s, e) => _onToggleTimeout?.Invoke();
             btnModelSetting.Click   += (s, e) => _onModelSetting?.Invoke();
-            btnEmployee.Click       += (s, e) => _onEmployeeManagement?.Invoke();
             btnX.Click              += (s, e) => this.Close();
             btnClose.Click          += (s, e) => this.Close();
         }

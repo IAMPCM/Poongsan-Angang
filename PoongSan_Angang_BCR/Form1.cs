@@ -806,11 +806,10 @@ namespace PoongSan_Angang_BCR
         private void btn_Settings_Click(object sender, EventArgs e)
         {
             using (var form = new SettingsForm(
-                onChangePassword:     () => btn_ChangePassword_Click(null, null),
-                onToggleTimeout:      () => OpenTimeoutSettingForm(),
-                onModelSetting:       () => btn_ModelSetting_Click(null, null),
-                onEmployeeManagement: () => OpenEmployeeForm(),
-                systemData:           m_VasimPlatform.m_SystemData))
+                onChangePassword: () => btn_ChangePassword_Click(null, null),
+                onToggleTimeout:  () => OpenTimeoutSettingForm(),
+                onModelSetting:   () => btn_ModelSetting_Click(null, null),
+                systemData:       m_VasimPlatform.m_SystemData))
             {
                 form.ShowDialog(this);
             }
@@ -824,6 +823,11 @@ namespace PoongSan_Angang_BCR
             {
                 form.ShowDialog(this);
             }
+        }
+
+        private void btn_Employee_Click(object sender, EventArgs e)
+        {
+            OpenEmployeeForm();
         }
 
         private void OpenEmployeeForm()

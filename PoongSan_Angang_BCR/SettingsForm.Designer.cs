@@ -17,7 +17,6 @@ namespace PoongSan_Angang_BCR
             this.btnChangePassword = new System.Windows.Forms.Button();
             this.btnTimeout        = new System.Windows.Forms.Button();
             this.btnModelSetting   = new System.Windows.Forms.Button();
-            this.btnEmployee       = new System.Windows.Forms.Button();
             this.btnX              = new System.Windows.Forms.Button();
             this.btnClose          = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -72,19 +71,6 @@ namespace PoongSan_Angang_BCR
             this.btnModelSetting.Text      = "바코드 설정";
             this.btnModelSetting.UseVisualStyleBackColor = false;
             //
-            // btnEmployee
-            //
-            this.btnEmployee.BackColor = System.Drawing.Color.FromArgb(80, 80, 100);
-            this.btnEmployee.FlatAppearance.BorderSize = 0;
-            this.btnEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmployee.Font      = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold);
-            this.btnEmployee.ForeColor = System.Drawing.Color.White;
-            this.btnEmployee.Location  = new System.Drawing.Point(20, 285);
-            this.btnEmployee.Name      = "btnEmployee";
-            this.btnEmployee.Size      = new System.Drawing.Size(360, 60);
-            this.btnEmployee.Text      = "사번 관리";
-            this.btnEmployee.UseVisualStyleBackColor = false;
-            //
             // btnX
             //
             this.btnX.BackColor = System.Drawing.Color.FromArgb(51, 51, 56);
@@ -105,7 +91,7 @@ namespace PoongSan_Angang_BCR
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font      = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold);
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location  = new System.Drawing.Point(260, 360);
+            this.btnClose.Location  = new System.Drawing.Point(260, 285);
             this.btnClose.Name      = "btnClose";
             this.btnClose.Size      = new System.Drawing.Size(120, 48);
             this.btnClose.Text      = "닫  기";
@@ -116,10 +102,9 @@ namespace PoongSan_Angang_BCR
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode       = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor           = System.Drawing.Color.FromArgb(51, 51, 56);
-            this.ClientSize          = new System.Drawing.Size(400, 430);
+            this.ClientSize          = new System.Drawing.Size(400, 355);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnX);
-            this.Controls.Add(this.btnEmployee);
             this.Controls.Add(this.btnModelSetting);
             this.Controls.Add(this.btnTimeout);
             this.Controls.Add(this.btnChangePassword);
@@ -136,7 +121,6 @@ namespace PoongSan_Angang_BCR
         private System.Windows.Forms.Button btnChangePassword;
         private System.Windows.Forms.Button btnTimeout;
         private System.Windows.Forms.Button btnModelSetting;
-        private System.Windows.Forms.Button btnEmployee;
         private System.Windows.Forms.Button btnX;
         private System.Windows.Forms.Button btnClose;
     }

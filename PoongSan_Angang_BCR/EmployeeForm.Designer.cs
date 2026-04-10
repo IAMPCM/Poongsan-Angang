@@ -34,15 +34,15 @@ namespace PoongSan_Angang_BCR
             //
             // btnClose
             //
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(51, 51, 56);
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(100, 100, 110);
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font      = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold);
+            this.btnClose.Font      = new System.Drawing.Font("굴림", 13F, System.Drawing.FontStyle.Bold);
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location  = new System.Drawing.Point(410, 5);
+            this.btnClose.Location  = new System.Drawing.Point(341, 320);
             this.btnClose.Name      = "btnClose";
-            this.btnClose.Size      = new System.Drawing.Size(40, 30);
-            this.btnClose.Text      = "✕";
+            this.btnClose.Size      = new System.Drawing.Size(99, 55);
+            this.btnClose.Text      = "닫  기";
             this.btnClose.UseVisualStyleBackColor = false;
             //
             // _listBox
@@ -64,7 +64,7 @@ namespace PoongSan_Angang_BCR
             this.btnSelect.ForeColor = System.Drawing.Color.White;
             this.btnSelect.Location  = new System.Drawing.Point(20, 320);
             this.btnSelect.Name      = "btnSelect";
-            this.btnSelect.Size      = new System.Drawing.Size(125, 55);
+            this.btnSelect.Size      = new System.Drawing.Size(99, 55);
             this.btnSelect.Text      = "출근 선택";
             this.btnSelect.UseVisualStyleBackColor = false;
             //
@@ -75,9 +75,9 @@ namespace PoongSan_Angang_BCR
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font      = new System.Drawing.Font("굴림", 13F, System.Drawing.FontStyle.Bold);
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location  = new System.Drawing.Point(160, 320);
+            this.btnAdd.Location  = new System.Drawing.Point(127, 320);
             this.btnAdd.Name      = "btnAdd";
-            this.btnAdd.Size      = new System.Drawing.Size(125, 55);
+            this.btnAdd.Size      = new System.Drawing.Size(99, 55);
             this.btnAdd.Text      = "추  가";
             this.btnAdd.UseVisualStyleBackColor = false;
             //
@@ -88,9 +88,9 @@ namespace PoongSan_Angang_BCR
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font      = new System.Drawing.Font("굴림", 13F, System.Drawing.FontStyle.Bold);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location  = new System.Drawing.Point(300, 320);
+            this.btnDelete.Location  = new System.Drawing.Point(234, 320);
             this.btnDelete.Name      = "btnDelete";
-            this.btnDelete.Size      = new System.Drawing.Size(125, 55);
+            this.btnDelete.Size      = new System.Drawing.Size(99, 55);
             this.btnDelete.Text      = "삭  제";
             this.btnDelete.UseVisualStyleBackColor = false;
             //
