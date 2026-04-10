@@ -20,7 +20,7 @@ namespace PoongSan_Angang_BCR
             DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
-        public override int ItemHeight
+        public new int ItemHeight
         {
             get => base.ItemHeight;
             set
