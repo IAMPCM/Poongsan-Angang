@@ -61,9 +61,9 @@ namespace PoongSan_Angang_BCR
             this.btnResetCarton = new System.Windows.Forms.Button();
             this.btnResetBox = new System.Windows.Forms.Button();
             this.lblCurrentEmployee = new System.Windows.Forms.Label();
-            this.cboBore = new PoongSan_Angang_BCR.CenteredComboBox();
-            this.cboLocal = new PoongSan_Angang_BCR.CenteredComboBox();
-            this.cboBullet = new PoongSan_Angang_BCR.CenteredComboBox();
+            this.cboBore = new System.Windows.Forms.ComboBox();
+            this.cboLocal = new System.Windows.Forms.ComboBox();
+            this.cboBullet = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lb_MachineName
@@ -474,45 +474,36 @@ namespace PoongSan_Angang_BCR
             // 
             // cboBore
             // 
-            this.cboBore.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboBore.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboBore.Font = new System.Drawing.Font("굴림", 45F);
             this.cboBore.FormattingEnabled = true;
-            this.cboBore.ItemHeight = 97;
-            this.cboBore.Location = new System.Drawing.Point(676, 248);
+            this.cboBore.Location = new System.Drawing.Point(816, 248);
             this.cboBore.Margin = new System.Windows.Forms.Padding(4);
             this.cboBore.Name = "cboBore";
-            this.cboBore.Size = new System.Drawing.Size(1178, 103);
+            this.cboBore.Size = new System.Drawing.Size(900, 98);
             this.cboBore.TabIndex = 153;
             this.cboBore.SelectedIndexChanged += new System.EventHandler(this.cboBore_SelectedIndexChanged);
             this.cboBore.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cboBore_MouseDown);
             // 
             // cboLocal
             // 
-            this.cboLocal.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboLocal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboLocal.Font = new System.Drawing.Font("굴림", 45F);
             this.cboLocal.FormattingEnabled = true;
-            this.cboLocal.ItemHeight = 97;
-            this.cboLocal.Location = new System.Drawing.Point(676, 454);
+            this.cboLocal.Location = new System.Drawing.Point(816, 454);
             this.cboLocal.Margin = new System.Windows.Forms.Padding(4);
             this.cboLocal.Name = "cboLocal";
-            this.cboLocal.Size = new System.Drawing.Size(1178, 103);
+            this.cboLocal.Size = new System.Drawing.Size(900, 98);
             this.cboLocal.TabIndex = 157;
             this.cboLocal.SelectedIndexChanged += new System.EventHandler(this.cboLocal_SelectedIndexChanged);
             this.cboLocal.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cboLocal_MouseDown);
             // 
             // cboBullet
             // 
-            this.cboBullet.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cboBullet.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboBullet.Font = new System.Drawing.Font("굴림", 45F);
             this.cboBullet.FormattingEnabled = true;
-            this.cboBullet.ItemHeight = 97;
-            this.cboBullet.Location = new System.Drawing.Point(676, 351);
+            this.cboBullet.Location = new System.Drawing.Point(816, 351);
             this.cboBullet.Margin = new System.Windows.Forms.Padding(4);
             this.cboBullet.Name = "cboBullet";
-            this.cboBullet.Size = new System.Drawing.Size(1178, 103);
+            this.cboBullet.Size = new System.Drawing.Size(900, 98);
             this.cboBullet.TabIndex = 155;
             this.cboBullet.SelectedIndexChanged += new System.EventHandler(this.cboBullet_SelectedIndexChanged);
             this.cboBullet.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cboBullet_MouseDown);
@@ -574,10 +565,10 @@ namespace PoongSan_Angang_BCR
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label lb_Result;
-        private PoongSan_Angang_BCR.CenteredComboBox cboBore;
+        private System.Windows.Forms.ComboBox cboBore;
         private System.Windows.Forms.Label label1;
-        private PoongSan_Angang_BCR.CenteredComboBox cboBullet;
-        private PoongSan_Angang_BCR.CenteredComboBox cboLocal;
+        private System.Windows.Forms.ComboBox cboBullet;
+        private System.Windows.Forms.ComboBox cboLocal;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
