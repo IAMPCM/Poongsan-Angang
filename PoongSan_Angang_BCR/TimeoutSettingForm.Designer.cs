@@ -25,7 +25,7 @@ namespace PoongSan_Angang_BCR
             //
             // lblTitle
             //
-            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(51, 51, 56);
+            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(52, 152, 219);
             this.lblTitle.Font      = new System.Drawing.Font("굴림", 20F, System.Drawing.FontStyle.Bold);
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location  = new System.Drawing.Point(20, 14);
@@ -36,9 +36,9 @@ namespace PoongSan_Angang_BCR
             //
             // lblStatusHeader
             //
-            this.lblStatusHeader.BackColor = System.Drawing.Color.FromArgb(51, 51, 56);
+            this.lblStatusHeader.BackColor = System.Drawing.Color.FromArgb(240, 244, 248);
             this.lblStatusHeader.Font      = new System.Drawing.Font("굴림", 13F);
-            this.lblStatusHeader.ForeColor = System.Drawing.Color.FromArgb(180, 180, 180);
+            this.lblStatusHeader.ForeColor = System.Drawing.Color.FromArgb(100, 120, 140);
             this.lblStatusHeader.Location  = new System.Drawing.Point(20, 80);
             this.lblStatusHeader.Name      = "lblStatusHeader";
             this.lblStatusHeader.Size      = new System.Drawing.Size(520, 28);
@@ -60,9 +60,9 @@ namespace PoongSan_Angang_BCR
             //
             // lblTimeHeader
             //
-            this.lblTimeHeader.BackColor = System.Drawing.Color.FromArgb(51, 51, 56);
+            this.lblTimeHeader.BackColor = System.Drawing.Color.FromArgb(240, 244, 248);
             this.lblTimeHeader.Font      = new System.Drawing.Font("굴림", 13F);
-            this.lblTimeHeader.ForeColor = System.Drawing.Color.FromArgb(180, 180, 180);
+            this.lblTimeHeader.ForeColor = System.Drawing.Color.FromArgb(100, 120, 140);
             this.lblTimeHeader.Location  = new System.Drawing.Point(20, 208);
             this.lblTimeHeader.Name      = "lblTimeHeader";
             this.lblTimeHeader.Size      = new System.Drawing.Size(520, 28);
@@ -71,10 +71,10 @@ namespace PoongSan_Angang_BCR
             //
             // lblMinutes
             //
-            this.lblMinutes.BackColor   = System.Drawing.Color.FromArgb(40, 40, 45);
+            this.lblMinutes.BackColor   = System.Drawing.Color.White;
             this.lblMinutes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblMinutes.Font        = new System.Drawing.Font("굴림", 22F, System.Drawing.FontStyle.Bold);
-            this.lblMinutes.ForeColor   = System.Drawing.Color.White;
+            this.lblMinutes.ForeColor   = System.Drawing.Color.FromArgb(31, 97, 141);
             this.lblMinutes.Location    = new System.Drawing.Point(20, 238);
             this.lblMinutes.Name        = "lblMinutes";
             this.lblMinutes.Size        = new System.Drawing.Size(310, 80);
@@ -96,11 +96,11 @@ namespace PoongSan_Angang_BCR
             //
             // btnX
             //
-            this.btnX.BackColor = System.Drawing.Color.FromArgb(51, 51, 56);
+            this.btnX.BackColor = System.Drawing.Color.FromArgb(214, 229, 241);
             this.btnX.FlatAppearance.BorderSize = 0;
             this.btnX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnX.Font      = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold);
-            this.btnX.ForeColor = System.Drawing.Color.White;
+            this.btnX.ForeColor = System.Drawing.Color.FromArgb(31, 97, 141);
             this.btnX.Location  = new System.Drawing.Point(510, 5);
             this.btnX.Name      = "btnX";
             this.btnX.Size      = new System.Drawing.Size(40, 30);
@@ -109,7 +109,7 @@ namespace PoongSan_Angang_BCR
             //
             // btnClose
             //
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(100, 100, 110);
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(127, 140, 141);
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font      = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold);
@@ -122,9 +122,8 @@ namespace PoongSan_Angang_BCR
             //
             // TimeoutSettingForm
             //
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
-            this.AutoScaleMode       = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor           = System.Drawing.Color.FromArgb(51, 51, 56);
+            this.AutoScaleMode       = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor           = System.Drawing.Color.FromArgb(240, 244, 248);
             this.ClientSize          = new System.Drawing.Size(560, 430);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnX);

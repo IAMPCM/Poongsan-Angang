@@ -23,7 +23,7 @@ namespace PoongSan_Angang_BCR
             //
             // lblTitle
             //
-            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(51, 51, 56);
+            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(52, 152, 219);
             this.lblTitle.Font      = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold);
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location  = new System.Drawing.Point(20, 15);
@@ -35,10 +35,11 @@ namespace PoongSan_Angang_BCR
             // btnChangePassword
             //
             this.btnChangePassword.BackColor = System.Drawing.Color.White;
-            this.btnChangePassword.FlatAppearance.BorderSize = 0;
+            this.btnChangePassword.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(189, 195, 199);
+            this.btnChangePassword.FlatAppearance.BorderSize = 1;
             this.btnChangePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChangePassword.Font      = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold);
-            this.btnChangePassword.ForeColor = System.Drawing.Color.Black;
+            this.btnChangePassword.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80);
             this.btnChangePassword.Location  = new System.Drawing.Point(20, 75);
             this.btnChangePassword.Name      = "btnChangePassword";
             this.btnChangePassword.Size      = new System.Drawing.Size(360, 60);
@@ -47,7 +48,7 @@ namespace PoongSan_Angang_BCR
             //
             // btnTimeout
             //
-            this.btnTimeout.BackColor = System.Drawing.Color.FromArgb(52, 73, 94);
+            this.btnTimeout.BackColor = System.Drawing.Color.FromArgb(52, 152, 219);
             this.btnTimeout.FlatAppearance.BorderSize = 0;
             this.btnTimeout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimeout.Font      = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold);
@@ -61,10 +62,11 @@ namespace PoongSan_Angang_BCR
             // btnModelSetting
             //
             this.btnModelSetting.BackColor = System.Drawing.Color.White;
-            this.btnModelSetting.FlatAppearance.BorderSize = 0;
+            this.btnModelSetting.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(189, 195, 199);
+            this.btnModelSetting.FlatAppearance.BorderSize = 1;
             this.btnModelSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModelSetting.Font      = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold);
-            this.btnModelSetting.ForeColor = System.Drawing.Color.Black;
+            this.btnModelSetting.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80);
             this.btnModelSetting.Location  = new System.Drawing.Point(20, 215);
             this.btnModelSetting.Name      = "btnModelSetting";
             this.btnModelSetting.Size      = new System.Drawing.Size(360, 60);
@@ -73,11 +75,11 @@ namespace PoongSan_Angang_BCR
             //
             // btnX
             //
-            this.btnX.BackColor = System.Drawing.Color.FromArgb(51, 51, 56);
+            this.btnX.BackColor = System.Drawing.Color.FromArgb(214, 229, 241);
             this.btnX.FlatAppearance.BorderSize = 0;
             this.btnX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnX.Font      = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold);
-            this.btnX.ForeColor = System.Drawing.Color.White;
+            this.btnX.ForeColor = System.Drawing.Color.FromArgb(31, 97, 141);
             this.btnX.Location  = new System.Drawing.Point(350, 5);
             this.btnX.Name      = "btnX";
             this.btnX.Size      = new System.Drawing.Size(40, 30);
@@ -86,7 +88,7 @@ namespace PoongSan_Angang_BCR
             //
             // btnClose
             //
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(100, 100, 110);
+            this.btnClose.BackColor = System.Drawing.Color.FromArgb(127, 140, 141);
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font      = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold);
@@ -99,9 +101,8 @@ namespace PoongSan_Angang_BCR
             //
             // SettingsForm
             //
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
-            this.AutoScaleMode       = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor           = System.Drawing.Color.FromArgb(51, 51, 56);
+            this.AutoScaleMode       = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor           = System.Drawing.Color.FromArgb(240, 244, 248);
             this.ClientSize          = new System.Drawing.Size(400, 355);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnX);

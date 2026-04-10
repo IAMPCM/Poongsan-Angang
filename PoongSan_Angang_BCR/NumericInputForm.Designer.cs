@@ -33,7 +33,7 @@ namespace PoongSan_Angang_BCR
             //
             // lblTitle
             //
-            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(51, 51, 56);
+            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(52, 152, 219);
             this.lblTitle.Font      = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold);
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location  = new System.Drawing.Point(0, 0);
@@ -44,10 +44,10 @@ namespace PoongSan_Angang_BCR
             //
             // lblDisplay
             //
-            this.lblDisplay.BackColor   = System.Drawing.Color.FromArgb(55, 55, 60);
+            this.lblDisplay.BackColor   = System.Drawing.Color.White;
             this.lblDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDisplay.Font        = new System.Drawing.Font("굴림", 22F, System.Drawing.FontStyle.Bold);
-            this.lblDisplay.ForeColor   = System.Drawing.Color.FromArgb(255, 220, 80);
+            this.lblDisplay.ForeColor   = System.Drawing.Color.FromArgb(31, 97, 141);
             this.lblDisplay.Location    = new System.Drawing.Point(20, 54);
             this.lblDisplay.Name        = "lblDisplay";
             this.lblDisplay.Size        = new System.Drawing.Size(282, 54);
@@ -57,12 +57,12 @@ namespace PoongSan_Angang_BCR
             // KeyW=90, KeyH=70, Gap=6, PadX=20, keyStartY=120
             //
             // Row 0: 1, 2, 3  (y=120)
-            this.btnKey1.BackColor = System.Drawing.Color.FromArgb(68, 68, 76);
-            this.btnKey1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(90, 90, 100);
+            this.btnKey1.BackColor = System.Drawing.Color.White;
+            this.btnKey1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(189, 195, 199);
             this.btnKey1.FlatAppearance.BorderSize  = 1;
             this.btnKey1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKey1.Font      = new System.Drawing.Font("굴림", 16F, System.Drawing.FontStyle.Bold);
-            this.btnKey1.ForeColor = System.Drawing.Color.White;
+            this.btnKey1.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80);
             this.btnKey1.Location  = new System.Drawing.Point(20, 120);
             this.btnKey1.Name      = "btnKey1";
             this.btnKey1.Size      = new System.Drawing.Size(90, 70);
@@ -70,12 +70,12 @@ namespace PoongSan_Angang_BCR
             this.btnKey1.Text      = "1";
             this.btnKey1.UseVisualStyleBackColor = false;
 
-            this.btnKey2.BackColor = System.Drawing.Color.FromArgb(68, 68, 76);
-            this.btnKey2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(90, 90, 100);
+            this.btnKey2.BackColor = System.Drawing.Color.White;
+            this.btnKey2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(189, 195, 199);
             this.btnKey2.FlatAppearance.BorderSize  = 1;
             this.btnKey2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKey2.Font      = new System.Drawing.Font("굴림", 16F, System.Drawing.FontStyle.Bold);
-            this.btnKey2.ForeColor = System.Drawing.Color.White;
+            this.btnKey2.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80);
             this.btnKey2.Location  = new System.Drawing.Point(116, 120);
             this.btnKey2.Name      = "btnKey2";
             this.btnKey2.Size      = new System.Drawing.Size(90, 70);
@@ -83,12 +83,12 @@ namespace PoongSan_Angang_BCR
             this.btnKey2.Text      = "2";
             this.btnKey2.UseVisualStyleBackColor = false;
 
-            this.btnKey3.BackColor = System.Drawing.Color.FromArgb(68, 68, 76);
-            this.btnKey3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(90, 90, 100);
+            this.btnKey3.BackColor = System.Drawing.Color.White;
+            this.btnKey3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(189, 195, 199);
             this.btnKey3.FlatAppearance.BorderSize  = 1;
             this.btnKey3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKey3.Font      = new System.Drawing.Font("굴림", 16F, System.Drawing.FontStyle.Bold);
-            this.btnKey3.ForeColor = System.Drawing.Color.White;
+            this.btnKey3.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80);
             this.btnKey3.Location  = new System.Drawing.Point(212, 120);
             this.btnKey3.Name      = "btnKey3";
             this.btnKey3.Size      = new System.Drawing.Size(90, 70);
@@ -97,12 +97,12 @@ namespace PoongSan_Angang_BCR
             this.btnKey3.UseVisualStyleBackColor = false;
 
             // Row 1: 4, 5, 6  (y=196)
-            this.btnKey4.BackColor = System.Drawing.Color.FromArgb(68, 68, 76);
-            this.btnKey4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(90, 90, 100);
+            this.btnKey4.BackColor = System.Drawing.Color.White;
+            this.btnKey4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(189, 195, 199);
             this.btnKey4.FlatAppearance.BorderSize  = 1;
             this.btnKey4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKey4.Font      = new System.Drawing.Font("굴림", 16F, System.Drawing.FontStyle.Bold);
-            this.btnKey4.ForeColor = System.Drawing.Color.White;
+            this.btnKey4.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80);
             this.btnKey4.Location  = new System.Drawing.Point(20, 196);
             this.btnKey4.Name      = "btnKey4";
             this.btnKey4.Size      = new System.Drawing.Size(90, 70);
@@ -110,12 +110,12 @@ namespace PoongSan_Angang_BCR
             this.btnKey4.Text      = "4";
             this.btnKey4.UseVisualStyleBackColor = false;
 
-            this.btnKey5.BackColor = System.Drawing.Color.FromArgb(68, 68, 76);
-            this.btnKey5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(90, 90, 100);
+            this.btnKey5.BackColor = System.Drawing.Color.White;
+            this.btnKey5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(189, 195, 199);
             this.btnKey5.FlatAppearance.BorderSize  = 1;
             this.btnKey5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKey5.Font      = new System.Drawing.Font("굴림", 16F, System.Drawing.FontStyle.Bold);
-            this.btnKey5.ForeColor = System.Drawing.Color.White;
+            this.btnKey5.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80);
             this.btnKey5.Location  = new System.Drawing.Point(116, 196);
             this.btnKey5.Name      = "btnKey5";
             this.btnKey5.Size      = new System.Drawing.Size(90, 70);
@@ -123,12 +123,12 @@ namespace PoongSan_Angang_BCR
             this.btnKey5.Text      = "5";
             this.btnKey5.UseVisualStyleBackColor = false;
 
-            this.btnKey6.BackColor = System.Drawing.Color.FromArgb(68, 68, 76);
-            this.btnKey6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(90, 90, 100);
+            this.btnKey6.BackColor = System.Drawing.Color.White;
+            this.btnKey6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(189, 195, 199);
             this.btnKey6.FlatAppearance.BorderSize  = 1;
             this.btnKey6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKey6.Font      = new System.Drawing.Font("굴림", 16F, System.Drawing.FontStyle.Bold);
-            this.btnKey6.ForeColor = System.Drawing.Color.White;
+            this.btnKey6.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80);
             this.btnKey6.Location  = new System.Drawing.Point(212, 196);
             this.btnKey6.Name      = "btnKey6";
             this.btnKey6.Size      = new System.Drawing.Size(90, 70);
@@ -137,12 +137,12 @@ namespace PoongSan_Angang_BCR
             this.btnKey6.UseVisualStyleBackColor = false;
 
             // Row 2: 7, 8, 9  (y=272)
-            this.btnKey7.BackColor = System.Drawing.Color.FromArgb(68, 68, 76);
-            this.btnKey7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(90, 90, 100);
+            this.btnKey7.BackColor = System.Drawing.Color.White;
+            this.btnKey7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(189, 195, 199);
             this.btnKey7.FlatAppearance.BorderSize  = 1;
             this.btnKey7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKey7.Font      = new System.Drawing.Font("굴림", 16F, System.Drawing.FontStyle.Bold);
-            this.btnKey7.ForeColor = System.Drawing.Color.White;
+            this.btnKey7.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80);
             this.btnKey7.Location  = new System.Drawing.Point(20, 272);
             this.btnKey7.Name      = "btnKey7";
             this.btnKey7.Size      = new System.Drawing.Size(90, 70);
@@ -150,12 +150,12 @@ namespace PoongSan_Angang_BCR
             this.btnKey7.Text      = "7";
             this.btnKey7.UseVisualStyleBackColor = false;
 
-            this.btnKey8.BackColor = System.Drawing.Color.FromArgb(68, 68, 76);
-            this.btnKey8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(90, 90, 100);
+            this.btnKey8.BackColor = System.Drawing.Color.White;
+            this.btnKey8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(189, 195, 199);
             this.btnKey8.FlatAppearance.BorderSize  = 1;
             this.btnKey8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKey8.Font      = new System.Drawing.Font("굴림", 16F, System.Drawing.FontStyle.Bold);
-            this.btnKey8.ForeColor = System.Drawing.Color.White;
+            this.btnKey8.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80);
             this.btnKey8.Location  = new System.Drawing.Point(116, 272);
             this.btnKey8.Name      = "btnKey8";
             this.btnKey8.Size      = new System.Drawing.Size(90, 70);
@@ -163,12 +163,12 @@ namespace PoongSan_Angang_BCR
             this.btnKey8.Text      = "8";
             this.btnKey8.UseVisualStyleBackColor = false;
 
-            this.btnKey9.BackColor = System.Drawing.Color.FromArgb(68, 68, 76);
-            this.btnKey9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(90, 90, 100);
+            this.btnKey9.BackColor = System.Drawing.Color.White;
+            this.btnKey9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(189, 195, 199);
             this.btnKey9.FlatAppearance.BorderSize  = 1;
             this.btnKey9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKey9.Font      = new System.Drawing.Font("굴림", 16F, System.Drawing.FontStyle.Bold);
-            this.btnKey9.ForeColor = System.Drawing.Color.White;
+            this.btnKey9.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80);
             this.btnKey9.Location  = new System.Drawing.Point(212, 272);
             this.btnKey9.Name      = "btnKey9";
             this.btnKey9.Size      = new System.Drawing.Size(90, 70);
@@ -177,9 +177,8 @@ namespace PoongSan_Angang_BCR
             this.btnKey9.UseVisualStyleBackColor = false;
 
             // Row 3: CLR, 0, ←  (y=348)
-            this.btnKeyCLR.BackColor = System.Drawing.Color.FromArgb(110, 60, 0);
-            this.btnKeyCLR.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(90, 90, 100);
-            this.btnKeyCLR.FlatAppearance.BorderSize  = 1;
+            this.btnKeyCLR.BackColor = System.Drawing.Color.FromArgb(230, 126, 34);
+            this.btnKeyCLR.FlatAppearance.BorderSize  = 0;
             this.btnKeyCLR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKeyCLR.Font      = new System.Drawing.Font("굴림", 16F, System.Drawing.FontStyle.Bold);
             this.btnKeyCLR.ForeColor = System.Drawing.Color.White;
@@ -190,12 +189,12 @@ namespace PoongSan_Angang_BCR
             this.btnKeyCLR.Text      = "CLR";
             this.btnKeyCLR.UseVisualStyleBackColor = false;
 
-            this.btnKey0.BackColor = System.Drawing.Color.FromArgb(68, 68, 76);
-            this.btnKey0.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(90, 90, 100);
+            this.btnKey0.BackColor = System.Drawing.Color.White;
+            this.btnKey0.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(189, 195, 199);
             this.btnKey0.FlatAppearance.BorderSize  = 1;
             this.btnKey0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKey0.Font      = new System.Drawing.Font("굴림", 16F, System.Drawing.FontStyle.Bold);
-            this.btnKey0.ForeColor = System.Drawing.Color.White;
+            this.btnKey0.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80);
             this.btnKey0.Location  = new System.Drawing.Point(116, 348);
             this.btnKey0.Name      = "btnKey0";
             this.btnKey0.Size      = new System.Drawing.Size(90, 70);
@@ -203,9 +202,8 @@ namespace PoongSan_Angang_BCR
             this.btnKey0.Text      = "0";
             this.btnKey0.UseVisualStyleBackColor = false;
 
-            this.btnKeyBack.BackColor = System.Drawing.Color.FromArgb(100, 55, 55);
-            this.btnKeyBack.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(90, 90, 100);
-            this.btnKeyBack.FlatAppearance.BorderSize  = 1;
+            this.btnKeyBack.BackColor = System.Drawing.Color.FromArgb(192, 57, 43);
+            this.btnKeyBack.FlatAppearance.BorderSize  = 0;
             this.btnKeyBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKeyBack.Font      = new System.Drawing.Font("굴림", 16F, System.Drawing.FontStyle.Bold);
             this.btnKeyBack.ForeColor = System.Drawing.Color.White;
@@ -218,7 +216,7 @@ namespace PoongSan_Angang_BCR
             //
             // btnOk
             //
-            this.btnOk.BackColor = System.Drawing.Color.FromArgb(0, 115, 55);
+            this.btnOk.BackColor = System.Drawing.Color.FromArgb(39, 174, 96);
             this.btnOk.FlatAppearance.BorderSize = 0;
             this.btnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOk.Font      = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold);
@@ -231,7 +229,7 @@ namespace PoongSan_Angang_BCR
             //
             // btnCancel
             //
-            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(72, 72, 78);
+            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(127, 140, 141);
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font      = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold);
@@ -244,9 +242,8 @@ namespace PoongSan_Angang_BCR
             //
             // NumericInputForm
             //
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
-            this.AutoScaleMode       = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor           = System.Drawing.Color.FromArgb(35, 35, 40);
+            this.AutoScaleMode       = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor           = System.Drawing.Color.FromArgb(240, 244, 248);
             this.ClientSize          = new System.Drawing.Size(322, 508);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOk);
