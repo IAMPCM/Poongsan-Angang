@@ -235,10 +235,9 @@ namespace PoongSan_Angang_BCR
             //
             // ChangePasswordForm
             //
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
-            this.AutoScaleMode       = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor           = System.Drawing.Color.FromArgb(51, 51, 56);
-            this.ClientSize          = new System.Drawing.Size(536, 742);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor     = System.Drawing.Color.FromArgb(51, 51, 56);
+            this.ClientSize    = new System.Drawing.Size(536, 742);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnClr);
             this.Controls.Add(this.btn0);
