@@ -87,5 +87,10 @@ namespace PoongSan_Angang_BCR
             lblDisplay.ForeColor = System.Drawing.Color.White;
             lblDisplay.Text = new string('*', _inputPassword.Length);
         }
+
+        private void PasswordForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

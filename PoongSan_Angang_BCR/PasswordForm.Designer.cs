@@ -34,9 +34,9 @@ namespace PoongSan_Angang_BCR
             // 
             // lblTitle
             // 
-            this.lblTitle.BackColor = System.Drawing.Color.Red;
+            this.lblTitle.BackColor = System.Drawing.Color.White;
             this.lblTitle.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.ForeColor = System.Drawing.Color.Yellow;
+            this.lblTitle.ForeColor = System.Drawing.Color.Black;
             this.lblTitle.Location = new System.Drawing.Point(114, 15);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
@@ -47,9 +47,9 @@ namespace PoongSan_Angang_BCR
             // 
             // lblPasswordLabel
             // 
-            this.lblPasswordLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.lblPasswordLabel.BackColor = System.Drawing.Color.White;
             this.lblPasswordLabel.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold);
-            this.lblPasswordLabel.ForeColor = System.Drawing.Color.White;
+            this.lblPasswordLabel.ForeColor = System.Drawing.Color.Black;
             this.lblPasswordLabel.Location = new System.Drawing.Point(29, 105);
             this.lblPasswordLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPasswordLabel.Name = "lblPasswordLabel";
@@ -60,7 +60,7 @@ namespace PoongSan_Angang_BCR
             // 
             // lblDisplay
             // 
-            this.lblDisplay.BackColor = System.Drawing.Color.Black;
+            this.lblDisplay.BackColor = System.Drawing.Color.White;
             this.lblDisplay.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDisplay.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold);
             this.lblDisplay.ForeColor = System.Drawing.Color.White;
@@ -69,7 +69,7 @@ namespace PoongSan_Angang_BCR
             this.lblDisplay.Name = "lblDisplay";
             this.lblDisplay.Size = new System.Drawing.Size(328, 52);
             this.lblDisplay.TabIndex = 2;
-            this.lblDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDisplay.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // btn7
             // 
@@ -253,11 +253,11 @@ namespace PoongSan_Angang_BCR
             // 
             // btn_Confirm
             // 
-            this.btn_Confirm.BackColor = System.Drawing.Color.Gray;
+            this.btn_Confirm.BackColor = System.Drawing.Color.White;
             this.btn_Confirm.FlatAppearance.BorderSize = 0;
             this.btn_Confirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Confirm.Font = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold);
-            this.btn_Confirm.ForeColor = System.Drawing.Color.White;
+            this.btn_Confirm.ForeColor = System.Drawing.Color.Black;
             this.btn_Confirm.Location = new System.Drawing.Point(29, 638);
             this.btn_Confirm.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Confirm.Name = "btn_Confirm";
@@ -269,11 +269,11 @@ namespace PoongSan_Angang_BCR
             // 
             // btn_Cancel
             // 
-            this.btn_Cancel.BackColor = System.Drawing.Color.Gray;
+            this.btn_Cancel.BackColor = System.Drawing.Color.White;
             this.btn_Cancel.FlatAppearance.BorderSize = 0;
             this.btn_Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Cancel.Font = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold);
-            this.btn_Cancel.ForeColor = System.Drawing.Color.White;
+            this.btn_Cancel.ForeColor = System.Drawing.Color.Black;
             this.btn_Cancel.Location = new System.Drawing.Point(279, 638);
             this.btn_Cancel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Cancel.Name = "btn_Cancel";
@@ -287,7 +287,7 @@ namespace PoongSan_Angang_BCR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.BackColor = System.Drawing.Color.SlateGray;
             this.ClientSize = new System.Drawing.Size(536, 742);
             this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.btn_Confirm);
@@ -314,6 +314,7 @@ namespace PoongSan_Angang_BCR
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "암호";
             this.TopMost = true;
+            this.Load += new System.EventHandler(this.PasswordForm_Load);
             this.ResumeLayout(false);
 
         }

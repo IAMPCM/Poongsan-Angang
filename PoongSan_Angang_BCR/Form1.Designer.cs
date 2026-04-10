@@ -29,17 +29,12 @@ namespace PoongSan_Angang_BCR
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lb_MachineName = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_Exit = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lb_Result = new System.Windows.Forms.Label();
-            this.cboBore = new PoongSan_Angang_BCR.CenteredComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.cboBullet = new PoongSan_Angang_BCR.CenteredComboBox();
-            this.cboLocal = new PoongSan_Angang_BCR.CenteredComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -64,17 +59,19 @@ namespace PoongSan_Angang_BCR
             this.txtHiddenInput = new System.Windows.Forms.TextBox();
             this.txtInputBCR = new System.Windows.Forms.TextBox();
             this.btnResetCarton = new System.Windows.Forms.Button();
-            this.btnResetBox    = new System.Windows.Forms.Button();
+            this.btnResetBox = new System.Windows.Forms.Button();
             this.lblCurrentEmployee = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.cboBore = new PoongSan_Angang_BCR.CenteredComboBox();
+            this.cboLocal = new PoongSan_Angang_BCR.CenteredComboBox();
+            this.cboBullet = new PoongSan_Angang_BCR.CenteredComboBox();
             this.SuspendLayout();
             // 
             // lb_MachineName
             // 
-            this.lb_MachineName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.lb_MachineName.BackColor = System.Drawing.Color.White;
             this.lb_MachineName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lb_MachineName.Font = new System.Drawing.Font("굴림", 40F, System.Drawing.FontStyle.Bold);
-            this.lb_MachineName.ForeColor = System.Drawing.SystemColors.Window;
+            this.lb_MachineName.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lb_MachineName.Location = new System.Drawing.Point(3, 2);
             this.lb_MachineName.Name = "lb_MachineName";
             this.lb_MachineName.Size = new System.Drawing.Size(1852, 140);
@@ -82,36 +79,26 @@ namespace PoongSan_Angang_BCR
             this.lb_MachineName.Text = "자동 검사 장비";
             this.lb_MachineName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(501, 13);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(117, 123);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 121;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
-            // 
             // btn_Exit
             // 
+            this.btn_Exit.BackColor = System.Drawing.Color.Red;
             this.btn_Exit.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_Exit.ForeColor = System.Drawing.SystemColors.WindowText;
             this.btn_Exit.Location = new System.Drawing.Point(1699, 45);
             this.btn_Exit.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Size = new System.Drawing.Size(141, 62);
             this.btn_Exit.TabIndex = 131;
             this.btn_Exit.Text = "종료";
-            this.btn_Exit.UseVisualStyleBackColor = true;
+            this.btn_Exit.UseVisualStyleBackColor = false;
             this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // label18
             // 
-            this.label18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.label18.BackColor = System.Drawing.Color.Honeydew;
             this.label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label18.Font = new System.Drawing.Font("굴림", 20F, System.Drawing.FontStyle.Bold);
-            this.label18.ForeColor = System.Drawing.SystemColors.Window;
+            this.label18.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label18.Location = new System.Drawing.Point(1, 248);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(671, 101);
@@ -121,10 +108,10 @@ namespace PoongSan_Angang_BCR
             // 
             // label3
             // 
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.label3.BackColor = System.Drawing.Color.GreenYellow;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Font = new System.Drawing.Font("굴림", 20F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.SystemColors.Window;
+            this.label3.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label3.Location = new System.Drawing.Point(1, 1287);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(671, 106);
@@ -144,25 +131,12 @@ namespace PoongSan_Angang_BCR
             this.lb_Result.TabIndex = 152;
             this.lb_Result.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // cboBore
-            // 
-            this.cboBore.Font = new System.Drawing.Font("굴림", 45F);
-            this.cboBore.FormattingEnabled = true;
-            this.cboBore.ItemHeight = 97;
-            this.cboBore.Location = new System.Drawing.Point(676, 248);
-            this.cboBore.Margin = new System.Windows.Forms.Padding(4);
-            this.cboBore.Name = "cboBore";
-            this.cboBore.Size = new System.Drawing.Size(1178, 101);
-            this.cboBore.TabIndex = 153;
-            this.cboBore.SelectedIndexChanged += new System.EventHandler(this.cboBore_SelectedIndexChanged);
-            this.cboBore.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cboBore_MouseDown);
-            // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.label1.BackColor = System.Drawing.Color.Honeydew;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("굴림", 20F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.SystemColors.Window;
+            this.label1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label1.Location = new System.Drawing.Point(1, 351);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(671, 101);
@@ -170,38 +144,12 @@ namespace PoongSan_Angang_BCR
             this.label1.Text = "탄종";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // cboBullet
-            // 
-            this.cboBullet.Font = new System.Drawing.Font("굴림", 45F);
-            this.cboBullet.FormattingEnabled = true;
-            this.cboBullet.ItemHeight = 97;
-            this.cboBullet.Location = new System.Drawing.Point(676, 351);
-            this.cboBullet.Margin = new System.Windows.Forms.Padding(4);
-            this.cboBullet.Name = "cboBullet";
-            this.cboBullet.Size = new System.Drawing.Size(1178, 101);
-            this.cboBullet.TabIndex = 155;
-            this.cboBullet.SelectedIndexChanged += new System.EventHandler(this.cboBullet_SelectedIndexChanged);
-            this.cboBullet.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cboBullet_MouseDown);
-            // 
-            // cboLocal
-            // 
-            this.cboLocal.Font = new System.Drawing.Font("굴림", 45F);
-            this.cboLocal.FormattingEnabled = true;
-            this.cboLocal.ItemHeight = 97;
-            this.cboLocal.Location = new System.Drawing.Point(676, 454);
-            this.cboLocal.Margin = new System.Windows.Forms.Padding(4);
-            this.cboLocal.Name = "cboLocal";
-            this.cboLocal.Size = new System.Drawing.Size(1178, 101);
-            this.cboLocal.TabIndex = 157;
-            this.cboLocal.SelectedIndexChanged += new System.EventHandler(this.cboLocal_SelectedIndexChanged);
-            this.cboLocal.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cboLocal_MouseDown);
-            // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.label2.BackColor = System.Drawing.Color.Honeydew;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("굴림", 20F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.SystemColors.Window;
+            this.label2.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label2.Location = new System.Drawing.Point(1, 454);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(671, 101);
@@ -211,10 +159,10 @@ namespace PoongSan_Angang_BCR
             // 
             // label4
             // 
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.label4.BackColor = System.Drawing.Color.Honeydew;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Font = new System.Drawing.Font("굴림", 20F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.SystemColors.Window;
+            this.label4.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label4.Location = new System.Drawing.Point(1, 662);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(669, 101);
@@ -224,10 +172,10 @@ namespace PoongSan_Angang_BCR
             // 
             // label7
             // 
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.label7.BackColor = System.Drawing.Color.Honeydew;
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label7.Font = new System.Drawing.Font("굴림", 20F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.SystemColors.Window;
+            this.label7.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label7.Location = new System.Drawing.Point(1, 765);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(669, 101);
@@ -262,10 +210,10 @@ namespace PoongSan_Angang_BCR
             // 
             // label10
             // 
-            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.label10.BackColor = System.Drawing.Color.Yellow;
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Font = new System.Drawing.Font("굴림", 20F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.SystemColors.Window;
+            this.label10.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label10.Location = new System.Drawing.Point(3, 1076);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(669, 101);
@@ -275,10 +223,10 @@ namespace PoongSan_Angang_BCR
             // 
             // label11
             // 
-            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.label11.BackColor = System.Drawing.Color.Yellow;
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label11.Font = new System.Drawing.Font("굴림", 20F, System.Drawing.FontStyle.Bold);
-            this.label11.ForeColor = System.Drawing.SystemColors.Window;
+            this.label11.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label11.Location = new System.Drawing.Point(3, 972);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(669, 101);
@@ -289,7 +237,7 @@ namespace PoongSan_Angang_BCR
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.Location = new System.Drawing.Point(261, 48);
+            this.button1.Location = new System.Drawing.Point(476, 49);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(79, 62);
@@ -301,10 +249,10 @@ namespace PoongSan_Angang_BCR
             // 
             // label12
             // 
-            this.label12.BackColor = System.Drawing.Color.Black;
+            this.label12.BackColor = System.Drawing.Color.Honeydew;
             this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label12.Font = new System.Drawing.Font("굴림", 20F, System.Drawing.FontStyle.Bold);
-            this.label12.ForeColor = System.Drawing.SystemColors.Window;
+            this.label12.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label12.Location = new System.Drawing.Point(1, 144);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(1853, 101);
@@ -314,10 +262,10 @@ namespace PoongSan_Angang_BCR
             // 
             // label13
             // 
-            this.label13.BackColor = System.Drawing.Color.Black;
+            this.label13.BackColor = System.Drawing.Color.Yellow;
             this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label13.Font = new System.Drawing.Font("굴림", 20F, System.Drawing.FontStyle.Bold);
-            this.label13.ForeColor = System.Drawing.SystemColors.Window;
+            this.label13.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label13.Location = new System.Drawing.Point(3, 868);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(1851, 101);
@@ -328,7 +276,7 @@ namespace PoongSan_Angang_BCR
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button2.Location = new System.Drawing.Point(169, 48);
+            this.button2.Location = new System.Drawing.Point(366, 49);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(84, 62);
@@ -351,10 +299,10 @@ namespace PoongSan_Angang_BCR
             // 
             // label8
             // 
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.label8.BackColor = System.Drawing.Color.White;
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label8.Font = new System.Drawing.Font("굴림", 20F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.SystemColors.Window;
+            this.label8.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label8.Location = new System.Drawing.Point(1, 558);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(669, 101);
@@ -398,32 +346,21 @@ namespace PoongSan_Angang_BCR
             this.btn_Stop.Text = "정지";
             this.btn_Stop.UseVisualStyleBackColor = true;
             this.btn_Stop.Click += new System.EventHandler(this.btn_Stop_Click);
-            //
+            // 
             // btn_Settings
-            //
+            // 
+            this.btn_Settings.BackColor = System.Drawing.Color.Aqua;
             this.btn_Settings.Font = new System.Drawing.Font("굴림", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btn_Settings.Location = new System.Drawing.Point(1301, 45);
+            this.btn_Settings.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btn_Settings.Location = new System.Drawing.Point(1517, 45);
             this.btn_Settings.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Settings.Name = "btn_Settings";
-            this.btn_Settings.Size = new System.Drawing.Size(257, 62);
+            this.btn_Settings.Size = new System.Drawing.Size(147, 62);
             this.btn_Settings.TabIndex = 180;
             this.btn_Settings.Text = "설정";
-            this.btn_Settings.UseVisualStyleBackColor = true;
+            this.btn_Settings.UseVisualStyleBackColor = false;
             this.btn_Settings.Click += new System.EventHandler(this.btn_Settings_Click);
-            //
-            // lblCurrentEmployee
-            //
-            this.lblCurrentEmployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.lblCurrentEmployee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblCurrentEmployee.Font = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.lblCurrentEmployee.ForeColor = System.Drawing.Color.White;
-            this.lblCurrentEmployee.Location = new System.Drawing.Point(22, 48);
-            this.lblCurrentEmployee.Name = "lblCurrentEmployee";
-            this.lblCurrentEmployee.Size = new System.Drawing.Size(300, 62);
-            this.lblCurrentEmployee.TabIndex = 184;
-            this.lblCurrentEmployee.Text = "작업자: 미선택";
-            this.lblCurrentEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            //
+            // 
             // label6
             // 
             this.label6.BackColor = System.Drawing.Color.White;
@@ -436,41 +373,13 @@ namespace PoongSan_Angang_BCR
             this.label6.TabIndex = 177;
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label6.Click += new System.EventHandler(this.label6_Click);
-            //
-            // btnResetCarton
-            //
-            this.btnResetCarton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnResetCarton.Font = new System.Drawing.Font("굴림", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnResetCarton.ForeColor = System.Drawing.Color.White;
-            this.btnResetCarton.Location = new System.Drawing.Point(1658, 1179);
-            this.btnResetCarton.Margin = new System.Windows.Forms.Padding(4);
-            this.btnResetCarton.Name = "btnResetCarton";
-            this.btnResetCarton.Size = new System.Drawing.Size(96, 106);
-            this.btnResetCarton.TabIndex = 183;
-            this.btnResetCarton.Text = "카톤\n리셋";
-            this.btnResetCarton.UseVisualStyleBackColor = false;
-            this.btnResetCarton.Click += new System.EventHandler(this.btnResetCarton_Click);
-            //
-            // btnResetBox
-            //
-            this.btnResetBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnResetBox.Font = new System.Drawing.Font("굴림", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnResetBox.ForeColor = System.Drawing.Color.White;
-            this.btnResetBox.Location = new System.Drawing.Point(1758, 1179);
-            this.btnResetBox.Margin = new System.Windows.Forms.Padding(4);
-            this.btnResetBox.Name = "btnResetBox";
-            this.btnResetBox.Size = new System.Drawing.Size(96, 106);
-            this.btnResetBox.TabIndex = 184;
-            this.btnResetBox.Text = "골판지\n리셋";
-            this.btnResetBox.UseVisualStyleBackColor = false;
-            this.btnResetBox.Click += new System.EventHandler(this.btnResetBox_Click);
-            //
+            // 
             // label14
             // 
-            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(56)))));
+            this.label14.BackColor = System.Drawing.Color.Aqua;
             this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label14.Font = new System.Drawing.Font("굴림", 20F, System.Drawing.FontStyle.Bold);
-            this.label14.ForeColor = System.Drawing.SystemColors.Window;
+            this.label14.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label14.Location = new System.Drawing.Point(1, 1179);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(671, 106);
@@ -484,7 +393,7 @@ namespace PoongSan_Angang_BCR
             this.label_PLC_Status.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label_PLC_Status.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label_PLC_Status.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label_PLC_Status.Location = new System.Drawing.Point(347, 48);
+            this.label_PLC_Status.Location = new System.Drawing.Point(583, 49);
             this.label_PLC_Status.Name = "label_PLC_Status";
             this.label_PLC_Status.Size = new System.Drawing.Size(62, 62);
             this.label_PLC_Status.TabIndex = 178;
@@ -521,6 +430,92 @@ namespace PoongSan_Angang_BCR
             this.txtInputBCR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtInputBCR.TextChanged += new System.EventHandler(this.txtInputBCR_TextChanged);
             this.txtInputBCR.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInputBCR_KeyPress);
+            // 
+            // btnResetCarton
+            // 
+            this.btnResetCarton.BackColor = System.Drawing.Color.LightBlue;
+            this.btnResetCarton.Font = new System.Drawing.Font("굴림", 10F, System.Drawing.FontStyle.Bold);
+            this.btnResetCarton.ForeColor = System.Drawing.Color.Black;
+            this.btnResetCarton.Location = new System.Drawing.Point(1658, 1179);
+            this.btnResetCarton.Margin = new System.Windows.Forms.Padding(4);
+            this.btnResetCarton.Name = "btnResetCarton";
+            this.btnResetCarton.Size = new System.Drawing.Size(96, 106);
+            this.btnResetCarton.TabIndex = 183;
+            this.btnResetCarton.Text = "카톤\r\n수량\r\n리셋";
+            this.btnResetCarton.UseVisualStyleBackColor = false;
+            this.btnResetCarton.Click += new System.EventHandler(this.btnResetCarton_Click);
+            // 
+            // btnResetBox
+            // 
+            this.btnResetBox.BackColor = System.Drawing.Color.LightBlue;
+            this.btnResetBox.Font = new System.Drawing.Font("굴림", 10F, System.Drawing.FontStyle.Bold);
+            this.btnResetBox.ForeColor = System.Drawing.Color.Black;
+            this.btnResetBox.Location = new System.Drawing.Point(1758, 1179);
+            this.btnResetBox.Margin = new System.Windows.Forms.Padding(4);
+            this.btnResetBox.Name = "btnResetBox";
+            this.btnResetBox.Size = new System.Drawing.Size(96, 106);
+            this.btnResetBox.TabIndex = 184;
+            this.btnResetBox.Text = "골판지\r\n수량 \r\n리셋";
+            this.btnResetBox.UseVisualStyleBackColor = false;
+            this.btnResetBox.Click += new System.EventHandler(this.btnResetBox_Click);
+            // 
+            // lblCurrentEmployee
+            // 
+            this.lblCurrentEmployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.lblCurrentEmployee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCurrentEmployee.Font = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblCurrentEmployee.ForeColor = System.Drawing.Color.White;
+            this.lblCurrentEmployee.Location = new System.Drawing.Point(21, 41);
+            this.lblCurrentEmployee.Name = "lblCurrentEmployee";
+            this.lblCurrentEmployee.Size = new System.Drawing.Size(300, 62);
+            this.lblCurrentEmployee.TabIndex = 184;
+            this.lblCurrentEmployee.Text = "작업자: 미선택";
+            this.lblCurrentEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cboBore
+            // 
+            this.cboBore.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboBore.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboBore.Font = new System.Drawing.Font("굴림", 45F);
+            this.cboBore.FormattingEnabled = true;
+            this.cboBore.ItemHeight = 97;
+            this.cboBore.Location = new System.Drawing.Point(676, 248);
+            this.cboBore.Margin = new System.Windows.Forms.Padding(4);
+            this.cboBore.Name = "cboBore";
+            this.cboBore.Size = new System.Drawing.Size(1178, 103);
+            this.cboBore.TabIndex = 153;
+            this.cboBore.SelectedIndexChanged += new System.EventHandler(this.cboBore_SelectedIndexChanged);
+            this.cboBore.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cboBore_MouseDown);
+            // 
+            // cboLocal
+            // 
+            this.cboLocal.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboLocal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboLocal.Font = new System.Drawing.Font("굴림", 45F);
+            this.cboLocal.FormattingEnabled = true;
+            this.cboLocal.ItemHeight = 97;
+            this.cboLocal.Location = new System.Drawing.Point(676, 454);
+            this.cboLocal.Margin = new System.Windows.Forms.Padding(4);
+            this.cboLocal.Name = "cboLocal";
+            this.cboLocal.Size = new System.Drawing.Size(1178, 103);
+            this.cboLocal.TabIndex = 157;
+            this.cboLocal.SelectedIndexChanged += new System.EventHandler(this.cboLocal_SelectedIndexChanged);
+            this.cboLocal.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cboLocal_MouseDown);
+            // 
+            // cboBullet
+            // 
+            this.cboBullet.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboBullet.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboBullet.Font = new System.Drawing.Font("굴림", 45F);
+            this.cboBullet.FormattingEnabled = true;
+            this.cboBullet.ItemHeight = 97;
+            this.cboBullet.Location = new System.Drawing.Point(676, 351);
+            this.cboBullet.Margin = new System.Windows.Forms.Padding(4);
+            this.cboBullet.Name = "cboBullet";
+            this.cboBullet.Size = new System.Drawing.Size(1178, 103);
+            this.cboBullet.TabIndex = 155;
+            this.cboBullet.SelectedIndexChanged += new System.EventHandler(this.cboBullet_SelectedIndexChanged);
+            this.cboBullet.MouseDown += new System.Windows.Forms.MouseEventHandler(this.cboBullet_MouseDown);
             // 
             // Form1
             // 
@@ -561,14 +556,12 @@ namespace PoongSan_Angang_BCR
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.btn_Exit);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lb_MachineName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -577,7 +570,6 @@ namespace PoongSan_Angang_BCR
         #endregion
 
         private System.Windows.Forms.Label lb_MachineName;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_Exit;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label3;
