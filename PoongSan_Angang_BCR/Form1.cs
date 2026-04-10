@@ -221,20 +221,47 @@ namespace PoongSan_Angang_BCR
                 _boxOkCount, _boxNgCount);
         }
 
-        // 수량 초기화 버튼 클릭
-        private void btnResetCount_Click(object sender, EventArgs e)
+        // 카톤 박스 수량 리셋 버튼
+        private void btnResetCarton_Click(object sender, EventArgs e)
         {
             using (var pwForm = new PasswordForm(m_VasimPlatform.m_SystemData.LoginPassword))
             {
                 pwForm.ShowDialog(this);
                 if (pwForm.IsAuthenticated)
-                {
-                    ResetDailyCount();
-                }
+                    ResetCartonCount();
             }
         }
 
-        // 수량 초기화
+        // 골판지 박스 수량 리셋 버튼
+        private void btnResetBox_Click(object sender, EventArgs e)
+        {
+            using (var pwForm = new PasswordForm(m_VasimPlatform.m_SystemData.LoginPassword))
+            {
+                pwForm.ShowDialog(this);
+                if (pwForm.IsAuthenticated)
+                    ResetBoxCount();
+            }
+        }
+
+        // 카톤 박스 수량 초기화
+        private void ResetCartonCount()
+        {
+            _cartonOkCount = 0;
+            _cartonNgCount = 0;
+            UpdateCountDisplay();
+            SaveCountToIni();
+        }
+
+        // 골판지 박스 수량 초기화
+        private void ResetBoxCount()
+        {
+            _boxOkCount = 0;
+            _boxNgCount = 0;
+            UpdateCountDisplay();
+            SaveCountToIni();
+        }
+
+        // 전체 수량 초기화 (날짜 변경 시 자동 호출)
         private void ResetDailyCount()
         {
             _cartonOkCount = 0;

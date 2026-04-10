@@ -63,7 +63,8 @@ namespace PoongSan_Angang_BCR
             this.txtInputBoxBCD = new System.Windows.Forms.Label();
             this.txtHiddenInput = new System.Windows.Forms.TextBox();
             this.txtInputBCR = new System.Windows.Forms.TextBox();
-            this.btnResetCount = new System.Windows.Forms.Button();
+            this.btnResetCarton = new System.Windows.Forms.Button();
+            this.btnResetBox    = new System.Windows.Forms.Button();
             this.lblCurrentEmployee = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -433,19 +434,33 @@ namespace PoongSan_Angang_BCR
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label6.Click += new System.EventHandler(this.label6_Click);
             //
-            // btnResetCount
+            // btnResetCarton
             //
-            this.btnResetCount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnResetCount.Font = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnResetCount.ForeColor = System.Drawing.Color.White;
-            this.btnResetCount.Location = new System.Drawing.Point(1658, 1179);
-            this.btnResetCount.Margin = new System.Windows.Forms.Padding(4);
-            this.btnResetCount.Name = "btnResetCount";
-            this.btnResetCount.Size = new System.Drawing.Size(196, 106);
-            this.btnResetCount.TabIndex = 183;
-            this.btnResetCount.Text = "수량 초기화";
-            this.btnResetCount.UseVisualStyleBackColor = false;
-            this.btnResetCount.Click += new System.EventHandler(this.btnResetCount_Click);
+            this.btnResetCarton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnResetCarton.Font = new System.Drawing.Font("굴림", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnResetCarton.ForeColor = System.Drawing.Color.White;
+            this.btnResetCarton.Location = new System.Drawing.Point(1658, 1179);
+            this.btnResetCarton.Margin = new System.Windows.Forms.Padding(4);
+            this.btnResetCarton.Name = "btnResetCarton";
+            this.btnResetCarton.Size = new System.Drawing.Size(96, 106);
+            this.btnResetCarton.TabIndex = 183;
+            this.btnResetCarton.Text = "카톤\n리셋";
+            this.btnResetCarton.UseVisualStyleBackColor = false;
+            this.btnResetCarton.Click += new System.EventHandler(this.btnResetCarton_Click);
+            //
+            // btnResetBox
+            //
+            this.btnResetBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnResetBox.Font = new System.Drawing.Font("굴림", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnResetBox.ForeColor = System.Drawing.Color.White;
+            this.btnResetBox.Location = new System.Drawing.Point(1758, 1179);
+            this.btnResetBox.Margin = new System.Windows.Forms.Padding(4);
+            this.btnResetBox.Name = "btnResetBox";
+            this.btnResetBox.Size = new System.Drawing.Size(96, 106);
+            this.btnResetBox.TabIndex = 184;
+            this.btnResetBox.Text = "골판지\n리셋";
+            this.btnResetBox.UseVisualStyleBackColor = false;
+            this.btnResetBox.Click += new System.EventHandler(this.btnResetBox_Click);
             //
             // label14
             // 
@@ -510,7 +525,8 @@ namespace PoongSan_Angang_BCR
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1857, 1530);
             this.Controls.Add(this.txtInputBCR);
-            this.Controls.Add(this.btnResetCount);
+            this.Controls.Add(this.btnResetCarton);
+            this.Controls.Add(this.btnResetBox);
             this.Controls.Add(this.btn_Settings);
             this.Controls.Add(this.lblCurrentEmployee);
             this.Controls.Add(this.cboBore);
@@ -591,7 +607,8 @@ namespace PoongSan_Angang_BCR
         private System.Windows.Forms.Label txtInputBoxBCD;
         private System.Windows.Forms.TextBox txtHiddenInput;
         private System.Windows.Forms.TextBox txtInputBCR;
-        private System.Windows.Forms.Button btnResetCount;
+        private System.Windows.Forms.Button btnResetCarton;
+        private System.Windows.Forms.Button btnResetBox;
     }
 }
 
