@@ -135,7 +135,6 @@
     <Compile Include="InputKeypadForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CenteredComboBox.cs" />
     <Compile Include="NumericInputForm.cs">
       <SubType>Form</SubType>
     </Compile>

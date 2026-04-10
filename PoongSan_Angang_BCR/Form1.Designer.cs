@@ -36,10 +36,10 @@ namespace PoongSan_Angang_BCR
             this.label18 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lb_Result = new System.Windows.Forms.Label();
-            this.cboBore = new PoongSan_Angang_BCR.CenteredComboBox();
+            this.cboBore = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.cboBullet = new PoongSan_Angang_BCR.CenteredComboBox();
-            this.cboLocal = new PoongSan_Angang_BCR.CenteredComboBox();
+            this.cboBullet = new System.Windows.Forms.ComboBox();
+            this.cboLocal = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -147,7 +147,6 @@ namespace PoongSan_Angang_BCR
             // 
             this.cboBore.Font = new System.Drawing.Font("굴림", 45F);
             this.cboBore.FormattingEnabled = true;
-            this.cboBore.ItemHeight = 93;
             this.cboBore.Location = new System.Drawing.Point(816, 248);
             this.cboBore.Margin = new System.Windows.Forms.Padding(4);
             this.cboBore.Name = "cboBore";
@@ -173,7 +172,6 @@ namespace PoongSan_Angang_BCR
             // 
             this.cboBullet.Font = new System.Drawing.Font("굴림", 45F);
             this.cboBullet.FormattingEnabled = true;
-            this.cboBullet.ItemHeight = 93;
             this.cboBullet.Location = new System.Drawing.Point(816, 351);
             this.cboBullet.Margin = new System.Windows.Forms.Padding(4);
             this.cboBullet.Name = "cboBullet";
@@ -186,7 +184,6 @@ namespace PoongSan_Angang_BCR
             // 
             this.cboLocal.Font = new System.Drawing.Font("굴림", 45F);
             this.cboLocal.FormattingEnabled = true;
-            this.cboLocal.ItemHeight = 93;
             this.cboLocal.Location = new System.Drawing.Point(816, 454);
             this.cboLocal.Margin = new System.Windows.Forms.Padding(4);
             this.cboLocal.Name = "cboLocal";
@@ -566,10 +563,10 @@ namespace PoongSan_Angang_BCR
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label3;
         public System.Windows.Forms.Label lb_Result;
-        private PoongSan_Angang_BCR.CenteredComboBox cboBore;
+        private System.Windows.Forms.ComboBox cboBore;
         private System.Windows.Forms.Label label1;
-        private PoongSan_Angang_BCR.CenteredComboBox cboBullet;
-        private PoongSan_Angang_BCR.CenteredComboBox cboLocal;
+        private System.Windows.Forms.ComboBox cboBullet;
+        private System.Windows.Forms.ComboBox cboLocal;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
