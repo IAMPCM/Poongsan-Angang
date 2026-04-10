@@ -1,103 +1,34 @@
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
 namespace PoongSan_Angang_BCR
 {
-    public class EmployeeForm : Form
+    public partial class EmployeeForm : Form
     {
         private readonly SystemData _systemData;
-        private ListBox _listBox;
+
+        // VS Designer용 기본 생성자
+        public EmployeeForm()
+        {
+            InitializeComponent();
+        }
 
         public EmployeeForm(SystemData systemData)
         {
             _systemData = systemData;
-            BuildUI();
+            InitializeComponent();
+            WireEvents();
             RefreshList();
         }
 
-        private void BuildUI()
+        private void WireEvents()
         {
-            this.Text            = "사번 관리";
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.BackColor       = Color.FromArgb(51, 51, 56);
-            this.Size            = new Size(460, 400);
-            this.StartPosition   = FormStartPosition.CenterParent;
-            this.TopMost         = true;
-
-            // 타이틀
-            var lblTitle = new Label
-            {
-                Text      = "사번 관리",
-                Font      = new Font("굴림", 16F, FontStyle.Bold),
-                ForeColor = Color.White,
-                BackColor = Color.FromArgb(51, 51, 56),
-                Size      = new Size(410, 44),
-                Location  = new Point(20, 12),
-                TextAlign = ContentAlignment.MiddleCenter
-            };
-
-            // 닫기 버튼
-            var btnClose = new Button
-            {
-                Text      = "✕",
-                Font      = new Font("굴림", 12F, FontStyle.Bold),
-                BackColor = Color.FromArgb(51, 51, 56),
-                ForeColor = Color.White,
-                Size      = new Size(40, 30),
-                Location  = new Point(410, 5),
-                FlatStyle = FlatStyle.Flat
-            };
-            btnClose.FlatAppearance.BorderSize = 0;
-            btnClose.Click += (s, e) => this.Close();
-
-            // 사번 목록
-            _listBox = new ListBox
-            {
-                Font      = new Font("굴림", 16F, FontStyle.Bold),
-                BackColor = Color.FromArgb(240, 240, 240),
-                ForeColor = Color.Black,
-                Size      = new Size(420, 240),
-                Location  = new Point(20, 65),
-                BorderStyle = BorderStyle.FixedSingle
-            };
-
-            // 버튼 3개
-            int btnY = 320;
-            int btnW = 125;
-
-            var btnSelect = MakeBtn("출근 선택", Color.FromArgb(0, 120, 60), 20,      btnY, btnW);
-            var btnAdd    = MakeBtn("추  가",    Color.FromArgb(0, 100, 180), 160,     btnY, btnW);
-            var btnDelete = MakeBtn("삭  제",    Color.FromArgb(180, 50, 50), 300,     btnY, btnW);
-
+            btnClose.Click  += (s, e) => this.Close();
             btnSelect.Click += OnSelectClick;
             btnAdd.Click    += OnAddClick;
             btnDelete.Click += OnDeleteClick;
-
-            this.Controls.Add(lblTitle);
-            this.Controls.Add(btnClose);
-            this.Controls.Add(_listBox);
-            this.Controls.Add(btnSelect);
-            this.Controls.Add(btnAdd);
-            this.Controls.Add(btnDelete);
-        }
-
-        private Button MakeBtn(string text, Color color, int x, int y, int w)
-        {
-            var btn = new Button
-            {
-                Text      = text,
-                Font      = new Font("굴림", 13F, FontStyle.Bold),
-                BackColor = color,
-                ForeColor = Color.White,
-                Size      = new Size(w, 55),
-                Location  = new Point(x, y),
-                FlatStyle = FlatStyle.Flat
-            };
-            btn.FlatAppearance.BorderSize = 0;
-            return btn;
         }
 
         private void RefreshList()
@@ -106,7 +37,6 @@ namespace PoongSan_Angang_BCR
             foreach (var id in GetCurrentIds())
                 _listBox.Items.Add(id);
 
-            // 현재 작업자 선택 표시
             if (!string.IsNullOrEmpty(_systemData.CurrentEmployeeId))
             {
                 int idx = _listBox.Items.IndexOf(_systemData.CurrentEmployeeId);
@@ -162,11 +92,9 @@ namespace PoongSan_Angang_BCR
 
             using (var keypad = new InputKeypadForm("사번 (숫자 8자리)"))
             {
-                if (keypad.ShowDialog(this) != System.Windows.Forms.DialogResult.OK) return;
+                if (keypad.ShowDialog(this) != DialogResult.OK) return;
 
                 string id = keypad.InputText.Trim();
-
-                // 유효성 검사: 8자리 숫자
                 if (id.Length != 8 || !id.All(char.IsDigit))
                 {
                     MessageBox.Show("사번은 숫자 8자리여야 합니다.", "입력 오류",
@@ -204,7 +132,6 @@ namespace PoongSan_Angang_BCR
             ids.Remove(target);
             SaveIds(ids);
 
-            // 현재 작업자가 삭제된 경우 초기화
             if (_systemData.CurrentEmployeeId == target)
             {
                 _systemData.CurrentEmployeeId = "";

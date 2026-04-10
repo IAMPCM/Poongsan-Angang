@@ -119,6 +119,9 @@
     <Compile Include="ChangePasswordForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ChangePasswordForm.Designer.cs">
+      <DependentUpon>ChangePasswordForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CIniFile.cs" />
     <Compile Include="Dask64.cs" />
     <Compile Include="Define.cs" />
@@ -132,20 +135,38 @@
     <Compile Include="AddEditModelForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AddEditModelForm.Designer.cs">
+      <DependentUpon>AddEditModelForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="InputKeypadForm.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputKeypadForm.Designer.cs">
+      <DependentUpon>InputKeypadForm.cs</DependentUpon>
     </Compile>
     <Compile Include="NumericInputForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="NumericInputForm.Designer.cs">
+      <DependentUpon>NumericInputForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SettingsForm.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="TimeoutSettingForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TimeoutSettingForm.Designer.cs">
+      <DependentUpon>TimeoutSettingForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="EmployeeForm.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeForm.Designer.cs">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ModelForm.cs">
       <SubType>Form</SubType>
