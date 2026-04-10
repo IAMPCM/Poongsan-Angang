@@ -420,9 +420,13 @@ namespace PoongSan_Angang_BCR
         {
             _isInternalChange = true;
 
-            cboBore.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboBore.DropDownStyle  = ComboBoxStyle.DropDownList;
             cboBullet.DropDownStyle = ComboBoxStyle.DropDownList;
-            cboLocal.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboLocal.DropDownStyle  = ComboBoxStyle.DropDownList;
+
+            cboBore.DrawMode  = DrawMode.OwnerDrawFixed;
+            cboBullet.DrawMode = DrawMode.OwnerDrawFixed;
+            cboLocal.DrawMode  = DrawMode.OwnerDrawFixed;
 
             cboBore.Items.Clear();
             cboBullet.Items.Clear();
@@ -822,13 +826,8 @@ namespace PoongSan_Angang_BCR
             e.DrawBackground();
             var cbo = (ComboBox)sender;
             string text = cbo.Items[e.Index].ToString();
-            SizeF textSize = e.Graphics.MeasureString(text, e.Font);
-            float x = e.Bounds.Left + (e.Bounds.Width  - textSize.Width)  / 2f;
-            float y = e.Bounds.Top  + (e.Bounds.Height - textSize.Height) / 2f;
-            using (var brush = new System.Drawing.SolidBrush(e.ForeColor))
-            {
-                e.Graphics.DrawString(text, e.Font, brush, x, y);
-            }
+            TextRenderer.DrawText(e.Graphics, text, e.Font, e.Bounds, e.ForeColor,
+                TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter | TextFormatFlags.SingleLine);
             e.DrawFocusRectangle();
         }
 
