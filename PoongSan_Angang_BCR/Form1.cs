@@ -424,10 +424,6 @@ namespace PoongSan_Angang_BCR
             cboBullet.DropDownStyle = ComboBoxStyle.DropDownList;
             cboLocal.DropDownStyle  = ComboBoxStyle.DropDownList;
 
-            cboBore.DrawMode  = DrawMode.OwnerDrawFixed;
-            cboBullet.DrawMode = DrawMode.OwnerDrawFixed;
-            cboLocal.DrawMode  = DrawMode.OwnerDrawFixed;
-
             cboBore.Items.Clear();
             cboBullet.Items.Clear();
             cboLocal.Items.Clear();
