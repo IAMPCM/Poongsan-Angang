@@ -119,7 +119,7 @@ namespace PoongSan_Angang_BCR
 
         private void UpdateDisplay()
         {
-            lblDisplay.ForeColor = System.Drawing.Color.White;
+            lblDisplay.ForeColor = System.Drawing.Color.FromArgb(31, 97, 141);
             lblDisplay.Text      = new string('*', _inputPassword.Length);
         }
     }
