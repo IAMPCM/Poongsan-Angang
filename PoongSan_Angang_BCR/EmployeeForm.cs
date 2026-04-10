@@ -90,7 +90,7 @@ namespace PoongSan_Angang_BCR
         {
             if (!Authenticate()) return;
 
-            using (var keypad = new InputKeypadForm("사번 (숫자 8자리)"))
+            using (var keypad = new NumericInputForm("사번 (숫자 8자리)"))
             {
                 if (keypad.ShowDialog(this) != DialogResult.OK) return;
 
