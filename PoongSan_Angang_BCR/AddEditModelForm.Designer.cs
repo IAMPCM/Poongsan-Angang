@@ -47,7 +47,7 @@ namespace PoongSan_Angang_BCR
             //
             // lblTitle  (formW=820, h=52)
             //
-            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(51, 51, 56);
+            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(52, 152, 219);
             this.lblTitle.Font      = new System.Drawing.Font("굴림", 17F, System.Drawing.FontStyle.Bold);
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location  = new System.Drawing.Point(0, 0);
@@ -58,9 +58,9 @@ namespace PoongSan_Angang_BCR
             //
             // lblHint  (y=52)
             //
-            this.lblHint.BackColor = System.Drawing.Color.FromArgb(38, 38, 43);
+            this.lblHint.BackColor = System.Drawing.Color.FromArgb(240, 244, 248);
             this.lblHint.Font      = new System.Drawing.Font("굴림", 10F);
-            this.lblHint.ForeColor = System.Drawing.Color.FromArgb(180, 180, 180);
+            this.lblHint.ForeColor = System.Drawing.Color.FromArgb(100, 120, 140);
             this.lblHint.Location  = new System.Drawing.Point(8, 52);
             this.lblHint.Name      = "lblHint";
             this.lblHint.Size      = new System.Drawing.Size(812, 22);
@@ -69,25 +69,25 @@ namespace PoongSan_Angang_BCR
             //
             // ── Row 0: 구경  (y=58) ──
             //
-            this.sep0.BackColor = System.Drawing.Color.FromArgb(60, 60, 65);
+            this.sep0.BackColor = System.Drawing.Color.FromArgb(189, 195, 199);
             this.sep0.Location  = new System.Drawing.Point(0, 58);
             this.sep0.Name      = "sep0";
             this.sep0.Size      = new System.Drawing.Size(820, 1);
 
-            this.lbl0.BackColor = System.Drawing.Color.FromArgb(44, 44, 50);
+            this.lbl0.BackColor = System.Drawing.Color.FromArgb(235, 245, 255);
             this.lbl0.Font      = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl0.ForeColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            this.lbl0.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80);
             this.lbl0.Location  = new System.Drawing.Point(0, 59);
             this.lbl0.Name      = "lbl0";
             this.lbl0.Size      = new System.Drawing.Size(180, 59);
             this.lbl0.Text      = "구경";
             this.lbl0.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-            this.txtBore.BackColor   = System.Drawing.Color.FromArgb(55, 55, 62);
+            this.txtBore.BackColor   = System.Drawing.Color.White;
             this.txtBore.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBore.Cursor      = System.Windows.Forms.Cursors.Hand;
             this.txtBore.Font        = new System.Drawing.Font("굴림", 14F);
-            this.txtBore.ForeColor   = System.Drawing.Color.Yellow;
+            this.txtBore.ForeColor   = System.Drawing.Color.FromArgb(31, 97, 141);
             this.txtBore.Location    = new System.Drawing.Point(196, 70);
             this.txtBore.Name        = "txtBore";
             this.txtBore.ReadOnly    = true;
@@ -97,25 +97,25 @@ namespace PoongSan_Angang_BCR
             //
             // ── Row 1: 탄종  (y=118) ──
             //
-            this.sep1.BackColor = System.Drawing.Color.FromArgb(60, 60, 65);
+            this.sep1.BackColor = System.Drawing.Color.FromArgb(189, 195, 199);
             this.sep1.Location  = new System.Drawing.Point(0, 118);
             this.sep1.Name      = "sep1";
             this.sep1.Size      = new System.Drawing.Size(820, 1);
 
-            this.lbl1.BackColor = System.Drawing.Color.FromArgb(44, 44, 50);
+            this.lbl1.BackColor = System.Drawing.Color.FromArgb(235, 245, 255);
             this.lbl1.Font      = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl1.ForeColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            this.lbl1.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80);
             this.lbl1.Location  = new System.Drawing.Point(0, 119);
             this.lbl1.Name      = "lbl1";
             this.lbl1.Size      = new System.Drawing.Size(180, 59);
             this.lbl1.Text      = "탄종";
             this.lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-            this.txtBullet.BackColor   = System.Drawing.Color.FromArgb(55, 55, 62);
+            this.txtBullet.BackColor   = System.Drawing.Color.White;
             this.txtBullet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBullet.Cursor      = System.Windows.Forms.Cursors.Hand;
             this.txtBullet.Font        = new System.Drawing.Font("굴림", 14F);
-            this.txtBullet.ForeColor   = System.Drawing.Color.Yellow;
+            this.txtBullet.ForeColor   = System.Drawing.Color.FromArgb(31, 97, 141);
             this.txtBullet.Location    = new System.Drawing.Point(196, 130);
             this.txtBullet.Name        = "txtBullet";
             this.txtBullet.ReadOnly    = true;
@@ -125,25 +125,25 @@ namespace PoongSan_Angang_BCR
             //
             // ── Row 2: 카톤 BCD (미국)  (y=178) ──
             //
-            this.sep2.BackColor = System.Drawing.Color.FromArgb(60, 60, 65);
+            this.sep2.BackColor = System.Drawing.Color.FromArgb(189, 195, 199);
             this.sep2.Location  = new System.Drawing.Point(0, 178);
             this.sep2.Name      = "sep2";
             this.sep2.Size      = new System.Drawing.Size(820, 1);
 
-            this.lbl2.BackColor = System.Drawing.Color.FromArgb(44, 44, 50);
+            this.lbl2.BackColor = System.Drawing.Color.FromArgb(235, 245, 255);
             this.lbl2.Font      = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl2.ForeColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            this.lbl2.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80);
             this.lbl2.Location  = new System.Drawing.Point(0, 179);
             this.lbl2.Name      = "lbl2";
             this.lbl2.Size      = new System.Drawing.Size(180, 59);
             this.lbl2.Text      = "카톤 BCD (미국)";
             this.lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-            this.txtCartonA.BackColor   = System.Drawing.Color.FromArgb(55, 55, 62);
+            this.txtCartonA.BackColor   = System.Drawing.Color.White;
             this.txtCartonA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCartonA.Cursor      = System.Windows.Forms.Cursors.Hand;
             this.txtCartonA.Font        = new System.Drawing.Font("굴림", 14F);
-            this.txtCartonA.ForeColor   = System.Drawing.Color.Yellow;
+            this.txtCartonA.ForeColor   = System.Drawing.Color.FromArgb(31, 97, 141);
             this.txtCartonA.Location    = new System.Drawing.Point(196, 190);
             this.txtCartonA.Name        = "txtCartonA";
             this.txtCartonA.ReadOnly    = true;
@@ -153,25 +153,25 @@ namespace PoongSan_Angang_BCR
             //
             // ── Row 3: 카톤 BCD (유럽)  (y=238) ──
             //
-            this.sep3.BackColor = System.Drawing.Color.FromArgb(60, 60, 65);
+            this.sep3.BackColor = System.Drawing.Color.FromArgb(189, 195, 199);
             this.sep3.Location  = new System.Drawing.Point(0, 238);
             this.sep3.Name      = "sep3";
             this.sep3.Size      = new System.Drawing.Size(820, 1);
 
-            this.lbl3.BackColor = System.Drawing.Color.FromArgb(44, 44, 50);
+            this.lbl3.BackColor = System.Drawing.Color.FromArgb(235, 245, 255);
             this.lbl3.Font      = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl3.ForeColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            this.lbl3.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80);
             this.lbl3.Location  = new System.Drawing.Point(0, 239);
             this.lbl3.Name      = "lbl3";
             this.lbl3.Size      = new System.Drawing.Size(180, 59);
             this.lbl3.Text      = "카톤 BCD (유럽)";
             this.lbl3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-            this.txtCartonE.BackColor   = System.Drawing.Color.FromArgb(55, 55, 62);
+            this.txtCartonE.BackColor   = System.Drawing.Color.White;
             this.txtCartonE.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCartonE.Cursor      = System.Windows.Forms.Cursors.Hand;
             this.txtCartonE.Font        = new System.Drawing.Font("굴림", 14F);
-            this.txtCartonE.ForeColor   = System.Drawing.Color.Yellow;
+            this.txtCartonE.ForeColor   = System.Drawing.Color.FromArgb(31, 97, 141);
             this.txtCartonE.Location    = new System.Drawing.Point(196, 250);
             this.txtCartonE.Name        = "txtCartonE";
             this.txtCartonE.ReadOnly    = true;
@@ -181,25 +181,25 @@ namespace PoongSan_Angang_BCR
             //
             // ── Row 4: 골판지 BCD  (y=298) ──
             //
-            this.sep4.BackColor = System.Drawing.Color.FromArgb(60, 60, 65);
+            this.sep4.BackColor = System.Drawing.Color.FromArgb(189, 195, 199);
             this.sep4.Location  = new System.Drawing.Point(0, 298);
             this.sep4.Name      = "sep4";
             this.sep4.Size      = new System.Drawing.Size(820, 1);
 
-            this.lbl4.BackColor = System.Drawing.Color.FromArgb(44, 44, 50);
+            this.lbl4.BackColor = System.Drawing.Color.FromArgb(235, 245, 255);
             this.lbl4.Font      = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl4.ForeColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            this.lbl4.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80);
             this.lbl4.Location  = new System.Drawing.Point(0, 299);
             this.lbl4.Name      = "lbl4";
             this.lbl4.Size      = new System.Drawing.Size(180, 59);
             this.lbl4.Text      = "골판지 BCD";
             this.lbl4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-            this.txtBox.BackColor   = System.Drawing.Color.FromArgb(55, 55, 62);
+            this.txtBox.BackColor   = System.Drawing.Color.White;
             this.txtBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBox.Cursor      = System.Windows.Forms.Cursors.Hand;
             this.txtBox.Font        = new System.Drawing.Font("굴림", 14F);
-            this.txtBox.ForeColor   = System.Drawing.Color.Yellow;
+            this.txtBox.ForeColor   = System.Drawing.Color.FromArgb(31, 97, 141);
             this.txtBox.Location    = new System.Drawing.Point(196, 310);
             this.txtBox.Name        = "txtBox";
             this.txtBox.ReadOnly    = true;
@@ -209,25 +209,25 @@ namespace PoongSan_Angang_BCR
             //
             // ── Row 5: 무게 최소  (y=358) ──
             //
-            this.sep5.BackColor = System.Drawing.Color.FromArgb(60, 60, 65);
+            this.sep5.BackColor = System.Drawing.Color.FromArgb(189, 195, 199);
             this.sep5.Location  = new System.Drawing.Point(0, 358);
             this.sep5.Name      = "sep5";
             this.sep5.Size      = new System.Drawing.Size(820, 1);
 
-            this.lbl5.BackColor = System.Drawing.Color.FromArgb(44, 44, 50);
+            this.lbl5.BackColor = System.Drawing.Color.FromArgb(235, 245, 255);
             this.lbl5.Font      = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl5.ForeColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            this.lbl5.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80);
             this.lbl5.Location  = new System.Drawing.Point(0, 359);
             this.lbl5.Name      = "lbl5";
             this.lbl5.Size      = new System.Drawing.Size(180, 59);
             this.lbl5.Text      = "무게 최소";
             this.lbl5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-            this.txtWeightMin.BackColor   = System.Drawing.Color.FromArgb(55, 55, 62);
+            this.txtWeightMin.BackColor   = System.Drawing.Color.White;
             this.txtWeightMin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtWeightMin.Cursor      = System.Windows.Forms.Cursors.Hand;
             this.txtWeightMin.Font        = new System.Drawing.Font("굴림", 14F);
-            this.txtWeightMin.ForeColor   = System.Drawing.Color.Yellow;
+            this.txtWeightMin.ForeColor   = System.Drawing.Color.FromArgb(31, 97, 141);
             this.txtWeightMin.Location    = new System.Drawing.Point(196, 370);
             this.txtWeightMin.Name        = "txtWeightMin";
             this.txtWeightMin.ReadOnly    = true;
@@ -237,25 +237,25 @@ namespace PoongSan_Angang_BCR
             //
             // ── Row 6: 무게 최대  (y=418) ──
             //
-            this.sep6.BackColor = System.Drawing.Color.FromArgb(60, 60, 65);
+            this.sep6.BackColor = System.Drawing.Color.FromArgb(189, 195, 199);
             this.sep6.Location  = new System.Drawing.Point(0, 418);
             this.sep6.Name      = "sep6";
             this.sep6.Size      = new System.Drawing.Size(820, 1);
 
-            this.lbl6.BackColor = System.Drawing.Color.FromArgb(44, 44, 50);
+            this.lbl6.BackColor = System.Drawing.Color.FromArgb(235, 245, 255);
             this.lbl6.Font      = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold);
-            this.lbl6.ForeColor = System.Drawing.Color.FromArgb(200, 200, 200);
+            this.lbl6.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80);
             this.lbl6.Location  = new System.Drawing.Point(0, 419);
             this.lbl6.Name      = "lbl6";
             this.lbl6.Size      = new System.Drawing.Size(180, 59);
             this.lbl6.Text      = "무게 최대";
             this.lbl6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 
-            this.txtWeightMax.BackColor   = System.Drawing.Color.FromArgb(55, 55, 62);
+            this.txtWeightMax.BackColor   = System.Drawing.Color.White;
             this.txtWeightMax.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtWeightMax.Cursor      = System.Windows.Forms.Cursors.Hand;
             this.txtWeightMax.Font        = new System.Drawing.Font("굴림", 14F);
-            this.txtWeightMax.ForeColor   = System.Drawing.Color.Yellow;
+            this.txtWeightMax.ForeColor   = System.Drawing.Color.FromArgb(31, 97, 141);
             this.txtWeightMax.Location    = new System.Drawing.Point(196, 430);
             this.txtWeightMax.Name        = "txtWeightMax";
             this.txtWeightMax.ReadOnly    = true;
@@ -265,14 +265,14 @@ namespace PoongSan_Angang_BCR
             //
             // sep7 — 마지막 구분선  (y=478)
             //
-            this.sep7.BackColor = System.Drawing.Color.FromArgb(60, 60, 65);
+            this.sep7.BackColor = System.Drawing.Color.FromArgb(189, 195, 199);
             this.sep7.Location  = new System.Drawing.Point(0, 478);
             this.sep7.Name      = "sep7";
             this.sep7.Size      = new System.Drawing.Size(820, 1);
             //
             // btnOk  (x=444, y=488)
             //
-            this.btnOk.BackColor = System.Drawing.Color.FromArgb(0, 120, 55);
+            this.btnOk.BackColor = System.Drawing.Color.FromArgb(39, 174, 96);
             this.btnOk.FlatAppearance.BorderSize = 0;
             this.btnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOk.Font      = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold);
@@ -286,7 +286,7 @@ namespace PoongSan_Angang_BCR
             //
             // btnCancel  (x=636, y=488)
             //
-            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(75, 75, 82);
+            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(127, 140, 141);
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font      = new System.Drawing.Font("굴림", 14F, System.Drawing.FontStyle.Bold);
@@ -300,9 +300,8 @@ namespace PoongSan_Angang_BCR
             //
             // AddEditModelForm
             //
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
-            this.AutoScaleMode       = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor           = System.Drawing.Color.FromArgb(38, 38, 43);
+            this.AutoScaleMode       = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor           = System.Drawing.Color.FromArgb(240, 244, 248);
             this.ClientSize          = new System.Drawing.Size(820, 554);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOk);
