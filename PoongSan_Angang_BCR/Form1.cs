@@ -343,10 +343,10 @@ namespace PoongSan_Angang_BCR
             var icon = CreateResetIcon(22);
             foreach (var btn in new Button[] { btnResetCarton, btnResetBox })
             {
-                btn.Image              = icon;
-                btn.TextImageRelation  = TextImageRelation.ImageAboveText;
-                btn.ImageAlign         = ContentAlignment.TopCenter;
-                btn.TextAlign          = ContentAlignment.BottomCenter;
+                btn.Image             = icon;
+                btn.TextImageRelation = TextImageRelation.ImageAboveText;
+                btn.ImageAlign        = ContentAlignment.TopCenter;
+                // TextAlign은 Designer에서 직접 설정 (런타임 덮어쓰기 제거)
             }
             btnResetCarton.Text = "카톤\r\n리셋";
             btnResetBox.Text    = "박스\r\n리셋";
