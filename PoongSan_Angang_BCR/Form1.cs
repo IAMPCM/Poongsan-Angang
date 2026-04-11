@@ -55,6 +55,7 @@ namespace PoongSan_Angang_BCR
             }
 
             Initialize();
+            ApplyResetButtonIcons();
 
             // 작업자 사번 표시 초기화
             UpdateEmployeeLabel();
@@ -336,6 +337,70 @@ namespace PoongSan_Angang_BCR
 
             base.WndProc(ref m);
         }
+        // ── 리셋 버튼 아이콘 ───────────────────────────────────────────
+        private void ApplyResetButtonIcons()
+        {
+            var icon = CreateResetIcon(36);
+            foreach (var btn in new Button[] { btnResetCarton, btnResetBox })
+            {
+                btn.Image              = icon;
+                btn.TextImageRelation  = TextImageRelation.ImageAboveText;
+                btn.ImageAlign         = ContentAlignment.TopCenter;
+                btn.TextAlign          = ContentAlignment.BottomCenter;
+            }
+            btnResetCarton.Text = "카톤\r\n리셋";
+            btnResetBox.Text    = "박스\r\n리셋";
+        }
+
+        private static Bitmap CreateResetIcon(int size)
+        {
+            var bmp = new Bitmap(size, size, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+            using (var g = Graphics.FromImage(bmp))
+            {
+                g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+                g.Clear(Color.Transparent);
+
+                float pad = size * 0.1f;
+                float d   = size - 2 * pad;
+                float cx  = size / 2f;
+                float cy  = size / 2f;
+                float r   = d / 2f;
+                float pw  = Math.Max(2f, size * 0.14f);
+
+                using (var pen = new Pen(Color.FromArgb(44, 62, 80), pw))
+                {
+                    pen.LineJoin = System.Drawing.Drawing2D.LineJoin.Round;
+                    // 60° 에서 시작, 270° 호 → 330° 에서 끝
+                    g.DrawArc(pen, pad, pad, d, d, 60f, 270f);
+                }
+
+                // 화살촉: 호의 끝점(330°)에서 접선 방향으로 삼각형
+                double endRad     = 330.0 * Math.PI / 180.0;
+                float  ex         = cx + r * (float)Math.Cos(endRad);
+                float  ey         = cy + r * (float)Math.Sin(endRad);
+                double tangentRad = endRad + Math.PI / 2.0;   // 시계 방향 접선
+                float  ah         = pw * 2.0f;
+                float  aw         = pw * 1.2f;
+
+                float tipX = ex + ah * (float)Math.Cos(tangentRad);
+                float tipY = ey + ah * (float)Math.Sin(tangentRad);
+                float lx   = ex + aw * (float)Math.Cos(tangentRad + Math.PI * 2.0 / 3.0);
+                float ly   = ey + aw * (float)Math.Sin(tangentRad + Math.PI * 2.0 / 3.0);
+                float rx2  = ex + aw * (float)Math.Cos(tangentRad - Math.PI * 2.0 / 3.0);
+                float ry2  = ey + aw * (float)Math.Sin(tangentRad - Math.PI * 2.0 / 3.0);
+
+                using (var brush = new SolidBrush(Color.FromArgb(44, 62, 80)))
+                    g.FillPolygon(brush, new PointF[]
+                    {
+                        new PointF(tipX, tipY),
+                        new PointF(lx,   ly),
+                        new PointF(rx2,  ry2)
+                    });
+            }
+            return bmp;
+        }
+        // ─────────────────────────────────────────────────────────────
+
         private void Delay(int ms)
         {
             var tick = Environment.TickCount;
