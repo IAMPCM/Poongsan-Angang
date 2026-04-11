@@ -340,7 +340,7 @@ namespace PoongSan_Angang_BCR
         // ── 리셋 버튼 아이콘 ───────────────────────────────────────────
         private void ApplyResetButtonIcons()
         {
-            var icon = CreateResetIcon(36);
+            var icon = CreateResetIcon(22);
             foreach (var btn in new Button[] { btnResetCarton, btnResetBox })
             {
                 btn.Image              = icon;
