@@ -80,7 +80,7 @@ namespace PoongSan_Angang_BCR
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 36;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(700, 518);
+            this.dataGridView1.Size = new System.Drawing.Size(820, 518);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
@@ -90,7 +90,7 @@ namespace PoongSan_Angang_BCR
             this.col_No.MinimumWidth = 8;
             this.col_No.Name = "col_No";
             this.col_No.ReadOnly = true;
-            this.col_No.Width = 35;
+            this.col_No.Width = 40;
             // 
             // col_Bore
             // 
@@ -98,7 +98,7 @@ namespace PoongSan_Angang_BCR
             this.col_Bore.MinimumWidth = 8;
             this.col_Bore.Name = "col_Bore";
             this.col_Bore.ReadOnly = true;
-            this.col_Bore.Width = 65;
+            this.col_Bore.Width = 75;
             // 
             // col_Bullet
             // 
@@ -106,7 +106,7 @@ namespace PoongSan_Angang_BCR
             this.col_Bullet.MinimumWidth = 8;
             this.col_Bullet.Name = "col_Bullet";
             this.col_Bullet.ReadOnly = true;
-            this.col_Bullet.Width = 60;
+            this.col_Bullet.Width = 70;
             // 
             // col_CartonA
             // 
@@ -114,7 +114,7 @@ namespace PoongSan_Angang_BCR
             this.col_CartonA.MinimumWidth = 8;
             this.col_CartonA.Name = "col_CartonA";
             this.col_CartonA.ReadOnly = true;
-            this.col_CartonA.Width = 115;
+            this.col_CartonA.Width = 140;
             // 
             // col_CartonE
             // 
@@ -122,7 +122,7 @@ namespace PoongSan_Angang_BCR
             this.col_CartonE.MinimumWidth = 8;
             this.col_CartonE.Name = "col_CartonE";
             this.col_CartonE.ReadOnly = true;
-            this.col_CartonE.Width = 115;
+            this.col_CartonE.Width = 140;
             // 
             // col_Box
             // 
@@ -130,7 +130,7 @@ namespace PoongSan_Angang_BCR
             this.col_Box.MinimumWidth = 8;
             this.col_Box.Name = "col_Box";
             this.col_Box.ReadOnly = true;
-            this.col_Box.Width = 115;
+            this.col_Box.Width = 135;
             // 
             // col_WeightMin
             // 
@@ -138,7 +138,7 @@ namespace PoongSan_Angang_BCR
             this.col_WeightMin.MinimumWidth = 8;
             this.col_WeightMin.Name = "col_WeightMin";
             this.col_WeightMin.ReadOnly = true;
-            this.col_WeightMin.Width = 78;
+            this.col_WeightMin.Width = 100;
             // 
             // col_WeightMax
             // 
@@ -146,7 +146,7 @@ namespace PoongSan_Angang_BCR
             this.col_WeightMax.MinimumWidth = 8;
             this.col_WeightMax.Name = "col_WeightMax";
             this.col_WeightMax.ReadOnly = true;
-            this.col_WeightMax.Width = 78;
+            this.col_WeightMax.Width = 100;
             // 
             // lblTitle
             // 
@@ -156,7 +156,7 @@ namespace PoongSan_Angang_BCR
             this.lblTitle.Location = new System.Drawing.Point(0, 0);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(700, 54);
+            this.lblTitle.Size = new System.Drawing.Size(820, 54);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "바코드 설정";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -165,10 +165,10 @@ namespace PoongSan_Angang_BCR
             // 
             this.lblPage.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold);
             this.lblPage.ForeColor = System.Drawing.Color.FromArgb(44, 62, 80);
-            this.lblPage.Location = new System.Drawing.Point(380, 575);
+            this.lblPage.Location = new System.Drawing.Point(440, 575);
             this.lblPage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPage.Name = "lblPage";
-            this.lblPage.Size = new System.Drawing.Size(130, 60);
+            this.lblPage.Size = new System.Drawing.Size(135, 60);
             this.lblPage.TabIndex = 6;
             this.lblPage.Text = "1 / 1 페이지";
             this.lblPage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -183,7 +183,7 @@ namespace PoongSan_Angang_BCR
             this.btn_Add.Location = new System.Drawing.Point(0, 575);
             this.btn_Add.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Add.Name = "btn_Add";
-            this.btn_Add.Size = new System.Drawing.Size(90, 60);
+            this.btn_Add.Size = new System.Drawing.Size(105, 60);
             this.btn_Add.TabIndex = 2;
             this.btn_Add.Text = "추가";
             this.btn_Add.UseVisualStyleBackColor = false;
@@ -196,10 +196,10 @@ namespace PoongSan_Angang_BCR
             this.btn_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Edit.Font = new System.Drawing.Font("굴림", 13F, System.Drawing.FontStyle.Bold);
             this.btn_Edit.ForeColor = System.Drawing.Color.White;
-            this.btn_Edit.Location = new System.Drawing.Point(95, 575);
+            this.btn_Edit.Location = new System.Drawing.Point(110, 575);
             this.btn_Edit.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Edit.Name = "btn_Edit";
-            this.btn_Edit.Size = new System.Drawing.Size(90, 60);
+            this.btn_Edit.Size = new System.Drawing.Size(105, 60);
             this.btn_Edit.TabIndex = 3;
             this.btn_Edit.Text = "변경";
             this.btn_Edit.UseVisualStyleBackColor = false;
@@ -212,10 +212,10 @@ namespace PoongSan_Angang_BCR
             this.btn_Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Delete.Font = new System.Drawing.Font("굴림", 13F, System.Drawing.FontStyle.Bold);
             this.btn_Delete.ForeColor = System.Drawing.Color.White;
-            this.btn_Delete.Location = new System.Drawing.Point(190, 575);
+            this.btn_Delete.Location = new System.Drawing.Point(220, 575);
             this.btn_Delete.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Delete.Name = "btn_Delete";
-            this.btn_Delete.Size = new System.Drawing.Size(90, 60);
+            this.btn_Delete.Size = new System.Drawing.Size(105, 60);
             this.btn_Delete.TabIndex = 4;
             this.btn_Delete.Text = "삭제";
             this.btn_Delete.UseVisualStyleBackColor = false;
@@ -228,10 +228,10 @@ namespace PoongSan_Angang_BCR
             this.btn_Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Save.Font = new System.Drawing.Font("굴림", 13F, System.Drawing.FontStyle.Bold);
             this.btn_Save.ForeColor = System.Drawing.Color.White;
-            this.btn_Save.Location = new System.Drawing.Point(285, 575);
+            this.btn_Save.Location = new System.Drawing.Point(330, 575);
             this.btn_Save.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(90, 60);
+            this.btn_Save.Size = new System.Drawing.Size(105, 60);
             this.btn_Save.TabIndex = 5;
             this.btn_Save.Text = "저장";
             this.btn_Save.UseVisualStyleBackColor = false;
@@ -244,10 +244,10 @@ namespace PoongSan_Angang_BCR
             this.btn_Prev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Prev.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold);
             this.btn_Prev.ForeColor = System.Drawing.Color.FromArgb(31, 97, 141);
-            this.btn_Prev.Location = new System.Drawing.Point(515, 575);
+            this.btn_Prev.Location = new System.Drawing.Point(580, 575);
             this.btn_Prev.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Prev.Name = "btn_Prev";
-            this.btn_Prev.Size = new System.Drawing.Size(40, 60);
+            this.btn_Prev.Size = new System.Drawing.Size(45, 60);
             this.btn_Prev.TabIndex = 7;
             this.btn_Prev.Text = "◀";
             this.btn_Prev.UseVisualStyleBackColor = false;
@@ -260,10 +260,10 @@ namespace PoongSan_Angang_BCR
             this.btn_Next.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Next.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold);
             this.btn_Next.ForeColor = System.Drawing.Color.FromArgb(31, 97, 141);
-            this.btn_Next.Location = new System.Drawing.Point(560, 575);
+            this.btn_Next.Location = new System.Drawing.Point(630, 575);
             this.btn_Next.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Next.Name = "btn_Next";
-            this.btn_Next.Size = new System.Drawing.Size(40, 60);
+            this.btn_Next.Size = new System.Drawing.Size(45, 60);
             this.btn_Next.TabIndex = 8;
             this.btn_Next.Text = "▶";
             this.btn_Next.UseVisualStyleBackColor = false;
@@ -276,10 +276,10 @@ namespace PoongSan_Angang_BCR
             this.btn_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Close.Font = new System.Drawing.Font("굴림", 13F, System.Drawing.FontStyle.Bold);
             this.btn_Close.ForeColor = System.Drawing.Color.White;
-            this.btn_Close.Location = new System.Drawing.Point(605, 575);
+            this.btn_Close.Location = new System.Drawing.Point(680, 575);
             this.btn_Close.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Close.Name = "btn_Close";
-            this.btn_Close.Size = new System.Drawing.Size(95, 60);
+            this.btn_Close.Size = new System.Drawing.Size(140, 60);
             this.btn_Close.TabIndex = 9;
             this.btn_Close.Text = "닫기";
             this.btn_Close.UseVisualStyleBackColor = false;
@@ -289,7 +289,7 @@ namespace PoongSan_Angang_BCR
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(244)))), ((int)(((byte)(248)))));
-            this.ClientSize = new System.Drawing.Size(700, 640);
+            this.ClientSize = new System.Drawing.Size(820, 640);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_Add);
