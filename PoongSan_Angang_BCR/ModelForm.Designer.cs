@@ -90,7 +90,7 @@ namespace PoongSan_Angang_BCR
             this.col_No.MinimumWidth = 8;
             this.col_No.Name = "col_No";
             this.col_No.ReadOnly = true;
-            this.col_No.Width = 40;
+            this.col_No.Width = 60;
             // 
             // col_Bore
             // 
