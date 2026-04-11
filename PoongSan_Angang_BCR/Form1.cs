@@ -346,7 +346,7 @@ namespace PoongSan_Angang_BCR
                 btn.Image             = icon;
                 btn.TextImageRelation = TextImageRelation.ImageAboveText;
                 btn.ImageAlign        = ContentAlignment.TopCenter;
-                // TextAlign은 Designer에서 직접 설정 (런타임 덮어쓰기 제거)
+                btn.TextAlign         = ContentAlignment.BottomCenter;
             }
             btnResetCarton.Text = "카톤\r\n리셋";
             btnResetBox.Text    = "박스\r\n리셋";
