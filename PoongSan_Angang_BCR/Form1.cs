@@ -19,6 +19,8 @@ namespace PoongSan_Angang_BCR
             public string Local { get; set; }
             public string CartonBCD { get; set; }
             public string BoxBCD { get; set; }
+            public double WeightMin { get; set; }
+            public double WeightMax { get; set; }
         }
 
         private bool _isInternalChange = false; // 클래스 전체에서 쓰는 변수이기 때문에 앞에 _를 붙인다.(관례)
@@ -32,10 +34,18 @@ namespace PoongSan_Angang_BCR
         // 추가 - 타임아웃 기능
         private System.Timers.Timer _timeoutTimer;  // 타이머 객체
 
+        // 날짜/시간 실시간 표시 타이머
+        private System.Windows.Forms.Timer _clockTimer;
+
         // 로그인 관련 변수
         private bool _isLoggedIn = false;                    // 로그인 상태
         private System.Timers.Timer _loginTimer;             // 로그인 유지 타이머
         private const int LOGIN_TIMEOUT_SECONDS = 60;        // 로그인 유지 시간 60초
+
+        // 중량 폴링 타이머
+        private System.Timers.Timer _weightTimer;
+        private double _currentWeightMin = 0;
+        private double _currentWeightMax = 0;
 
 
         public Form1()
@@ -43,6 +53,7 @@ namespace PoongSan_Angang_BCR
             InitializeComponent();
             m_VasimPlatform = new VasimPlatform(this); // 객체 생성
             AlarmForm.Initialize(this);
+            OkForm.Initialize(this);
             m_VasimPlatform.m_SystemData.Load();
 
             if (m_VasimPlatform.m_SystemData.AutoMachineUse == "true")
@@ -55,6 +66,9 @@ namespace PoongSan_Angang_BCR
             }
 
             Initialize();
+            UpdateTimeoutStatusLabel();
+            StartWeightPolling();
+            UpdatePollingStatusLabel();
             ApplyResetButtonIcons();
 
             // 작업자 사번 표시 초기화
@@ -82,11 +96,6 @@ namespace PoongSan_Angang_BCR
                 else
                     ConnectOmron();
 
-                label_PLC_Status.Visible = true;
-            }
-            else
-            {
-                label_PLC_Status.Visible = false;
             }
         }
         public void ConnectOmron()
@@ -120,7 +129,7 @@ namespace PoongSan_Angang_BCR
 
             using (PasswordForm pwForm = new PasswordForm(m_VasimPlatform.m_SystemData.LoginPassword))
             {
-                pwForm.ShowDialog(this);
+                ShowPopup(pwForm);
                 if (pwForm.IsAuthenticated)
                 {
                     _isLoggedIn = true;
@@ -165,27 +174,47 @@ namespace PoongSan_Angang_BCR
                     ? string.Format("CartonBCD_{0}.csv", dateStr)
                     : string.Format("BoxBCD_{0}.csv", dateStr);
 
-                string csvPath = System.IO.Path.Combine(Define.HistoryPath, fileName);
+                // 폴더 구조: History/{카톤|골판지}/{yyyy년}/{M월}/{d일}/
+                string typeFolder = boxType == "Carton" ? "카톤" : "골판지";
+                string csvDir = System.IO.Path.Combine(
+                    Define.HistoryPath,
+                    typeFolder,
+                    csvDate.ToString("yyyy") + "년",
+                    csvDate.Month + "월",
+                    csvDate.Day + "일");
+
+                string csvPath = System.IO.Path.Combine(csvDir, fileName);
 
                 // 폴더 없으면 생성
-                if (!System.IO.Directory.Exists(Define.HistoryPath))
-                    System.IO.Directory.CreateDirectory(Define.HistoryPath);
+                if (!System.IO.Directory.Exists(csvDir))
+                    System.IO.Directory.CreateDirectory(csvDir);
 
                 // 헤더 추가 (파일이 없을 때만)
                 bool fileExists = System.IO.File.Exists(csvPath);
                 using (System.IO.StreamWriter sw = new System.IO.StreamWriter(csvPath, true, new System.Text.UTF8Encoding(true)))
                 {
                     if (!fileExists)
-                        sw.WriteLine("날짜\t시간\t구경\t탄종\t기준바코드\t리딩바코드\t검사결과");
+                        sw.WriteLine("날짜\t시간\t구경\t탄종\t기준바코드\t리딩바코드\t검사결과\t사번");
 
-                    sw.WriteLine(string.Format("{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}",
+                    string empId = string.IsNullOrEmpty(m_VasimPlatform.m_SystemData.CurrentEmployeeId)
+                        ? "미선택"
+                        : m_VasimPlatform.m_SystemData.CurrentEmployeeId;
+
+                    // 스캔된 바코드로 실제 탄종 역조회 (NG 시 잘못 찍힌 제품의 탄종 기록)
+                    AmmoRow? matchedRow = boxType == "Carton"
+                        ? _rows.Cast<AmmoRow?>().FirstOrDefault(r => r.Value.CartonBCD == scannedBcd)
+                        : _rows.Cast<AmmoRow?>().FirstOrDefault(r => r.Value.BoxBCD == scannedBcd);
+                    string actualBullet = matchedRow.HasValue ? matchedRow.Value.Bullet : "미등록";
+
+                    sw.WriteLine(string.Format("{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}\t{7}",
                         now.ToString("yyyy-MM-dd"),
                         now.ToString("HH:mm:ss"),
                         cboBore.Text,
                         cboBullet.Text,
                         standardBcd,
-                        scannedBcd,
-                        result));
+                        "(" + actualBullet + ") " + scannedBcd,
+                        result,
+                        empId));
                 }
             }
             catch { }
@@ -227,7 +256,7 @@ namespace PoongSan_Angang_BCR
         {
             using (var pwForm = new PasswordForm(m_VasimPlatform.m_SystemData.LoginPassword))
             {
-                pwForm.ShowDialog(this);
+                ShowPopup(pwForm);
                 if (pwForm.IsAuthenticated)
                     ResetCartonCount();
             }
@@ -238,7 +267,7 @@ namespace PoongSan_Angang_BCR
         {
             using (var pwForm = new PasswordForm(m_VasimPlatform.m_SystemData.LoginPassword))
             {
-                pwForm.ShowDialog(this);
+                ShowPopup(pwForm);
                 if (pwForm.IsAuthenticated)
                     ResetBoxCount();
             }
@@ -311,6 +340,8 @@ namespace PoongSan_Angang_BCR
             }
             blockClose = false;
 
+            StopWeightPolling();
+
             if (m_VasimPlatform.m_SystemData.AutoMachineUse == "true")
                 m_VasimPlatform.m_mxPlc.Dispose();
 
@@ -340,16 +371,20 @@ namespace PoongSan_Angang_BCR
         // ── 리셋 버튼 아이콘 ───────────────────────────────────────────
         private void ApplyResetButtonIcons()
         {
-            var icon = CreateResetIcon(22);
+            var rawIcon = CreateResetIcon(22);
+            // 아이콘 하단에 4px 투명 여백을 추가해 텍스트와 간격을 확보
+            var icon = new Bitmap(rawIcon.Width, rawIcon.Height + 4, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+            using (var g = Graphics.FromImage(icon)) { g.Clear(Color.Transparent); g.DrawImage(rawIcon, 0, 0); }
             foreach (var btn in new Button[] { btnResetCarton, btnResetBox })
             {
                 btn.Image             = icon;
                 btn.TextImageRelation = TextImageRelation.ImageAboveText;
                 btn.ImageAlign        = ContentAlignment.TopCenter;
                 btn.TextAlign         = ContentAlignment.BottomCenter;
+                btn.Padding           = new System.Windows.Forms.Padding(0, 8, 0, 0);
             }
             btnResetCarton.Text = "카톤\r\n리셋";
-            btnResetBox.Text    = "박스\r\n리셋";
+            btnResetBox.Text    = "골판지\r\n리셋";
         }
 
         private static Bitmap CreateResetIcon(int size)
@@ -411,12 +446,27 @@ namespace PoongSan_Angang_BCR
             }
         }
 
+        // 날짜/시간 1초마다 갱신
+        private void ClockTimer_Tick(object sender, EventArgs e)
+        {
+            lbl_Date.Text = DateTime.Now.ToString("yyyy-MM-dd");
+            lbl_Time.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             this.Location = new System.Drawing.Point(0, 0);
 
             // 추가
             this.WindowState = FormWindowState.Maximized;
+
+            // 날짜/시간 실시간 표시 타이머 시작
+            lbl_Date.Text = DateTime.Now.ToString("yyyy-MM-dd");
+            lbl_Time.Text = DateTime.Now.ToString("HH:mm:ss");
+            _clockTimer = new System.Windows.Forms.Timer();
+            _clockTimer.Interval = 1000;
+            _clockTimer.Tick += ClockTimer_Tick;
+            _clockTimer.Start();
 
             // this.TopMost = true;  // 항상 최상단에 표시
 
@@ -458,13 +508,6 @@ namespace PoongSan_Angang_BCR
                     ResetDailyCount();
                 }
 
-                if (m_VasimPlatform.m_SystemData.AutoMachineUse == "true")
-                {
-                    if (m_VasimPlatform.m_mxPlc.m_bConnected)
-                        label_PLC_Status.BackColor = Color.Green;
-                    else
-                        label_PLC_Status.BackColor = Color.Red;
-                }
             }));
         }
         private void LoadCsvData()
@@ -497,13 +540,18 @@ namespace PoongSan_Angang_BCR
 
                 if (cells.Length < 5) continue;
 
+                double wMin = 0, wMax = 0;
+                if (cells.Length > 5) double.TryParse(cells[5].Trim(), out wMin);
+                if (cells.Length > 6) double.TryParse(cells[6].Trim(), out wMax);
                 _rows.Add(new AmmoRow
                 {
                     Bore = cells[0].Trim(),
                     Bullet = cells[1].Trim(),
                     Local = cells[2].Trim(),
                     CartonBCD = cells[3].Trim(),
-                    BoxBCD = cells[4].Trim()
+                    BoxBCD = cells[4].Trim(),
+                    WeightMin = wMin,
+                    WeightMax = wMax
                 });
             }
         }
@@ -609,6 +657,9 @@ namespace PoongSan_Angang_BCR
 
             txtCartonBCD.Text = row.CartonBCD;
             txtBoxBCD.Text    = row.BoxBCD;
+
+            _currentWeightMin = row.WeightMin;
+            _currentWeightMax = row.WeightMax;
 
             // 복원 중이 아닐 때만 SystemData에 저장 (구경/탄종/로컬 모두 완전히 선택된 시점)
             if (!_isRestoring)
@@ -791,6 +842,7 @@ namespace PoongSan_Angang_BCR
 
                     if (cartonOk)
                     {
+                        OkForm.ShowOk("카톤 OK");
                         lb_Result.Text = "OK";
                         lb_Result.BackColor = System.Drawing.Color.Green;
                         _cartonOkCount++;
@@ -798,7 +850,7 @@ namespace PoongSan_Angang_BCR
                     }
                     else
                     {
-                        AlarmForm.ShowAlarm("NG", this);
+                        AlarmForm.ShowAlarm("카톤 NG", this);
                         lb_Result.Text = "NG";
                         lb_Result.BackColor = System.Drawing.Color.Red;
                         _cartonNgCount++;
@@ -818,6 +870,7 @@ namespace PoongSan_Angang_BCR
 
                     if (boxOk)
                     {
+                        OkForm.ShowOk("골판지 OK");
                         lb_Result.Text = "OK";
                         lb_Result.BackColor = System.Drawing.Color.Green;
                         _boxOkCount++;
@@ -825,7 +878,7 @@ namespace PoongSan_Angang_BCR
                     }
                     else
                     {
-                        AlarmForm.ShowAlarm("NG", this);
+                        AlarmForm.ShowAlarm("골판지 NG", this);
                         lb_Result.Text = "NG";
                         lb_Result.BackColor = System.Drawing.Color.Red;
                         _boxNgCount++;
@@ -863,6 +916,37 @@ namespace PoongSan_Angang_BCR
                 if (_timeoutTimer != null)
                     _timeoutTimer.Stop();
             }
+
+            UpdateTimeoutStatusLabel();
+        }
+
+        // 헤더의 타임아웃 ON/OFF 상태 레이블 갱신
+        private void UpdateTimeoutStatusLabel()
+        {
+            if (m_VasimPlatform.m_SystemData.TimeoutUse == "true")
+            {
+                lbl_TimeoutStatus.Text      = "타임아웃 ON";
+                lbl_TimeoutStatus.ForeColor = System.Drawing.Color.LimeGreen;
+            }
+            else
+            {
+                lbl_TimeoutStatus.Text      = "타임아웃 OFF";
+                lbl_TimeoutStatus.ForeColor = System.Drawing.Color.Gray;
+            }
+        }
+
+        private void UpdatePollingStatusLabel()
+        {
+            if ((m_VasimPlatform.m_SystemData.WeightPollingEnabled ?? "true") == "true")
+            {
+                lbl_PollingStatus.Text      = "PLC 중량 체크 ON";
+                lbl_PollingStatus.ForeColor = System.Drawing.Color.LimeGreen;
+            }
+            else
+            {
+                lbl_PollingStatus.Text      = "PLC 중량 체크 OFF";
+                lbl_PollingStatus.ForeColor = System.Drawing.Color.Gray;
+            }
         }
 
         // 기존 핸들러 — TimeoutSettingForm 내부에서 직접 처리하므로 빈 상태 유지
@@ -874,19 +958,52 @@ namespace PoongSan_Angang_BCR
                 onChangePassword: () => btn_ChangePassword_Click(null, null),
                 onToggleTimeout:  () => OpenTimeoutSettingForm(),
                 onModelSetting:   () => btn_ModelSetting_Click(null, null),
+                onPlcSetting:     () => OpenPlcSettingForm(),
                 systemData:       m_VasimPlatform.m_SystemData))
             {
-                form.ShowDialog(this);
+                ShowPopup(form);
             }
+        }
+
+        private void OpenPlcSettingForm()
+        {
+            using (var pw = new PasswordForm(m_VasimPlatform.m_SystemData.LoginPassword))
+            {
+                ShowPopup(pw);
+                if (!pw.IsAuthenticated) return;
+            }
+            using (var form = new PlcSettingForm(m_VasimPlatform.m_SystemData,
+                onPollingToggle: () => ToggleWeightPolling()))
+            {
+                ShowPopup(form);
+            }
+        }
+
+        private void ToggleWeightPolling()
+        {
+            bool wasEnabled = m_VasimPlatform.m_SystemData.WeightPollingEnabled == "true";
+            m_VasimPlatform.m_SystemData.WeightPollingEnabled = wasEnabled ? "false" : "true";
+            m_VasimPlatform.m_SystemData.Save();
+
+            if (wasEnabled)
+                StopWeightPolling();
+            else
+                StartWeightPolling();
+            UpdatePollingStatusLabel();
         }
 
         private void OpenTimeoutSettingForm()
         {
+            using (var pw = new PasswordForm(m_VasimPlatform.m_SystemData.LoginPassword))
+            {
+                ShowPopup(pw);
+                if (!pw.IsAuthenticated) return;
+            }
             using (var form = new TimeoutSettingForm(
                 m_VasimPlatform.m_SystemData,
                 onSettingChanged: () => ApplyTimeoutSettings()))
             {
-                form.ShowDialog(this);
+                ShowPopup(form);
             }
         }
 
@@ -899,7 +1016,7 @@ namespace PoongSan_Angang_BCR
         {
             using (var form = new EmployeeForm(m_VasimPlatform.m_SystemData))
             {
-                form.ShowDialog(this);
+                ShowPopup(form);
             }
             UpdateEmployeeLabel();
         }
@@ -977,14 +1094,18 @@ namespace PoongSan_Angang_BCR
                 return;
             }
 
-            // 비밀번호 확인
-            if (!ShowPasswordForm()) return;
+            // 비밀번호 확인 (매번 입력)
+            using (var pwForm = new PasswordForm(m_VasimPlatform.m_SystemData.LoginPassword))
+            {
+                ShowPopup(pwForm);
+                if (!pwForm.IsAuthenticated) return;
+            }
 
             // 바코드 설정 화면 열기
             bool dataModified = false;
             using (ModelForm modelForm = new ModelForm(m_VasimPlatform.m_SystemData))
             {
-                modelForm.ShowDialog(this);
+                ShowPopup(modelForm);
                 dataModified = modelForm.DataModified;
             }
 
@@ -1004,8 +1125,21 @@ namespace PoongSan_Angang_BCR
         {
             using (var dlg = new ChangePasswordForm(m_VasimPlatform.m_SystemData))
             {
-                dlg.ShowDialog(this);
+                ShowPopup(dlg);
             }
+        }
+
+        // 모든 팝업을 Form1 기준 정중앙에 표시
+        private DialogResult ShowPopup(Form form)
+        {
+            form.StartPosition = FormStartPosition.Manual;
+            form.Load += (s, e) =>
+            {
+                form.Location = new System.Drawing.Point(
+                    this.Left + (this.Width  - form.Width)  / 2,
+                    this.Top  + (this.Height - form.Height) / 2);
+            };
+            return form.ShowDialog(this);
         }
 
         // ── 마지막 선택한 구경/탄종/로컬 복원 ──
@@ -1045,6 +1179,80 @@ namespace PoongSan_Angang_BCR
             }
         }
 
+        // ── 중량 폴링 ──────────────────────────────────────────────────
+        private void StartWeightPolling()
+        {
+            if (m_VasimPlatform.m_SystemData.melsecplcUse != "true") return;
+            if (m_VasimPlatform.m_SystemData.WeightPollingEnabled != "true") return;
+            var sd = m_VasimPlatform.m_SystemData;
+            // 4개 주소가 모두 비어 있으면 폴링 불필요
+            if (string.IsNullOrEmpty(sd.WeightPlcAddress1) &&
+                string.IsNullOrEmpty(sd.WeightPlcAddress2) &&
+                string.IsNullOrEmpty(sd.WeightPlcAddress3) &&
+                string.IsNullOrEmpty(sd.WeightPlcAddress4)) return;
+
+            int seconds = 30;
+            int.TryParse(m_VasimPlatform.m_SystemData.WeightPollSeconds, out seconds);
+            if (seconds < 1)   seconds = 1;
+            if (seconds > 999) seconds = 999;
+
+            if (_weightTimer == null)
+            {
+                _weightTimer = new System.Timers.Timer();
+                _weightTimer.AutoReset = true;
+                _weightTimer.Elapsed  += WeightTimer_Elapsed;
+            }
+            _weightTimer.Stop();
+            _weightTimer.Interval = seconds * 1000.0;
+            _weightTimer.Start();
+
+            label9.Text      = "사용";
+            label9.ForeColor = System.Drawing.Color.LimeGreen;
+        }
+
+        private void StopWeightPolling()
+        {
+            _weightTimer?.Stop();
+            label9.Text      = "미사용";
+            label9.ForeColor = System.Drawing.Color.Black;
+        }
+
+        private void WeightTimer_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            if (m_VasimPlatform.m_SystemData.WeightPollingEnabled != "true") return;
+            if (!m_VasimPlatform.m_mxPlc.m_bConnected) return;
+            if (_currentWeightMin == 0 && _currentWeightMax == 0) return; // 범위 미설정
+
+            var sd = m_VasimPlatform.m_SystemData;
+            string[] addresses = new[]
+            {
+                sd.WeightPlcAddress1,
+                sd.WeightPlcAddress2,
+                sd.WeightPlcAddress3,
+                sd.WeightPlcAddress4,
+            };
+
+            foreach (string address in addresses)
+            {
+                if (string.IsNullOrEmpty(address)) continue; // 미설정 탄 → 건너뜀
+
+                short rawValue;
+                if (m_VasimPlatform.m_mxPlc.ReadShort(address, out rawValue) != 0) continue; // 읽기 실패 → 무시
+                if (rawValue == 0) continue; // 값이 0 → 무시 (요구사항)
+
+                double weight = rawValue; // 단위: grain
+                if (weight < _currentWeightMin || weight > _currentWeightMax)
+                {
+                    this.Invoke(new Action(() =>
+                    {
+                        AlarmForm.ShowAlarm("중량 NG", this);
+                    }));
+                }
+            }
+        }
+        // ──────────────────────────────────────────────────────────────
+
+
         private void label7_Click(object sender, EventArgs e)
         {
 
@@ -1056,6 +1264,16 @@ namespace PoongSan_Angang_BCR
         }
 
         private void txtInputBCR_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lb_MachineName_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
         {
 
         }

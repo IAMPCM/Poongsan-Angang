@@ -13,6 +13,13 @@ namespace PoongSan_Angang_BCR
 
         public string PLC_Address;
         public string PLC_Port;
+        public string PlcStationNo;      // MX Component 논리 스테이션 번호
+        public string WeightPlcAddress1;  // 1번 탄 중량 레지스터 주소 (예: D1000)
+        public string WeightPlcAddress2;  // 2번 탄 중량 레지스터 주소
+        public string WeightPlcAddress3;  // 3번 탄 중량 레지스터 주소
+        public string WeightPlcAddress4;  // 4번 탄 중량 레지스터 주소
+        public string WeightPollSeconds;    // 중량 폴링 주기 (초, 1~999)
+        public string WeightPollingEnabled; // 중량 폴링 ON/OFF ("true"/"false")
         // 금일 검사 수량
         public string CountDate;       // 마지막 저장 날짜
         public string CartonOkList;    // 카톤박스 OK 바코드 목록 (쉼표 구분)
@@ -53,6 +60,20 @@ namespace PoongSan_Angang_BCR
                 melsecplcUse = ini.ReadString(section, "melsecplcUse", "");
                 PLC_Address = ini.ReadString(section, "PLC_Address", "");
                 PLC_Port = ini.ReadString(section, "PLC_Port", "");
+                PlcStationNo      = ini.ReadString(section, "PlcStationNo",      "0");
+                WeightPlcAddress1 = ini.ReadString(section, "WeightPlcAddress1", "");
+                WeightPlcAddress2 = ini.ReadString(section, "WeightPlcAddress2", "");
+                WeightPlcAddress3 = ini.ReadString(section, "WeightPlcAddress3", "");
+                WeightPlcAddress4 = ini.ReadString(section, "WeightPlcAddress4", "");
+                // 구버전 마이그레이션: WeightPlcAddress(단일) → WeightPlcAddress1
+                if (string.IsNullOrEmpty(WeightPlcAddress1))
+                {
+                    string old = ini.ReadString(section, "WeightPlcAddress", "");
+                    if (!string.IsNullOrEmpty(old))
+                        WeightPlcAddress1 = old;
+                }
+                WeightPollSeconds    = ini.ReadString(section, "WeightPollSeconds",    "30");
+                WeightPollingEnabled = ini.ReadString(section, "WeightPollingEnabled", "true");
 
                 // 금일 검사 수량 불러오기
                 CountDate = ini.ReadString(section, "CountDate", "");
@@ -86,7 +107,7 @@ namespace PoongSan_Angang_BCR
                 string section = "System";
 
                 ini.WriteString(section, "SIMULATION", SimulationUse);
-                //ini.WriteString(section, "melsecplcUse", melsecplcUse);
+                ini.WriteString(section, "melsecplcUse", melsecplcUse);
                 ini.WriteString(section, "AutoMachineUse", AutoMachineUse);
                 ini.WriteString(section, "TimeoutUse",     TimeoutUse);
                 ini.WriteString(section, "TimeoutMinutes", TimeoutMinutes ?? "1");
@@ -107,6 +128,15 @@ namespace PoongSan_Angang_BCR
                 // 사번 저장
                 ini.WriteString(section, "EmployeeIds",       EmployeeIds       ?? "");
                 ini.WriteString(section, "CurrentEmployeeId", CurrentEmployeeId ?? "");
+
+                // PLC 중량 연동 설정 저장
+                ini.WriteString(section, "PlcStationNo",       PlcStationNo       ?? "0");
+                ini.WriteString(section, "WeightPlcAddress1",  WeightPlcAddress1  ?? "");
+                ini.WriteString(section, "WeightPlcAddress2",  WeightPlcAddress2  ?? "");
+                ini.WriteString(section, "WeightPlcAddress3",  WeightPlcAddress3  ?? "");
+                ini.WriteString(section, "WeightPlcAddress4",  WeightPlcAddress4  ?? "");
+                ini.WriteString(section, "WeightPollSeconds",  WeightPollSeconds  ?? "30");
+                ini.WriteString(section, "WeightPollingEnabled", WeightPollingEnabled ?? "true");
             }
         }
     }
