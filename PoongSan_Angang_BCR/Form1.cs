@@ -1290,7 +1290,7 @@ namespace PoongSan_Angang_BCR
                         : System.Drawing.Color.Black;
 
                     if (capturedNg)
-                        AlarmForm.ShowAlarm("중량 NG", this);
+                        AlarmForm.ShowAlarm($"{capturedIdx + 1}번 탄 중량 NG", this);
                 }));
             }
         }
