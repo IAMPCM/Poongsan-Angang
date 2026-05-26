@@ -87,7 +87,7 @@ namespace PoongSan_Angang_BCR
                 default: current = _systemData.WeightPlcAddress4; break;
             }
 
-            using (var kpd = new InputKeypadForm($"{idx}번 탄 중량 주소", current ?? ""))
+            using (var kpd = new InputKeypadForm($"{idx}번 탄 PLC 주소", current ?? ""))
             {
                 if (kpd.ShowDialog(this) != DialogResult.OK) return;
 

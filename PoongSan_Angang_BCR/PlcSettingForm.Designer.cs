@@ -70,7 +70,7 @@ namespace PoongSan_Angang_BCR
             this.lblAddrHdr1.Name       = "lblAddrHdr1";
             this.lblAddrHdr1.Size       = new System.Drawing.Size(210, 54);
             this.lblAddrHdr1.TabIndex   = 13;
-            this.lblAddrHdr1.Text       = "1번 탄 중량 주소";
+            this.lblAddrHdr1.Text       = "1번 탄 PLC 주소";
             this.lblAddrHdr1.TextAlign  = System.Drawing.ContentAlignment.MiddleCenter;
 
             this.lblAddrVal1.BackColor   = System.Drawing.Color.White;
@@ -93,7 +93,7 @@ namespace PoongSan_Angang_BCR
             this.lblAddrHdr2.Name       = "lblAddrHdr2";
             this.lblAddrHdr2.Size       = new System.Drawing.Size(210, 54);
             this.lblAddrHdr2.TabIndex   = 11;
-            this.lblAddrHdr2.Text       = "2번 탄 중량 주소";
+            this.lblAddrHdr2.Text       = "2번 탄 PLC 주소";
             this.lblAddrHdr2.TextAlign  = System.Drawing.ContentAlignment.MiddleCenter;
 
             this.lblAddrVal2.BackColor   = System.Drawing.Color.White;
@@ -116,7 +116,7 @@ namespace PoongSan_Angang_BCR
             this.lblAddrHdr3.Name       = "lblAddrHdr3";
             this.lblAddrHdr3.Size       = new System.Drawing.Size(210, 54);
             this.lblAddrHdr3.TabIndex   = 9;
-            this.lblAddrHdr3.Text       = "3번 탄 중량 주소";
+            this.lblAddrHdr3.Text       = "3번 탄 PLC 주소";
             this.lblAddrHdr3.TextAlign  = System.Drawing.ContentAlignment.MiddleCenter;
 
             this.lblAddrVal3.BackColor   = System.Drawing.Color.White;
@@ -139,7 +139,7 @@ namespace PoongSan_Angang_BCR
             this.lblAddrHdr4.Name       = "lblAddrHdr4";
             this.lblAddrHdr4.Size       = new System.Drawing.Size(210, 54);
             this.lblAddrHdr4.TabIndex   = 7;
-            this.lblAddrHdr4.Text       = "4번 탄 중량 주소";
+            this.lblAddrHdr4.Text       = "4번 탄 PLC 주소";
             this.lblAddrHdr4.TextAlign  = System.Drawing.ContentAlignment.MiddleCenter;
 
             this.lblAddrVal4.BackColor   = System.Drawing.Color.White;
