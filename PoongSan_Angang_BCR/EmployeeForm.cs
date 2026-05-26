@@ -140,5 +140,6 @@ namespace PoongSan_Angang_BCR
 
             RefreshList();
         }
+
     }
 }

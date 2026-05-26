@@ -33,5 +33,6 @@ namespace PoongSan_Angang_BCR
             btnX.Click              += (s, e) => this.Close();
             btnClose.Click          += (s, e) => this.Close();
         }
+
     }
 }
