@@ -1236,9 +1236,9 @@ namespace PoongSan_Angang_BCR
             {
                 if (string.IsNullOrEmpty(address)) continue; // 미설정 탄 → 건너뜀
 
-                short rawValue;
-                if (m_VasimPlatform.m_mxPlc.ReadShort(address, out rawValue) != 0) continue; // 읽기 실패 → 무시
-                if (rawValue == 0) continue; // 값이 0 → 무시 (요구사항)
+                float rawValue;
+                if (m_VasimPlatform.m_mxPlc.ReadFloat(address, out rawValue) != 0) continue; // 읽기 실패 → 무시
+                if (rawValue == 0.0f) continue; // 값이 0 → 무시 (요구사항)
 
                 double weight = rawValue; // 단위: grain
                 if (weight < _currentWeightMin || weight > _currentWeightMax)
