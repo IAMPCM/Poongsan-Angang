@@ -23,6 +23,12 @@ namespace PoongSan_Angang_BCR
         public delegate void EvePlcReceiveHandler(string name, object data);
         public event EvePlcReceiveHandler PLCReceivedData;
         object PLCLock = new object();
+
+        /// <summary>
+        /// 연결 상태가 변화할 때 호출되는 콜백 (true=연결됨, false=끊김)
+        /// UI 스레드 전환은 호출 측에서 처리해야 합니다.
+        /// </summary>
+        public Action<bool> OnConnectionChanged;
         
         public MXPlc(Form1 frm)
         {
@@ -129,26 +135,14 @@ namespace PoongSan_Angang_BCR
             int result = lpcom_ReferencesUtlType.GetDevice(device, out readValue);
 
             // MX Component의 GetDevice 메서드는 연결이 성공적으로 수행되면 0을 반환합니다.
-            // 따라서, result가 0이면 연결이 활성 상태라고 판단할 수 있습니다.
-            if (result == 0)
+            // 상태가 변화한 경우에만 OnConnectionChanged 콜백을 발동합니다.
+            bool newConnected = (result == 0);
+            if (newConnected != m_bConnected)
             {
-                //Console.WriteLine($"Successfully read {device}. Connection is alive.");
-                m_bConnected = true;
-                return true;
+                m_bConnected = newConnected;
+                OnConnectionChanged?.Invoke(m_bConnected);
             }
-            else
-            {
-                //Console.WriteLine($"Failed to read {device} with error code: {result}. Connection might be lost.");
-                m_bConnected = false;
-                return false;
-            }
-            // Implement a method to check if the connection is still alive
-            // This could involve reading a dummy device or performing a lightweight operation
-            // Example:
-            //int status = 0;
-            //lpcom_ReferencesUtlType.GetDevice("DUMMY_DEVICE", out status);
-            //return status == 0;
-            //return true; // Placeholder return value
+            return m_bConnected;
         }
         public int BitWrite(string sDevice, string sBit, string sDeiveData)
         {

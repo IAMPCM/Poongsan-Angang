@@ -68,6 +68,14 @@ namespace PoongSan_Angang_BCR
             }
 
             Initialize();
+
+            // PLC 연결 상태 변화 콜백 등록 (Initialize 이후에 등록)
+            m_VasimPlatform.m_mxPlc.OnConnectionChanged = connected =>
+            {
+                if (this.IsHandleCreated)
+                    this.BeginInvoke(new Action(() => UpdatePlcConnectionLabel(connected)));
+            };
+
             UpdateTimeoutStatusLabel();
             StartWeightPolling();
             UpdatePollingStatusLabel();
@@ -951,6 +959,22 @@ namespace PoongSan_Angang_BCR
             }
         }
 
+        /// <summary>
+        /// PLC 연결 상태가 바뀔 때마다 label9를 갱신합니다.
+        /// 폴링이 꺼져 있으면 "미사용" 상태를 그대로 유지합니다.
+        /// </summary>
+        private void UpdatePlcConnectionLabel(bool connected)
+        {
+            // 폴링이 비활성화된 경우에는 "미사용" 표시를 건드리지 않음
+            if (m_VasimPlatform.m_SystemData.melsecplcUse != "true") return;
+            if ((m_VasimPlatform.m_SystemData.WeightPollingEnabled ?? "true") != "true") return;
+
+            label9.Text      = connected ? "연결됨" : "연결 안됨";
+            label9.ForeColor = connected
+                ? System.Drawing.Color.LimeGreen
+                : System.Drawing.Color.Red;
+        }
+
         // 기존 핸들러 — TimeoutSettingForm 내부에서 직접 처리하므로 빈 상태 유지
         private void btn_TimeoutToggle_Click(object sender, EventArgs e) { }
 
@@ -1208,15 +1232,19 @@ namespace PoongSan_Angang_BCR
             _weightTimer.Interval = seconds * 1000.0;
             _weightTimer.Start();
 
-            label9.Text      = "사용";
-            label9.ForeColor = System.Drawing.Color.LimeGreen;
+            // 현재 연결 상태를 즉시 반영 (이후 상태 변화는 OnConnectionChanged 콜백이 처리)
+            bool plcConnected = m_VasimPlatform.m_mxPlc.m_bConnected;
+            label9.Text      = plcConnected ? "연결됨" : "연결 안됨";
+            label9.ForeColor = plcConnected
+                ? System.Drawing.Color.LimeGreen
+                : System.Drawing.Color.Red;
         }
 
         private void StopWeightPolling()
         {
             _weightTimer?.Stop();
             label9.Text      = "미사용";
-            label9.ForeColor = System.Drawing.Color.Black;
+            label9.ForeColor = System.Drawing.Color.Gray;
             ResetAllWeightLabels();
         }
 
