@@ -46,11 +46,13 @@ namespace PoongSan_Angang_BCR
         private System.Timers.Timer _weightTimer;
         private double _currentWeightMin = 0;
         private double _currentWeightMax = 0;
+        private System.Windows.Forms.Label[] _weightLabels; // lblWeight1~4 참조 배열
 
 
         public Form1()
         {
             InitializeComponent();
+            _weightLabels = new System.Windows.Forms.Label[] { lblWeight1, lblWeight2, lblWeight3, lblWeight4 };
             m_VasimPlatform = new VasimPlatform(this); // 객체 생성
             AlarmForm.Initialize(this);
             OkForm.Initialize(this);
@@ -1215,6 +1217,23 @@ namespace PoongSan_Angang_BCR
             _weightTimer?.Stop();
             label9.Text      = "미사용";
             label9.ForeColor = System.Drawing.Color.Black;
+            ResetAllWeightLabels();
+        }
+
+        // 중량 라벨 전체를 초기 상태("-")로 되돌림
+        private void ResetAllWeightLabels()
+        {
+            for (int i = 0; i < _weightLabels.Length; i++)
+                ResetWeightLabel(i);
+        }
+
+        // 특정 인덱스(0~3)의 중량 라벨을 초기 상태로 되돌림
+        private void ResetWeightLabel(int idx)
+        {
+            var lbl = _weightLabels[idx];
+            lbl.Text      = $"{idx + 1}번: -";
+            lbl.BackColor = System.Drawing.Color.White;
+            lbl.ForeColor = System.Drawing.Color.DarkGray;
         }
 
         private void WeightTimer_Elapsed(object sender, ElapsedEventArgs e)
@@ -1232,22 +1251,47 @@ namespace PoongSan_Angang_BCR
                 sd.WeightPlcAddress4,
             };
 
-            foreach (string address in addresses)
+            for (int i = 0; i < addresses.Length; i++)
             {
-                if (string.IsNullOrEmpty(address)) continue; // 미설정 탄 → 건너뜀
+                string address    = addresses[i];
+                int    capturedIdx = i;
+
+                // 주소 미설정 탄 → 라벨 초기화
+                if (string.IsNullOrEmpty(address))
+                {
+                    this.Invoke(new Action(() => ResetWeightLabel(capturedIdx)));
+                    continue;
+                }
 
                 float rawValue;
-                if (m_VasimPlatform.m_mxPlc.ReadFloat(address, out rawValue) != 0) continue; // 읽기 실패 → 무시
-                if (rawValue == 0.0f) continue; // 값이 0 → 무시 (요구사항)
+                if (m_VasimPlatform.m_mxPlc.ReadFloat(address, out rawValue) != 0) continue; // 읽기 실패 → 이전 값 유지
 
-                double weight = rawValue; // 단위: grain
-                if (weight < _currentWeightMin || weight > _currentWeightMax)
+                // 값이 0이면 아직 측정 전 → 라벨 초기화
+                if (rawValue == 0.0f)
                 {
-                    this.Invoke(new Action(() =>
-                    {
-                        AlarmForm.ShowAlarm("중량 NG", this);
-                    }));
+                    this.Invoke(new Action(() => ResetWeightLabel(capturedIdx)));
+                    continue;
                 }
+
+                double weight      = rawValue;
+                bool   isNg        = weight < _currentWeightMin || weight > _currentWeightMax;
+                float  captured    = rawValue;
+                bool   capturedNg  = isNg;
+
+                this.Invoke(new Action(() =>
+                {
+                    var lbl = _weightLabels[capturedIdx];
+                    lbl.Text      = $"{capturedIdx + 1}번: {captured:F1}";
+                    lbl.BackColor = capturedNg
+                        ? System.Drawing.Color.Red
+                        : System.Drawing.Color.LimeGreen;
+                    lbl.ForeColor = capturedNg
+                        ? System.Drawing.Color.White
+                        : System.Drawing.Color.Black;
+
+                    if (capturedNg)
+                        AlarmForm.ShowAlarm("중량 NG", this);
+                }));
             }
         }
         // ──────────────────────────────────────────────────────────────
