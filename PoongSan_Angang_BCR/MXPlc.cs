@@ -23,6 +23,12 @@ namespace PoongSan_Angang_BCR
         public delegate void EvePlcReceiveHandler(string name, object data);
         public event EvePlcReceiveHandler PLCReceivedData;
         object PLCLock = new object();
+
+        /// <summary>
+        /// 연결 상태가 변화할 때 호출되는 콜백 (true=연결됨, false=끊김)
+        /// UI 스레드 전환은 호출 측에서 처리해야 합니다.
+        /// </summary>
+        public Action<bool> OnConnectionChanged;
         
         public MXPlc(Form1 frm)
         {
@@ -38,7 +44,9 @@ namespace PoongSan_Angang_BCR
 
         public void Connect()
         {
-            lpcom_ReferencesUtlType.ActLogicalStationNumber = 0;
+            int stationNo = 0;
+            int.TryParse(frm1.m_VasimPlatform.m_SystemData.PlcStationNo, out stationNo);
+            lpcom_ReferencesUtlType.ActLogicalStationNumber = stationNo;
             Start();
         }
         public void Start()
@@ -124,29 +132,23 @@ namespace PoongSan_Angang_BCR
         {
             string device = "D0";
             int readValue;
-            int result = lpcom_ReferencesUtlType.GetDevice(device, out readValue);
+            int result;
+
+            // PLCLock으로 보호: _weightTimer 스레드의 ReadFloat()와 COM 객체 동시 접근 방지
+            lock (PLCLock)
+            {
+                result = lpcom_ReferencesUtlType.GetDevice(device, out readValue);
+            }
 
             // MX Component의 GetDevice 메서드는 연결이 성공적으로 수행되면 0을 반환합니다.
-            // 따라서, result가 0이면 연결이 활성 상태라고 판단할 수 있습니다.
-            if (result == 0)
+            // 상태가 변화한 경우에만 OnConnectionChanged 콜백을 발동합니다.
+            bool newConnected = (result == 0);
+            if (newConnected != m_bConnected)
             {
-                //Console.WriteLine($"Successfully read {device}. Connection is alive.");
-                m_bConnected = true;
-                return true;
+                m_bConnected = newConnected;
+                OnConnectionChanged?.Invoke(m_bConnected);
             }
-            else
-            {
-                //Console.WriteLine($"Failed to read {device} with error code: {result}. Connection might be lost.");
-                m_bConnected = false;
-                return false;
-            }
-            // Implement a method to check if the connection is still alive
-            // This could involve reading a dummy device or performing a lightweight operation
-            // Example:
-            //int status = 0;
-            //lpcom_ReferencesUtlType.GetDevice("DUMMY_DEVICE", out status);
-            //return status == 0;
-            //return true; // Placeholder return value
+            return m_bConnected;
         }
         public int BitWrite(string sDevice, string sBit, string sDeiveData)
         {
@@ -327,6 +329,54 @@ namespace PoongSan_Angang_BCR
                 return iReturnCode;
             }
         }
+        /// <summary>
+        /// 미쓰비시 PLC의 32비트 실수(REAL)를 읽습니다.
+        /// 연속된 2개 레지스터(sDevice, sDevice+1)를 읽어 IEEE 754 float로 변환합니다.
+        /// 예: D100 → D100(하위 16비트) + D101(상위 16비트)
+        /// </summary>
+        public int ReadFloat(string sDevice, out float value)
+        {
+            lock (PLCLock)
+            {
+                value = 0f;
+                if (lpcom_ReferencesUtlType == null) return -1;
+
+                // 주소 파싱: "D100" → prefix="D", addr=100
+                int splitIdx = 0;
+                while (splitIdx < sDevice.Length && !char.IsDigit(sDevice[splitIdx]))
+                    splitIdx++;
+                if (splitIdx == 0 || splitIdx >= sDevice.Length) return -1;
+
+                string prefix  = sDevice.Substring(0, splitIdx);
+                int    addrNum = int.Parse(sDevice.Substring(splitIdx));
+
+                string addrLow  = $"{prefix}{addrNum}";       // 하위 16비트 레지스터
+                string addrHigh = $"{prefix}{addrNum + 1}";   // 상위 16비트 레지스터
+
+                short low, high;
+                int ret;
+
+                ret = lpcom_ReferencesUtlType.GetDevice2(addrLow, out low);
+                if (ret != 0)
+                {
+                    Console.WriteLine($"ReadFloat 하위 읽기 실패: {ret}");
+                    return ret;
+                }
+
+                ret = lpcom_ReferencesUtlType.GetDevice2(addrHigh, out high);
+                if (ret != 0)
+                {
+                    Console.WriteLine($"ReadFloat 상위 읽기 실패: {ret}");
+                    return ret;
+                }
+
+                // 하위 word + 상위 word → 32비트 IEEE 754 float
+                uint bits = ((uint)(ushort)high << 16) | (uint)(ushort)low;
+                value = BitConverter.ToSingle(BitConverter.GetBytes(bits), 0);
+                return 0;
+            }
+        }
+
         public int ReadShort(string sDevice, out short sDeiveData) //최대  32767
         {
             lock (PLCLock)
@@ -650,9 +700,15 @@ namespace PoongSan_Angang_BCR
         }
         public void Dispose()
         {
-            connectionThread.Abort();
-            PlcDataThread.Abort();
-            PlcAliveThread.Abort();
+            // ① stopRequested = true 먼저 설정 → ConnectionThreadProc 루프가 정상 종료 경로로 빠져나옴
+            //   (설정 없이 Abort()만 하면 while(!stopRequested) 루프가 폭주하며 StackOverflowException 유발)
+            stopRequested = true;
+
+            // ② null 체크 후 Abort() → PlcAliveThread는 초기화되지 않을 수 있으므로 NullReferenceException 방지
+            connectionThread?.Abort();
+            PlcDataThread?.Abort();
+            if (PlcAliveThread != null)
+                PlcAliveThread.Abort();
 
             lpcom_ReferencesUtlType = null;
             lpcom_ReferencesProgType = null;

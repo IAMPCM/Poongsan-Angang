@@ -18,9 +18,9 @@ namespace PoongSan_Angang_BCR
             // 확인 버튼만 비활성화 (ENT 누른 후 활성화)
             // CLOSE 버튼은 항상 활성화 — 비밀번호 미입력 시에도 닫기 가능
             btn_Confirm.Enabled = false;
-            btn_Confirm.BackColor = System.Drawing.Color.Gray;
+            btn_Confirm.BackColor = System.Drawing.Color.FromArgb(189, 195, 199);
             btn_Cancel.Enabled = true;
-            btn_Cancel.BackColor = System.Drawing.Color.FromArgb(70, 70, 75);
+            btn_Cancel.BackColor = System.Drawing.Color.FromArgb(127, 140, 141);
         }
 
         // 숫자 버튼 클릭 시 호출
@@ -54,8 +54,8 @@ namespace PoongSan_Angang_BCR
             // ENT 누르면 확인/CLOSE 버튼 활성화
             btn_Confirm.Enabled = true;
             btn_Cancel.Enabled = true;
-            btn_Confirm.BackColor = System.Drawing.Color.FromArgb(70, 70, 75);
-            btn_Cancel.BackColor = System.Drawing.Color.FromArgb(70, 70, 75);
+            btn_Confirm.BackColor = System.Drawing.Color.FromArgb(39, 174, 96);
+            btn_Cancel.BackColor = System.Drawing.Color.FromArgb(127, 140, 141);
         }
 
         // 확인 버튼
@@ -84,8 +84,13 @@ namespace PoongSan_Angang_BCR
         // 입력 표시 업데이트 (* 로 표시)
         private void UpdateDisplay()
         {
-            lblDisplay.ForeColor = System.Drawing.Color.White;
+            lblDisplay.ForeColor = System.Drawing.Color.FromArgb(31, 97, 141);
             lblDisplay.Text = new string('*', _inputPassword.Length);
+        }
+
+        private void PasswordForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
