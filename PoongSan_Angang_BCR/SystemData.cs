@@ -20,6 +20,14 @@ namespace PoongSan_Angang_BCR
         public string WeightPlcAddress4;  // 4번 탄 중량 레지스터 주소
         public string WeightPollSeconds;    // 중량 폴링 주기 (초, 1~999)
         public string WeightPollingEnabled; // 중량 폴링 ON/OFF ("true"/"false")
+
+        // PLC D레지스터 주소 (앱 설정 화면에서 변경 가능)
+        public string PlcAddrBoreData;      // PLC→PC 구경 데이터 주소       (기본: D10000)
+        public string PlcAddrBoreDataLen;   // PLC→PC 구경 데이터 글자 수    (기본: 10)
+        public string PlcAddrBcdLen;        // PLC→PC 바코드 길이 주소       (기본: D25008)
+        public string PlcAddrBcdData;       // PLC→PC 바코드 데이터 주소     (기본: D25009)
+        public string PlcAddrResultIndiv;   // PC→PLC 개별 검사결과 주소     (기본: D28060)
+        public string PlcAddrResultBox;     // PC→PLC 박스 검사결과 주소     (기본: D28070)
         // 금일 검사 수량
         public string CountDate;       // 마지막 저장 날짜
         public string CartonOkList;    // 카톤박스 OK 바코드 목록 (쉼표 구분)
@@ -74,6 +82,14 @@ namespace PoongSan_Angang_BCR
                 }
                 WeightPollSeconds    = ini.ReadString(section, "WeightPollSeconds",    "30");
                 WeightPollingEnabled = ini.ReadString(section, "WeightPollingEnabled", "true");
+
+                // PLC D레지스터 주소
+                PlcAddrBoreData    = ini.ReadString(section, "PlcAddrBoreData",    "D10000");
+                PlcAddrBoreDataLen = ini.ReadString(section, "PlcAddrBoreDataLen", "10");
+                PlcAddrBcdLen      = ini.ReadString(section, "PlcAddrBcdLen",      "D25008");
+                PlcAddrBcdData     = ini.ReadString(section, "PlcAddrBcdData",     "D25009");
+                PlcAddrResultIndiv = ini.ReadString(section, "PlcAddrResultIndiv", "D28060");
+                PlcAddrResultBox   = ini.ReadString(section, "PlcAddrResultBox",   "D28070");
 
                 // 금일 검사 수량 불러오기
                 CountDate = ini.ReadString(section, "CountDate", "");
@@ -137,6 +153,14 @@ namespace PoongSan_Angang_BCR
                 ini.WriteString(section, "WeightPlcAddress4",  WeightPlcAddress4  ?? "");
                 ini.WriteString(section, "WeightPollSeconds",  WeightPollSeconds  ?? "30");
                 ini.WriteString(section, "WeightPollingEnabled", WeightPollingEnabled ?? "true");
+
+                // PLC D레지스터 주소
+                ini.WriteString(section, "PlcAddrBoreData",    PlcAddrBoreData    ?? "D10000");
+                ini.WriteString(section, "PlcAddrBoreDataLen", PlcAddrBoreDataLen ?? "10");
+                ini.WriteString(section, "PlcAddrBcdLen",      PlcAddrBcdLen      ?? "D25008");
+                ini.WriteString(section, "PlcAddrBcdData",     PlcAddrBcdData     ?? "D25009");
+                ini.WriteString(section, "PlcAddrResultIndiv", PlcAddrResultIndiv ?? "D28060");
+                ini.WriteString(section, "PlcAddrResultBox",   PlcAddrResultBox   ?? "D28070");
             }
         }
     }

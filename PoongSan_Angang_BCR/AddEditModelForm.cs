@@ -91,7 +91,7 @@ namespace PoongSan_Angang_BCR
             if (string.IsNullOrWhiteSpace(txtBore.Text) ||
                 string.IsNullOrWhiteSpace(txtBullet.Text))
             {
-                MessageBox.Show("구경과 탄종을 입력해 주세요.",
+                MessageBox.Show(this, "구경과 탄종을 입력해 주세요.",
                     "오류", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }

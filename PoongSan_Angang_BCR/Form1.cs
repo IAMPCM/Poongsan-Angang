@@ -99,14 +99,12 @@ namespace PoongSan_Angang_BCR
         }
         public void Initialize() // PLC 연결 초기화
         {
-            if (m_VasimPlatform.m_SystemData.AutoMachineUse == "true")
-            {
-                if (m_VasimPlatform.m_SystemData.melsecplcUse == "true")
-                    m_VasimPlatform.m_mxPlc.Initialize();
-                else
-                    ConnectOmron();
-
-            }
+            // 방향 1: PLC 연결 초기화를 AutoMachineUse 대신 melsecplcUse로 제어
+            // AutoMachineUse는 D10000 Bore 체크 전용으로 분리됨
+            if (m_VasimPlatform.m_SystemData.melsecplcUse == "true")
+                m_VasimPlatform.m_mxPlc.Initialize();
+            else if (m_VasimPlatform.m_SystemData.AutoMachineUse == "true")
+                ConnectOmron();
         }
         public void ConnectOmron()
         {
@@ -169,8 +167,22 @@ namespace PoongSan_Angang_BCR
             }));
         }
 
+        // 현재 화면에 표시 중인 탄 무게 4개를 "값1/값2/값3/값4" 형태로 반환
+        // (폴링 OFF 또는 미연결 시에는 "-/-/-/-" 반환)
+        private string GetCurrentWeightsString()
+        {
+            var parts = new string[_weightLabels.Length];
+            for (int i = 0; i < _weightLabels.Length; i++)
+            {
+                string text = _weightLabels[i].Text;
+                int nl = text.IndexOf('\n');
+                parts[i] = nl >= 0 ? text.Substring(nl + 1) : "-";
+            }
+            return string.Join("/", parts);
+        }
+
         // CSV 저장 함수
-        private void SaveToCsv(string boxType, string standardBcd, string scannedBcd, string result)
+        private void SaveToCsv(string boxType, string standardBcd, string scannedBcd, string result, string weights)
         {
             try
             {
@@ -199,12 +211,52 @@ namespace PoongSan_Angang_BCR
                 if (!System.IO.Directory.Exists(csvDir))
                     System.IO.Directory.CreateDirectory(csvDir);
 
-                // 헤더 추가 (파일이 없을 때만)
+                // 헤더 처리: 파일이 없으면 새로 작성, 헤더가 다르면 자동 재정렬
+                // 컬럼 순서: 날짜|시간|구경|탄종|기준바코드|리딩바코드|검사결과|탄 무게(1/2/3/4번)|[빈칸]|사번
+                // ※ 탄 무게와 사번 사이 빈 구분 컬럼 삽입 → Excel에서 열 간격 확보
+                // ※ 인코딩: CP949(EUC-KR) → 한국어 Windows Excel에서 더블클릭 시 바로 정상 표시
+                var csvEncoding = System.Text.Encoding.GetEncoding(949);
+                string newHeader = "날짜\t시간\t구경\t탄종\t기준바코드\t리딩바코드\t검사결과\t탄 무게(1/2/3/4번)\t\t사번";
                 bool fileExists = System.IO.File.Exists(csvPath);
-                using (System.IO.StreamWriter sw = new System.IO.StreamWriter(csvPath, true, new System.Text.UTF8Encoding(true)))
+                if (fileExists)
+                {
+                    string firstLine = System.IO.File.ReadLines(csvPath, csvEncoding)
+                                           .FirstOrDefault() ?? "";
+                    if (firstLine != newHeader)
+                    {
+                        // 헤더가 다름 → 컬럼 위치를 파싱해서 올바른 순서로 재작성
+                        var allLines = System.IO.File.ReadAllLines(csvPath, csvEncoding);
+                        string[] oldCols = firstLine.Split('\t');
+
+                        // 컬럼명 끝의 공백을 제거하고 비교 (이전 포맷 호환)
+                        int iWeight = -1, iEmp = -1;
+                        for (int c = 0; c < oldCols.Length; c++)
+                        {
+                            string col = oldCols[c].TrimEnd();
+                            if (col == "탄 무게(1/2/3/4번)") iWeight = c;
+                            if (col == "사번")               iEmp    = c;
+                        }
+
+                        var updated = new System.Collections.Generic.List<string>();
+                        updated.Add(newHeader);
+                        for (int li = 1; li < allLines.Length; li++)
+                        {
+                            string ln = allLines[li];
+                            if (string.IsNullOrWhiteSpace(ln)) continue;
+                            string[] cells = ln.Split('\t');
+                            // 날짜~검사결과(0~6) + 탄무게 + [빈칸] + 사번 순으로 재조합
+                            string basePart  = cells.Length >= 7 ? string.Join("\t", cells, 0, 7) : ln.TrimEnd();
+                            string weightVal = iWeight >= 0 && iWeight < cells.Length ? cells[iWeight].TrimEnd() : "-";
+                            string empVal    = iEmp    >= 0 && iEmp    < cells.Length ? cells[iEmp]               : "";
+                            updated.Add(basePart + "\t" + weightVal + "\t\t" + empVal);
+                        }
+                        System.IO.File.WriteAllLines(csvPath, updated, csvEncoding);
+                    }
+                }
+                using (System.IO.StreamWriter sw = new System.IO.StreamWriter(csvPath, true, csvEncoding))
                 {
                     if (!fileExists)
-                        sw.WriteLine("날짜\t시간\t구경\t탄종\t기준바코드\t리딩바코드\t검사결과\t사번");
+                        sw.WriteLine(newHeader);
 
                     string empId = string.IsNullOrEmpty(m_VasimPlatform.m_SystemData.CurrentEmployeeId)
                         ? "미선택"
@@ -216,7 +268,7 @@ namespace PoongSan_Angang_BCR
                         : _rows.Cast<AmmoRow?>().FirstOrDefault(r => r.Value.BoxBCD == scannedBcd);
                     string actualBullet = matchedRow.HasValue ? matchedRow.Value.Bullet : "미등록";
 
-                    sw.WriteLine(string.Format("{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}\t{7}",
+                    sw.WriteLine(string.Format("{0}\t{1}\t{2}\t{3}\t{4}\t{5}\t{6}\t{7}\t\t{8}",
                         now.ToString("yyyy-MM-dd"),
                         now.ToString("HH:mm:ss"),
                         cboBore.Text,
@@ -224,6 +276,7 @@ namespace PoongSan_Angang_BCR
                         standardBcd,
                         "(" + actualBullet + ") " + scannedBcd,
                         result,
+                        weights,
                         empId));
                 }
             }
@@ -352,7 +405,7 @@ namespace PoongSan_Angang_BCR
 
             StopWeightPolling();
 
-            if (m_VasimPlatform.m_SystemData.AutoMachineUse == "true")
+            if (m_VasimPlatform.m_SystemData.melsecplcUse == "true")
                 m_VasimPlatform.m_mxPlc.Dispose();
 
             // 추가: 전부 끄기
@@ -617,6 +670,12 @@ namespace PoongSan_Angang_BCR
                 m_VasimPlatform.m_SystemData.SavedBullet = "";
                 m_VasimPlatform.m_SystemData.SavedLocal  = "";
                 m_VasimPlatform.m_SystemData.Save();
+
+                // 로컬 미선택 상태이므로 중량 범위 초기화 → 타이머 조기 리턴 보장
+                // 라벨도 명시적으로 "-"로 초기화 (모델 미완성 상태 표시)
+                _currentWeightMin = 0;
+                _currentWeightMax = 0;
+                ResetAllWeightLabels();
             }
 
             _isInternalChange = false;
@@ -650,6 +709,14 @@ namespace PoongSan_Angang_BCR
                 m_VasimPlatform.m_SystemData.SavedBullet = bullet;
                 m_VasimPlatform.m_SystemData.SavedLocal  = "";
                 m_VasimPlatform.m_SystemData.Save();
+
+                // 구경+탄종으로 무게 범위가 결정되므로 즉시 올바른 값으로 세팅
+                // (CSV 데이터상 동일 구경+탄종의 모든 로컬은 무게범위가 동일)
+                var weightRow = _rows.FirstOrDefault(r => r.Bore == bore && r.Bullet == bullet);
+                _currentWeightMin = weightRow.WeightMin;
+                _currentWeightMax = weightRow.WeightMax;
+                // 라벨은 "-"로 초기화 → 타이머가 다음 발동 시 실제 무게로 채워줌
+                ResetAllWeightLabels();
             }
 
             _isInternalChange = false;
@@ -663,7 +730,7 @@ namespace PoongSan_Angang_BCR
             string bullet = cboBullet.SelectedItem.ToString();
             string local  = cboLocal.SelectedItem.ToString();
 
-            var row = _rows.LastOrDefault(r => r.Bore == bore && r.Bullet == bullet && r.Local == local);
+            var row = _rows.FirstOrDefault(r => r.Bore == bore && r.Bullet == bullet && r.Local == local);
 
             txtCartonBCD.Text = row.CartonBCD;
             txtBoxBCD.Text    = row.BoxBCD;
@@ -803,45 +870,6 @@ namespace PoongSan_Angang_BCR
                 if (scanned.Length == CARTON_BCD_LENGTH)
                 {
                     txtInputCartonBCD.Text = scanned;
-                    string sPLCData1;
-
-                    if (m_VasimPlatform.m_SystemData.AutoMachineUse == "true")
-                    {             
-                        try
-                        {
-                            if (m_VasimPlatform.m_SystemData.melsecplcUse == "true")
-                            {
-                                m_VasimPlatform.m_mxPlc.Read2WordForwardString(PLCDefine.PLC_Data, PLCDefine.PLC_Data_Length, out sPLCData1);
-                            }
-                            else
-                            {
-                                ushort[] data = new ushort[10];
-                                m_VasimPlatform.plc_omron.ReadDMs(200, ref data, 10);
-                                sPLCData1 = ConvertToString(data);
-                            }
-                        }
-                        catch
-                        {
-                            AlarmForm.ShowAlarm("PLC 이상 발생.", this);
-                            lb_Result.Text = "NG";
-                            lb_Result.BackColor = System.Drawing.Color.Red;
-                            UpdateCountDisplay();
-                            SaveCountToIni();
-                            ResetTimeoutTimer();
-                            return;
-                        }
-                        if (cboBore.Text != sPLCData1)
-                        //if (cboBore.Text != sPLCData1 || cboBullet.Text != sPLCData2 || cboLocal.Text != sPLCData3)
-                        {
-                            AlarmForm.ShowAlarm("PLC Data가 불일치 합니다.", this);
-                            lb_Result.Text = "NG";
-                            lb_Result.BackColor = System.Drawing.Color.Red;
-                            UpdateCountDisplay();
-                            SaveCountToIni();
-                            ResetTimeoutTimer();
-                            return;
-                        }
-                    }
 
                     string bore   = cboBore.SelectedItem?.ToString()   ?? "";
                     string bullet = cboBullet.SelectedItem?.ToString() ?? "";
@@ -850,13 +878,14 @@ namespace PoongSan_Angang_BCR
                     bool cartonOk = _rows.Any(r =>
                         r.Bore == bore && r.Bullet == bullet && r.Local == local && r.CartonBCD == scanned);
 
+                    string cartonWeights = GetCurrentWeightsString();
                     if (cartonOk)
                     {
                         OkForm.ShowOk("카톤 OK");
                         lb_Result.Text = "OK";
                         lb_Result.BackColor = System.Drawing.Color.Green;
                         _cartonOkCount++;
-                        SaveToCsv("Carton", txtCartonBCD.Text, scanned, "OK");
+                        SaveToCsv("Carton", txtCartonBCD.Text, scanned, "OK", cartonWeights);
                     }
                     else
                     {
@@ -864,7 +893,7 @@ namespace PoongSan_Angang_BCR
                         lb_Result.Text = "NG";
                         lb_Result.BackColor = System.Drawing.Color.Red;
                         _cartonNgCount++;
-                        SaveToCsv("Carton", txtCartonBCD.Text, scanned, "NG");
+                        SaveToCsv("Carton", txtCartonBCD.Text, scanned, "NG", cartonWeights);
                     }
                 }
                 else if (scanned.Length == BOX_BCD_LENGTH)
@@ -878,13 +907,14 @@ namespace PoongSan_Angang_BCR
                     bool boxOk = _rows.Any(r =>
                         r.Bore == bore2 && r.Bullet == bullet2 && r.Local == local2 && r.BoxBCD == scanned);
 
+                    string boxWeights = GetCurrentWeightsString();
                     if (boxOk)
                     {
                         OkForm.ShowOk("골판지 OK");
                         lb_Result.Text = "OK";
                         lb_Result.BackColor = System.Drawing.Color.Green;
                         _boxOkCount++;
-                        SaveToCsv("Box", txtBoxBCD.Text, scanned, "OK");
+                        SaveToCsv("Box", txtBoxBCD.Text, scanned, "OK", boxWeights);
                     }
                     else
                     {
@@ -892,7 +922,7 @@ namespace PoongSan_Angang_BCR
                         lb_Result.Text = "NG";
                         lb_Result.BackColor = System.Drawing.Color.Red;
                         _boxNgCount++;
-                        SaveToCsv("Box", txtBoxBCD.Text, scanned, "NG");
+                        SaveToCsv("Box", txtBoxBCD.Text, scanned, "NG", boxWeights);
                     }
                 }
                 UpdateCountDisplay();
@@ -969,10 +999,14 @@ namespace PoongSan_Angang_BCR
             if (m_VasimPlatform.m_SystemData.melsecplcUse != "true") return;
             if ((m_VasimPlatform.m_SystemData.WeightPollingEnabled ?? "true") != "true") return;
 
-            label9.Text      = connected ? "연결됨" : "연결 안됨";
+            label9.Text      = connected ? "PLC 연결" : "PLC 미연결";
             label9.ForeColor = connected
                 ? System.Drawing.Color.LimeGreen
-                : System.Drawing.Color.Red;
+                : System.Drawing.Color.Gray;
+
+            // Fix A: 연결 끊김 시 중량 라벨도 함께 초기화 (마지막 OK값이 그대로 남는 문제 방지)
+            if (!connected)
+                ResetAllWeightLabels();
         }
 
         // 기존 핸들러 — TimeoutSettingForm 내부에서 직접 처리하므로 빈 상태 유지
@@ -1210,6 +1244,14 @@ namespace PoongSan_Angang_BCR
         {
             if (m_VasimPlatform.m_SystemData.melsecplcUse != "true") return;
             if (m_VasimPlatform.m_SystemData.WeightPollingEnabled != "true") return;
+
+            // 주소 설정 여부와 무관하게 연결 상태 먼저 표시
+            bool plcConnected = m_VasimPlatform.m_mxPlc.m_bConnected;
+            label9.Text      = plcConnected ? "PLC 연결" : "PLC 미연결";
+            label9.ForeColor = plcConnected
+                ? System.Drawing.Color.LimeGreen
+                : System.Drawing.Color.Gray;
+
             var sd = m_VasimPlatform.m_SystemData;
             // 4개 주소가 모두 비어 있으면 폴링 불필요
             if (string.IsNullOrEmpty(sd.WeightPlcAddress1) &&
@@ -1231,13 +1273,6 @@ namespace PoongSan_Angang_BCR
             _weightTimer.Stop();
             _weightTimer.Interval = seconds * 1000.0;
             _weightTimer.Start();
-
-            // 현재 연결 상태를 즉시 반영 (이후 상태 변화는 OnConnectionChanged 콜백이 처리)
-            bool plcConnected = m_VasimPlatform.m_mxPlc.m_bConnected;
-            label9.Text      = plcConnected ? "연결됨" : "연결 안됨";
-            label9.ForeColor = plcConnected
-                ? System.Drawing.Color.LimeGreen
-                : System.Drawing.Color.Red;
         }
 
         private void StopWeightPolling()
@@ -1259,9 +1294,9 @@ namespace PoongSan_Angang_BCR
         private void ResetWeightLabel(int idx)
         {
             var lbl = _weightLabels[idx];
-            lbl.Text      = $"{idx + 1}번: -";
+            lbl.Text      = $"{idx + 1}번 무게 :\n-";
             lbl.BackColor = System.Drawing.Color.White;
-            lbl.ForeColor = System.Drawing.Color.DarkGray;
+            lbl.ForeColor = System.Drawing.Color.Black;
         }
 
         private void WeightTimer_Elapsed(object sender, ElapsedEventArgs e)
@@ -1292,12 +1327,33 @@ namespace PoongSan_Angang_BCR
                 }
 
                 float rawValue;
-                if (m_VasimPlatform.m_mxPlc.ReadFloat(address, out rawValue) != 0) continue; // 읽기 실패 → 이전 값 유지
+                if (m_VasimPlatform.m_mxPlc.ReadFloat(address, out rawValue) != 0)
+                {
+                    // Fix C: 읽기 실패 → 해당 라벨 초기화 (연결 감지 전 타이밍 공백 구간 대응)
+                    this.Invoke(new Action(() => ResetWeightLabel(capturedIdx)));
+                    continue;
+                }
 
-                // 값이 0이면 아직 측정 전 → 라벨 초기화
+                // 레지스터 분리 읽기 경쟁 조건 왜곡값 처리
+                // ※ 왜곡값 최대 크기: 0x0000FFFF(IEEE 754 비정규수) ≈ 9.18e-41
+                //   → 1e-10f 미만이면 물리적으로 불가능한 왜곡값으로 간주
+                int capturedIdx2 = capturedIdx;
                 if (rawValue == 0.0f)
                 {
-                    this.Invoke(new Action(() => ResetWeightLabel(capturedIdx)));
+                    // 정확히 0: 노란색 "0.0" 표시 (NG 아님, 눈으로 확인용)
+                    this.Invoke(new Action(() =>
+                    {
+                        var lbl = _weightLabels[capturedIdx2];
+                        lbl.Text      = $"{capturedIdx2 + 1}번 무게 :\n0.0";
+                        lbl.BackColor = System.Drawing.Color.Yellow;
+                        lbl.ForeColor = System.Drawing.Color.Black;
+                    }));
+                    continue;
+                }
+                if (rawValue < 1e-10f)
+                {
+                    // 극소 왜곡값(0 초과 1e-10 미만): 레지스터 분리 읽기 타이밍 오류 → 라벨 초기화
+                    this.Invoke(new Action(() => ResetWeightLabel(capturedIdx2)));
                     continue;
                 }
 
@@ -1309,7 +1365,7 @@ namespace PoongSan_Angang_BCR
                 this.Invoke(new Action(() =>
                 {
                     var lbl = _weightLabels[capturedIdx];
-                    lbl.Text      = $"{capturedIdx + 1}번: {captured:F1}";
+                    lbl.Text      = $"{capturedIdx + 1}번 무게 :\n{captured:F1}";
                     lbl.BackColor = capturedNg
                         ? System.Drawing.Color.Red
                         : System.Drawing.Color.LimeGreen;

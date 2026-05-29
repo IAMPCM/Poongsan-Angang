@@ -132,7 +132,13 @@ namespace PoongSan_Angang_BCR
         {
             string device = "D0";
             int readValue;
-            int result = lpcom_ReferencesUtlType.GetDevice(device, out readValue);
+            int result;
+
+            // PLCLock으로 보호: _weightTimer 스레드의 ReadFloat()와 COM 객체 동시 접근 방지
+            lock (PLCLock)
+            {
+                result = lpcom_ReferencesUtlType.GetDevice(device, out readValue);
+            }
 
             // MX Component의 GetDevice 메서드는 연결이 성공적으로 수행되면 0을 반환합니다.
             // 상태가 변화한 경우에만 OnConnectionChanged 콜백을 발동합니다.
@@ -694,9 +700,15 @@ namespace PoongSan_Angang_BCR
         }
         public void Dispose()
         {
-            connectionThread.Abort();
-            PlcDataThread.Abort();
-            PlcAliveThread.Abort();
+            // ① stopRequested = true 먼저 설정 → ConnectionThreadProc 루프가 정상 종료 경로로 빠져나옴
+            //   (설정 없이 Abort()만 하면 while(!stopRequested) 루프가 폭주하며 StackOverflowException 유발)
+            stopRequested = true;
+
+            // ② null 체크 후 Abort() → PlcAliveThread는 초기화되지 않을 수 있으므로 NullReferenceException 방지
+            connectionThread?.Abort();
+            PlcDataThread?.Abort();
+            if (PlcAliveThread != null)
+                PlcAliveThread.Abort();
 
             lpcom_ReferencesUtlType = null;
             lpcom_ReferencesProgType = null;

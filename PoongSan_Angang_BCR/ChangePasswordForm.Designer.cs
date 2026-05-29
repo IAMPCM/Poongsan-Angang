@@ -266,7 +266,7 @@ namespace PoongSan_Angang_BCR
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin          = new System.Windows.Forms.Padding(4);
             this.Name            = "ChangePasswordForm";
-            this.StartPosition   = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition   = System.Windows.Forms.FormStartPosition.CenterParent;
             this.TopMost         = true;
             this.ResumeLayout(false);
         }

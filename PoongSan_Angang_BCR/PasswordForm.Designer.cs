@@ -302,7 +302,7 @@ namespace PoongSan_Angang_BCR
             this.MaximizeBox     = false;
             this.MinimizeBox     = false;
             this.Name            = "PasswordForm";
-            this.StartPosition   = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition   = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text            = "암호";
             this.TopMost         = true;
             this.Load += new System.EventHandler(this.PasswordForm_Load);

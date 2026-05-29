@@ -25,10 +25,11 @@ namespace PoongSan_Angang_BCR
 
         private void WireEvents()
         {
-            btnClose.Click  += (s, e) => this.Close();
-            btnSelect.Click += OnSelectClick;
-            btnAdd.Click    += OnAddClick;
-            btnDelete.Click += OnDeleteClick;
+            btnClose.Click    += (s, e) => this.Close();
+            btnCheckOut.Click += OnCheckOutClick;
+            btnSelect.Click   += OnSelectClick;
+            btnAdd.Click      += OnAddClick;
+            btnDelete.Click   += OnDeleteClick;
         }
 
         private void RefreshList()
@@ -71,6 +72,25 @@ namespace PoongSan_Angang_BCR
             }
         }
 
+        private void OnCheckOutClick(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(_systemData.CurrentEmployeeId))
+            {
+                MessageBox.Show("현재 출근 중인 작업자가 없습니다.", "안내",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            if (!Authenticate()) return;
+
+            string prev = _systemData.CurrentEmployeeId;
+            _systemData.CurrentEmployeeId = "";
+            _systemData.Save();
+            MessageBox.Show(string.Format("작업자 [{0}] 퇴근 처리되었습니다.", prev),
+                "퇴근", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();
+        }
+
         private void OnSelectClick(object sender, EventArgs e)
         {
             if (_listBox.SelectedItem == null)
@@ -79,6 +99,9 @@ namespace PoongSan_Angang_BCR
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
+
+            if (!Authenticate()) return;
+
             _systemData.CurrentEmployeeId = _listBox.SelectedItem.ToString();
             _systemData.Save();
             MessageBox.Show(string.Format("작업자 [{0}] 출근 처리되었습니다.", _systemData.CurrentEmployeeId),

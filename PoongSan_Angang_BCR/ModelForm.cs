@@ -24,9 +24,10 @@ namespace PoongSan_Angang_BCR
         private List<ModelRow> _models      = new List<ModelRow>();
         private List<string>   _altRows     = new List<string>(); // 대체 바코드 행 보존용
         private string         _csvPath     = Define.BcdCsvPath;
-        private const int      ROWS_PER_PAGE = 8;
+        private const int      ROWS_PER_PAGE = 12;
         private int            _currentPage  = 0;
         private int            _selectedIndex = -1;
+        private bool           _unsavedChanges = false;
 
         // SystemData 참조 (비밀번호 변경에 사용)
         private SystemData _systemData;
@@ -53,7 +54,7 @@ namespace PoongSan_Angang_BCR
 
             if (!File.Exists(_csvPath))
             {
-                MessageBox.Show("CSV 파일을 찾을 수 없습니다.\n" + _csvPath);
+                MessageBox.Show(this, "CSV 파일을 찾을 수 없습니다.\n" + _csvPath);
                 return;
             }
 
@@ -110,7 +111,7 @@ namespace PoongSan_Angang_BCR
                 dict[key].BoxBCD = boxBcd;
             }
 
-            _models = dict.Values.ToList();
+            _models = dict.Values.OrderBy(m => m.Bore).ThenBy(m => m.Bullet).ToList();
         }
 
         // ────────────────────────────────────────────
@@ -121,7 +122,7 @@ namespace PoongSan_Angang_BCR
             try
             {
                 var lines = new List<string>();
-                lines.Add("bore,bullet,Local,Carton BCD,Box BCD");
+                lines.Add("bore,bullet,Local,Carton BCD,Box BCD,WeightMin,WeightMax");
 
                 foreach (var m in _models)
                 {
@@ -146,12 +147,12 @@ namespace PoongSan_Angang_BCR
                     lines.Add(alt);
 
                 File.WriteAllLines(_csvPath, lines, System.Text.Encoding.UTF8);
-                MessageBox.Show("저장 완료했습니다.", "저장",
+                MessageBox.Show(this, "저장 완료했습니다.", "저장",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("저장 실패: " + ex.Message, "오류",
+                MessageBox.Show(this, "저장 실패: " + ex.Message, "오류",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -227,6 +228,8 @@ namespace PoongSan_Angang_BCR
         {
             using (var dlg = new AddEditModelForm(isEditMode: false))
             {
+                dlg.StartPosition = FormStartPosition.Manual;
+                dlg.Location = new System.Drawing.Point(this.Location.X + 200, this.Location.Y + 100);
                 if (dlg.ShowDialog(this) != DialogResult.OK) return;
 
                 // 중복 확인
@@ -236,7 +239,7 @@ namespace PoongSan_Angang_BCR
 
                 if (exists)
                 {
-                    MessageBox.Show("이미 존재하는 구경/탄종입니다.",
+                    MessageBox.Show(this, "이미 존재하는 구경/탄종입니다.",
                         "오류", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
@@ -252,7 +255,8 @@ namespace PoongSan_Angang_BCR
                     WeightMax  = dlg.ResultWeightMax
                 });
 
-                DataModified   = true;   // ← 추가 플래그 ON
+                DataModified    = true;
+                _unsavedChanges = true;
                 _selectedIndex = _models.Count - 1;
                 _currentPage   = (_models.Count - 1) / ROWS_PER_PAGE;
                 RefreshGrid();
@@ -265,7 +269,7 @@ namespace PoongSan_Angang_BCR
         {
             if (_selectedIndex < 0 || _selectedIndex >= _models.Count)
             {
-                MessageBox.Show("변경할 항목을 선택해 주세요.",
+                MessageBox.Show(this, "변경할 항목을 선택해 주세요.",
                     "오류", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
@@ -282,6 +286,8 @@ namespace PoongSan_Angang_BCR
                 weightMin: m.WeightMin,
                 weightMax: m.WeightMax))
             {
+                dlg.StartPosition = FormStartPosition.Manual;
+                dlg.Location = new System.Drawing.Point(this.Location.X + 200, this.Location.Y + 100);
                 if (dlg.ShowDialog(this) != DialogResult.OK) return;
 
                 _models[_selectedIndex] = new ModelRow
@@ -295,9 +301,10 @@ namespace PoongSan_Angang_BCR
                     WeightMax  = dlg.ResultWeightMax
                 };
 
-                DataModified = true;     // ← 변경 플래그 ON
+                DataModified    = true;
+                _unsavedChanges = true;
                 RefreshGrid();
-                MessageBox.Show("변경되었습니다.", "완료",
+                MessageBox.Show(this, "변경되었습니다.", "완료",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
@@ -307,20 +314,21 @@ namespace PoongSan_Angang_BCR
         {
             if (_selectedIndex < 0 || _selectedIndex >= _models.Count)
             {
-                MessageBox.Show("삭제할 항목을 선택해 주세요.",
+                MessageBox.Show(this, "삭제할 항목을 선택해 주세요.",
                     "오류", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             var m  = _models[_selectedIndex];
-            var dr = MessageBox.Show(
+            var dr = MessageBox.Show(this,
                 string.Format("{0} / {1} 을(를) 삭제하시겠습니까?", m.Bore, m.Bullet),
                 "삭제 확인", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (dr == DialogResult.Yes)
             {
                 _models.RemoveAt(_selectedIndex);
-                DataModified   = true;   // ← 삭제 플래그 ON
+                DataModified    = true;
+                _unsavedChanges = true;
                 _selectedIndex = -1;
 
                 if (_currentPage >= TotalPages)
@@ -334,7 +342,8 @@ namespace PoongSan_Angang_BCR
         private void btn_Save_Click(object sender, EventArgs e)
         {
             SaveCsv();
-            DataModified = true;     // ← 저장 플래그 ON
+            DataModified    = true;
+            _unsavedChanges = false;
         }
 
         // ── 페이지 이동 ──
@@ -352,6 +361,26 @@ namespace PoongSan_Angang_BCR
         private void btn_Close_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            if (_unsavedChanges)
+            {
+                var result = MessageBox.Show(this,
+                    "저장하지 않은 변경사항이 있습니다.\n저장 버튼을 누르지 않고 나가면 변경사항이 저장되지 않습니다.\n\n그래도 나가시겠습니까?",
+                    "저장 안 됨",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning);
+
+                if (result == DialogResult.No)
+                {
+                    e.Cancel = true;
+                    return;
+                }
+            }
+
+            base.OnFormClosing(e);
         }
     }
 }

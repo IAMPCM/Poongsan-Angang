@@ -332,57 +332,57 @@ namespace PoongSan_Angang_BCR
             this.label9.TabIndex = 173;
             this.label9.Text = "미사용";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            //
-            // lblWeight1 (x=875, 1번 탄 중량)
-            //
+            // 
+            // lblWeight1
+            // 
             this.lblWeight1.BackColor = System.Drawing.Color.White;
             this.lblWeight1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblWeight1.Font = new System.Drawing.Font("굴림", 16F, System.Drawing.FontStyle.Bold);
-            this.lblWeight1.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblWeight1.ForeColor = System.Drawing.Color.Black;
             this.lblWeight1.Location = new System.Drawing.Point(875, 558);
             this.lblWeight1.Name = "lblWeight1";
             this.lblWeight1.Size = new System.Drawing.Size(240, 101);
             this.lblWeight1.TabIndex = 230;
-            this.lblWeight1.Text = "1번: -";
+            this.lblWeight1.Text = "1번 무게 :\n-";
             this.lblWeight1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            //
-            // lblWeight2 (x=1115, 2번 탄 중량)
-            //
+            // 
+            // lblWeight2
+            // 
             this.lblWeight2.BackColor = System.Drawing.Color.White;
             this.lblWeight2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblWeight2.Font = new System.Drawing.Font("굴림", 16F, System.Drawing.FontStyle.Bold);
-            this.lblWeight2.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblWeight2.ForeColor = System.Drawing.Color.Black;
             this.lblWeight2.Location = new System.Drawing.Point(1115, 558);
             this.lblWeight2.Name = "lblWeight2";
             this.lblWeight2.Size = new System.Drawing.Size(240, 101);
             this.lblWeight2.TabIndex = 231;
-            this.lblWeight2.Text = "2번: -";
+            this.lblWeight2.Text = "2번 무게 :\n-";
             this.lblWeight2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            //
-            // lblWeight3 (x=1355, 3번 탄 중량)
-            //
+            // 
+            // lblWeight3
+            // 
             this.lblWeight3.BackColor = System.Drawing.Color.White;
             this.lblWeight3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblWeight3.Font = new System.Drawing.Font("굴림", 16F, System.Drawing.FontStyle.Bold);
-            this.lblWeight3.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblWeight3.ForeColor = System.Drawing.Color.Black;
             this.lblWeight3.Location = new System.Drawing.Point(1355, 558);
             this.lblWeight3.Name = "lblWeight3";
             this.lblWeight3.Size = new System.Drawing.Size(240, 101);
             this.lblWeight3.TabIndex = 232;
-            this.lblWeight3.Text = "3번: -";
+            this.lblWeight3.Text = "3번 무게 :\n-";
             this.lblWeight3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            //
-            // lblWeight4 (x=1595, 4번 탄 중량)
-            //
+            // 
+            // lblWeight4
+            // 
             this.lblWeight4.BackColor = System.Drawing.Color.White;
             this.lblWeight4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblWeight4.Font = new System.Drawing.Font("굴림", 16F, System.Drawing.FontStyle.Bold);
-            this.lblWeight4.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblWeight4.ForeColor = System.Drawing.Color.Black;
             this.lblWeight4.Location = new System.Drawing.Point(1595, 558);
             this.lblWeight4.Name = "lblWeight4";
             this.lblWeight4.Size = new System.Drawing.Size(235, 101);
             this.lblWeight4.TabIndex = 233;
-            this.lblWeight4.Text = "4번: -";
+            this.lblWeight4.Text = "4번 무게 :\n-";
             this.lblWeight4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_Start
