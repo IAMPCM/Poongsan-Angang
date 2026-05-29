@@ -138,7 +138,7 @@ namespace PoongSan_Angang_BCR
             this.col_WeightMin.MinimumWidth = 8;
             this.col_WeightMin.Name = "col_WeightMin";
             this.col_WeightMin.ReadOnly = true;
-            this.col_WeightMin.Width = 124;
+            this.col_WeightMin.Width = 90;
             // 
             // col_WeightMax
             // 
@@ -146,7 +146,7 @@ namespace PoongSan_Angang_BCR
             this.col_WeightMax.MinimumWidth = 8;
             this.col_WeightMax.Name = "col_WeightMax";
             this.col_WeightMax.ReadOnly = true;
-            this.col_WeightMax.Width = 124;
+            this.col_WeightMax.Width = 90;
             // 
             // lblTitle
             // 

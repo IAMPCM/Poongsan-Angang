@@ -35,5 +35,6 @@ namespace PoongSan_Angang_BCR
             btnPlcSetting.Click     += (s, e) => _onPlcSetting?.Invoke();
             btnClose.Click          += (s, e) => this.Close();
         }
+
     }
 }
